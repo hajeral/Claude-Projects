@@ -1,0 +1,8 @@
+904 renders, 0 with findings, 160s
+23/23 flows pass
+docs/screens.html written: 83 routes, 573 endpoint references
+render: 904 renders, 83 routes, 8 combos, 0 with findings, 68 distinct link targets checked
+clicks en: 84 route runs, 1573 interactions, verdicts {'ok': 1516, 'already-active': 57}
+clicks ar: 84 route runs, 1579 interactions, verdicts {'ok': 1518, 'already-active': 60, 'i18n': 1}
+    admin-cms: [i18n] button "معاينة" missing AR: doha
+flows: 23/23 pass

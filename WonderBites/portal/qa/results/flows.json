@@ -1,0 +1,236 @@
+[
+ {
+  "flow": "admin login → OTP → Command Center",
+  "ok": true,
+  "errors": [],
+  "secs": 0.7
+ },
+ {
+  "flow": "admin login: wrong OTP 000000 shows error",
+  "ok": true,
+  "errors": [],
+  "secs": 1.2
+ },
+ {
+  "flow": "FLOW-01 merchant sign-up → OTP → Pending verification → admin approves → merchant signs in",
+  "ok": true,
+  "errors": [],
+  "secs": 2.4
+ },
+ {
+  "flow": "forgot password → reset password → sign in",
+  "ok": true,
+  "errors": [],
+  "secs": 1.3
+ },
+ {
+  "flow": "logout (profile menu → Log out → confirm → login)",
+  "ok": true,
+  "errors": [],
+  "secs": 1.0
+ },
+ {
+  "flow": "global search → result navigates",
+  "ok": true,
+  "errors": [],
+  "secs": 1.1
+ },
+ {
+  "flow": "date-range calendar apply → KPIs refetch with from/to",
+  "ok": true,
+  "errors": [],
+  "secs": 1.5
+ },
+ {
+  "flow": "notifications panel → deep link",
+  "ok": true,
+  "errors": [],
+  "secs": 1.5
+ },
+ {
+  "flow": "profile menu → Profile settings (admin + merchant)",
+  "ok": true,
+  "errors": [],
+  "secs": 1.2
+ },
+ {
+  "flow": "export dialog → toast → download in notifications",
+  "ok": true,
+  "errors": [],
+  "secs": 3.2
+ },
+ {
+  "flow": "branch switcher → branch-scoped refetch",
+  "ok": true,
+  "errors": [],
+  "secs": 1.0
+ },
+ {
+  "flow": "Need Help drawer (ticket) + Help screen",
+  "ok": true,
+  "errors": [],
+  "secs": 1.8
+ },
+ {
+  "flow": "template banner → templates → Create from Template → prefilled product → save",
+  "ok": true,
+  "errors": [],
+  "secs": 1.4
+ },
+ {
+  "flow": "Add listing → detail → edit → delete",
+  "ok": true,
+  "errors": [],
+  "secs": 2.3
+ },
+ {
+  "flow": "order modal → assign driver",
+  "ok": true,
+  "errors": [],
+  "secs": 0.7
+ },
+ {
+  "flow": "refund flow (policy check → submit)",
+  "ok": true,
+  "errors": [],
+  "secs": 1.4
+ },
+ {
+  "flow": "invite user",
+  "ok": true,
+  "errors": [],
+  "secs": 1.2
+ },
+ {
+  "flow": "create voucher",
+  "ok": true,
+  "errors": [],
+  "secs": 1.0
+ },
+ {
+  "flow": "CMS banner publish",
+  "ok": true,
+  "errors": [],
+  "secs": 0.4
+ },
+ {
+  "flow": "merchant Language tab switches the app to Arabic",
+  "ok": true,
+  "errors": [],
+  "secs": 0.8
+ },
+ {
+  "flow": "markets: enable UAE → switcher, filters, sign-up, UAE branch in AED → back to QAR (EN)",
+  "ok": true,
+  "errors": [],
+  "secs": 6.4
+ },
+ {
+  "flow": "markets: enable UAE → switcher, filters, sign-up, UAE branch in AED → back to QAR (AR)",
+  "ok": true,
+  "errors": [],
+  "secs": 6.6
+ },
+ {
+  "flow": "markets: Qatar defaults (general settings, sign-up, phone codes, time zone)",
+  "ok": true,
+  "errors": [],
+  "secs": 1.1
+ },
+ {
+  "flow": "F-001 listing edit keeps remaining; quantity below committed → field error",
+  "ok": true,
+  "errors": [],
+  "secs": 1.3
+ },
+ {
+  "flow": "F-002 order state machine: terminal orders 409 invalid_transition, UI hides disallowed actions",
+  "ok": true,
+  "errors": [],
+  "secs": 1.3
+ },
+ {
+  "flow": "F-003 / FLOW-08 merchant verifies pickup code in the order modal → completed (single-use, expiry, inline error)",
+  "ok": true,
+  "errors": [],
+  "secs": 1.1
+ },
+ {
+  "flow": "F-004 merchant Overview KPIs / recent orders / top bags come from the order store",
+  "ok": true,
+  "errors": [],
+  "secs": 0.5
+ },
+ {
+  "flow": "F-005 support contacts from the markets registry (Need Help drawer + Help screen), editable in Settings → Markets",
+  "ok": true,
+  "errors": [],
+  "secs": 1.6
+ },
+ {
+  "flow": "pickup codes: one format (6 chars, no ambiguous characters), unique, expire at window end + grace; admin uses the same helper",
+  "ok": true,
+  "errors": [],
+  "secs": 0.1
+ },
+ {
+  "flow": "commission: 19 % platform default (Settings → General → Commercial), effective-dated, merchant contract override",
+  "ok": true,
+  "errors": [],
+  "secs": 0.5
+ },
+ {
+  "flow": "demo data: badge in both top bars, sign-in says \"Demo: any credentials\", no realistic emails / phones / IBANs",
+  "ok": true,
+  "errors": [],
+  "secs": 0.8
+ },
+ {
+  "flow": "FLOW-02 merchant listing appears in Admin → Drops; admin flag disables it for the merchant",
+  "ok": true,
+  "errors": [],
+  "secs": 0.6
+ },
+ {
+  "flow": "FLOW-05/06 merchant orders are a filtered projection of admin orders (same IDs, same states)",
+  "ok": true,
+  "errors": [],
+  "secs": 0.8
+ },
+ {
+  "flow": "FLOW-07 reserving / completing reduces remaining; cancellation restores it",
+  "ok": true,
+  "errors": [],
+  "secs": 0.3
+ },
+ {
+  "flow": "FLOW-09 admin verifies a pickup (Pickups → Verify code) → one completed state in both portals",
+  "ok": true,
+  "errors": [],
+  "secs": 1.5
+ },
+ {
+  "flow": "FLOW-10 admin cancel / refund by policy → merchant sees Cancelled / Refunded",
+  "ok": true,
+  "errors": [],
+  "secs": 0.5
+ },
+ {
+  "flow": "FLOW-12 payouts = completed orders × effective commission: Admin Financials ≡ Admin Merchant ≡ Merchant Analytics",
+  "ok": true,
+  "errors": [],
+  "secs": 0.4
+ },
+ {
+  "flow": "FLOW-15 merchant dispute / help request ↔ Admin Support with two-way replies",
+  "ok": true,
+  "errors": [],
+  "secs": 1.8
+ },
+ {
+  "flow": "FLOW-17 merchant reports a review → Admin Moderation → decision shown on merchant Reviews",
+  "ok": true,
+  "errors": [],
+  "secs": 1.6
+ }
+]

@@ -1,0 +1,2737 @@
+{
+ "generatedAt": "2026-11-19T22:33:08+00:00",
+ "shots": [
+  {
+   "route": "launcher",
+   "portal": "public",
+   "title": "Choose a portal",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/launcher--en-dark.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-login",
+   "portal": "public",
+   "title": "Sign In",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-login--en-dark.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-login",
+   "portal": "public",
+   "title": "Sign In",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/m-login--en-dark.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "otp",
+   "portal": "public",
+   "title": "Two-step verification",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/otp--en-dark.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-signup",
+   "portal": "public",
+   "title": "Sign Up",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/m-signup--en-dark.jpg",
+   "size": [
+    1200,
+    918
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "forgot-password",
+   "portal": "public",
+   "title": "Forgot Password?",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/forgot-password--en-dark.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "reset-password",
+   "portal": "public",
+   "title": "Reset password",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/reset-password--en-dark.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "not-found",
+   "portal": "public",
+   "title": "Page not found",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/not-found--en-dark.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-notifications",
+   "portal": "admin",
+   "title": "Notifications",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-notifications--en-dark.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-notifications",
+   "portal": "merchant",
+   "title": "Notifications",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/m-notifications--en-dark.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-command-center",
+   "portal": "admin",
+   "title": "Command Center",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-command-center--en-dark.jpg",
+   "size": [
+    1200,
+    1333
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-overview",
+   "portal": "merchant",
+   "title": "m-overview",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/m-overview--en-dark.jpg",
+   "size": [
+    1200,
+    1061
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-sustainability",
+   "portal": "merchant",
+   "title": "Sustainability & Impact",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/m-sustainability--en-dark.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-settings-markets",
+   "portal": "admin",
+   "title": "Settings",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-settings-markets--en-dark.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-drops",
+   "portal": "admin",
+   "title": "Drops",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-drops--en-dark.jpg",
+   "size": [
+    1200,
+    914
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-drop-edit",
+   "portal": "admin",
+   "title": "Edit Drop",
+   "params": {
+    "id": "DR-3391"
+   },
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-drop-edit--en-dark.jpg",
+   "size": [
+    1200,
+    1272
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-pickups",
+   "portal": "admin",
+   "title": "Pickups",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-pickups--en-dark.jpg",
+   "size": [
+    1200,
+    914
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-orders",
+   "portal": "admin",
+   "title": "Orders & Reservations",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-orders--en-dark.jpg",
+   "size": [
+    1200,
+    914
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-merchants",
+   "portal": "admin",
+   "title": "Merchants",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-merchants--en-dark.jpg",
+   "size": [
+    1200,
+    828
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-merchant-detail",
+   "portal": "admin",
+   "title": "Merchant details",
+   "params": {
+    "id": "MER-058"
+   },
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-merchant-detail--en-dark.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-merchant-new",
+   "portal": "admin",
+   "title": "Add Merchant",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-merchant-new--en-dark.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-consumers",
+   "portal": "admin",
+   "title": "Consumers",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-consumers--en-dark.jpg",
+   "size": [
+    1200,
+    914
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-consumer-detail",
+   "portal": "admin",
+   "title": "Consumer details",
+   "params": {
+    "id": "CON-1212"
+   },
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-consumer-detail--en-dark.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-issues",
+   "portal": "admin",
+   "title": "Issues & Alerts",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-issues--en-dark.jpg",
+   "size": [
+    1200,
+    1089
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-moderation",
+   "portal": "admin",
+   "title": "Moderation",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-moderation--en-dark.jpg",
+   "size": [
+    1200,
+    949
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-support",
+   "portal": "admin",
+   "title": "Support",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-support--en-dark.jpg",
+   "size": [
+    1200,
+    1333
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-ticket-detail",
+   "portal": "admin",
+   "title": "Ticket",
+   "params": {
+    "id": "SUP-8841"
+   },
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-ticket-detail--en-dark.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-financials",
+   "portal": "admin",
+   "title": "Financials",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-financials--en-dark.jpg",
+   "size": [
+    1200,
+    1333
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-payout-detail",
+   "portal": "admin",
+   "title": "Payout details",
+   "params": {
+    "id": "PO-066-261029"
+   },
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-payout-detail--en-dark.jpg",
+   "size": [
+    1200,
+    760
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-operations",
+   "portal": "admin",
+   "title": "Operations Analytics",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-operations--en-dark.jpg",
+   "size": [
+    1200,
+    1281
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-performance",
+   "portal": "admin",
+   "title": "Performance",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-performance--en-dark.jpg",
+   "size": [
+    1200,
+    885
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-performance-merchants",
+   "portal": "admin",
+   "title": "Merchant Performance",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-performance-merchants--en-dark.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-performance-report",
+   "portal": "admin",
+   "title": "Drop Accuracy Report",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-performance-report--en-dark.jpg",
+   "size": [
+    1200,
+    1029
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-sustainability",
+   "portal": "admin",
+   "title": "Sustainability & Impact",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-sustainability--en-dark.jpg",
+   "size": [
+    1200,
+    833
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-sustainability-report",
+   "portal": "admin",
+   "title": "Sustainability Impact Report",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-sustainability-report--en-dark.jpg",
+   "size": [
+    1200,
+    1046
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-wallet",
+   "portal": "admin",
+   "title": "Wallet Credit & Vouchers",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-wallet--en-dark.jpg",
+   "size": [
+    1200,
+    913
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-wallet-detail",
+   "portal": "admin",
+   "title": "Wallet details",
+   "params": {
+    "id": "WAL-30410"
+   },
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-wallet-detail--en-dark.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-voucher-new",
+   "portal": "admin",
+   "title": "admin-voucher-new",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-voucher-new--en-dark.jpg",
+   "size": [
+    1200,
+    947
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-voucher-detail",
+   "portal": "admin",
+   "title": "Voucher details",
+   "params": {
+    "id": "VCH-101"
+   },
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-voucher-detail--en-dark.jpg",
+   "size": [
+    1200,
+    953
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-quality",
+   "portal": "admin",
+   "title": "Quality & Safety",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-quality--en-dark.jpg",
+   "size": [
+    1200,
+    843
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-compliance-detail",
+   "portal": "admin",
+   "title": "Compliance details",
+   "params": {
+    "id": "MER-058"
+   },
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-compliance-detail--en-dark.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-listings",
+   "portal": "admin",
+   "title": "Listings & Templates",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-listings--en-dark.jpg",
+   "size": [
+    1200,
+    809
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-template-new",
+   "portal": "admin",
+   "title": "New Template",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-template-new--en-dark.jpg",
+   "size": [
+    1200,
+    976
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-template-edit",
+   "portal": "admin",
+   "title": "Edit Template",
+   "params": {
+    "id": "tpl_110"
+   },
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-template-edit--en-dark.jpg",
+   "size": [
+    1200,
+    1069
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-templates",
+   "portal": "admin",
+   "title": "Templates",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-templates--en-dark.jpg",
+   "size": [
+    1200,
+    1235
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-cms",
+   "portal": "admin",
+   "title": "CMS",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-cms--en-dark.jpg",
+   "size": [
+    1200,
+    809
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-cms-page",
+   "portal": "admin",
+   "title": "Edit Page",
+   "params": {
+    "id": "pg_4"
+   },
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-cms-page--en-dark.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-cms-banner",
+   "portal": "admin",
+   "title": "Edit Banner",
+   "params": {
+    "id": "ban_2"
+   },
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-cms-banner--en-dark.jpg",
+   "size": [
+    1200,
+    815
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-cms-faq",
+   "portal": "admin",
+   "title": "Edit FAQ",
+   "params": {
+    "id": "faq_1"
+   },
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-cms-faq--en-dark.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-users",
+   "portal": "admin",
+   "title": "Users & Access",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-users--en-dark.jpg",
+   "size": [
+    1200,
+    946
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-settings-profile",
+   "portal": "admin",
+   "title": "Settings",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-settings-profile--en-dark.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-settings",
+   "portal": "admin",
+   "title": "Settings",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-settings--en-dark.jpg",
+   "size": [
+    1200,
+    963
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-settings-notifications",
+   "portal": "admin",
+   "title": "Settings",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-settings-notifications--en-dark.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-settings-security",
+   "portal": "admin",
+   "title": "Settings",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-settings-security--en-dark.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-settings-policies",
+   "portal": "admin",
+   "title": "Settings",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-settings-policies--en-dark.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-policy-about",
+   "portal": "admin",
+   "title": "Settings",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-policy-about--en-dark.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-policy-privacy",
+   "portal": "admin",
+   "title": "Settings",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-policy-privacy--en-dark.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-policy-terms",
+   "portal": "admin",
+   "title": "Settings",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-policy-terms--en-dark.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-policy-refund",
+   "portal": "admin",
+   "title": "Settings",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/admin-policy-refund--en-dark.jpg",
+   "size": [
+    1200,
+    1134
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-settings",
+   "portal": "merchant",
+   "title": "Settings",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/m-settings--en-dark.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-help",
+   "portal": "merchant",
+   "title": "Help",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/m-help--en-dark.jpg",
+   "size": [
+    1200,
+    881
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-reviews",
+   "portal": "merchant",
+   "title": "Reviews",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/m-reviews--en-dark.jpg",
+   "size": [
+    1200,
+    1333
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-reports",
+   "portal": "merchant",
+   "title": "Reports / Dispute",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/m-reports--en-dark.jpg",
+   "size": [
+    1200,
+    768
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-report-detail",
+   "portal": "merchant",
+   "title": "Report details",
+   "params": {
+    "id": "dsp_1042"
+   },
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/m-report-detail--en-dark.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-orders",
+   "portal": "merchant",
+   "title": "Orders & Pickups",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/m-orders--en-dark.jpg",
+   "size": [
+    1200,
+    874
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-listings",
+   "portal": "merchant",
+   "title": "Listings (Bags)",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/m-listings--en-dark.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-inventory",
+   "portal": "merchant",
+   "title": "Inventory",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/m-inventory--en-dark.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-inventory-new",
+   "portal": "merchant",
+   "title": "Inventory",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/m-inventory-new--en-dark.jpg",
+   "size": [
+    1200,
+    1279
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-inventory-detail",
+   "portal": "merchant",
+   "title": "Inventory",
+   "params": {
+    "id": "LIS-2412"
+   },
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/m-inventory-detail--en-dark.jpg",
+   "size": [
+    1200,
+    924
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-create-product",
+   "portal": "merchant",
+   "title": "Create Product",
+   "params": {
+    "templateId": "TPL-01"
+   },
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/m-create-product--en-dark.jpg",
+   "size": [
+    1200,
+    812
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-drivers",
+   "portal": "merchant",
+   "title": "Drivers",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/m-drivers--en-dark.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-driver-detail",
+   "portal": "merchant",
+   "title": "Drivers",
+   "params": {
+    "id": "DRV-03"
+   },
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/m-driver-detail--en-dark.jpg",
+   "size": [
+    1200,
+    1333
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-analytics",
+   "portal": "merchant",
+   "title": "Sales & Analytics",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/m-analytics--en-dark.jpg",
+   "size": [
+    1200,
+    1333
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-analytics-days",
+   "portal": "merchant",
+   "title": "Sales & Analytics",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/m-analytics-days--en-dark.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-customers",
+   "portal": "merchant",
+   "title": "Customers",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/m-customers--en-dark.jpg",
+   "size": [
+    1200,
+    914
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-customer-new",
+   "portal": "merchant",
+   "title": "Add Customer",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/m-customer-new--en-dark.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:31 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-customer-detail",
+   "portal": "merchant",
+   "title": "Customers",
+   "params": {
+    "id": "CUS-1010"
+   },
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/m-customer-detail--en-dark.jpg",
+   "size": [
+    1200,
+    1333
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-branches",
+   "portal": "merchant",
+   "title": "Branch Management",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/m-branches--en-dark.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-branch-edit",
+   "portal": "merchant",
+   "title": "Branch Management",
+   "params": {
+    "id": "BR-01"
+   },
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/m-branch-edit--en-dark.jpg",
+   "size": [
+    1200,
+    807
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-vendors",
+   "portal": "merchant",
+   "title": "Vendors",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/m-vendors--en-dark.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-vendor-new",
+   "portal": "merchant",
+   "title": "Add New Sub Vendor",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/m-vendor-new--en-dark.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-vendor-detail",
+   "portal": "merchant",
+   "title": "Vendors",
+   "params": {
+    "id": "VEN-05"
+   },
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/m-vendor-detail--en-dark.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-templates",
+   "portal": "merchant",
+   "title": "Templates",
+   "params": {},
+   "mode": "EN · Night",
+   "lang": "en",
+   "theme": "dark",
+   "file": "gallery/m-templates--en-dark.jpg",
+   "size": [
+    1200,
+    1019
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "launcher",
+   "portal": "public",
+   "title": "Choose a portal",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/launcher--ar-light.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-login",
+   "portal": "public",
+   "title": "Sign In",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-login--ar-light.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-login",
+   "portal": "public",
+   "title": "Sign In",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/m-login--ar-light.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "otp",
+   "portal": "public",
+   "title": "Two-step verification",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/otp--ar-light.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-signup",
+   "portal": "public",
+   "title": "Sign Up",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/m-signup--ar-light.jpg",
+   "size": [
+    1200,
+    901
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "forgot-password",
+   "portal": "public",
+   "title": "Forgot Password?",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/forgot-password--ar-light.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "reset-password",
+   "portal": "public",
+   "title": "Reset password",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/reset-password--ar-light.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "not-found",
+   "portal": "public",
+   "title": "Page not found",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/not-found--ar-light.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-notifications",
+   "portal": "admin",
+   "title": "Notifications",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-notifications--ar-light.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-notifications",
+   "portal": "merchant",
+   "title": "Notifications",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/m-notifications--ar-light.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-command-center",
+   "portal": "admin",
+   "title": "Command Center",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-command-center--ar-light.jpg",
+   "size": [
+    1200,
+    1333
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-overview",
+   "portal": "merchant",
+   "title": "m-overview",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/m-overview--ar-light.jpg",
+   "size": [
+    1200,
+    1002
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-sustainability",
+   "portal": "merchant",
+   "title": "Sustainability & Impact",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/m-sustainability--ar-light.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-settings-markets",
+   "portal": "admin",
+   "title": "Settings",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-settings-markets--ar-light.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-drops",
+   "portal": "admin",
+   "title": "Drops",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-drops--ar-light.jpg",
+   "size": [
+    1200,
+    916
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-drop-edit",
+   "portal": "admin",
+   "title": "Edit Drop",
+   "params": {
+    "id": "DR-3391"
+   },
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-drop-edit--ar-light.jpg",
+   "size": [
+    1200,
+    1294
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-pickups",
+   "portal": "admin",
+   "title": "Pickups",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-pickups--ar-light.jpg",
+   "size": [
+    1200,
+    916
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-orders",
+   "portal": "admin",
+   "title": "Orders & Reservations",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-orders--ar-light.jpg",
+   "size": [
+    1200,
+    916
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-merchants",
+   "portal": "admin",
+   "title": "Merchants",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-merchants--ar-light.jpg",
+   "size": [
+    1200,
+    829
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-merchant-detail",
+   "portal": "admin",
+   "title": "Merchant details",
+   "params": {
+    "id": "MER-058"
+   },
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-merchant-detail--ar-light.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-merchant-new",
+   "portal": "admin",
+   "title": "Add Merchant",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-merchant-new--ar-light.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-consumers",
+   "portal": "admin",
+   "title": "Consumers",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-consumers--ar-light.jpg",
+   "size": [
+    1200,
+    916
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-consumer-detail",
+   "portal": "admin",
+   "title": "Consumer details",
+   "params": {
+    "id": "CON-1212"
+   },
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-consumer-detail--ar-light.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-issues",
+   "portal": "admin",
+   "title": "Issues & Alerts",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-issues--ar-light.jpg",
+   "size": [
+    1200,
+    1091
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-moderation",
+   "portal": "admin",
+   "title": "Moderation",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-moderation--ar-light.jpg",
+   "size": [
+    1200,
+    951
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-support",
+   "portal": "admin",
+   "title": "Support",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-support--ar-light.jpg",
+   "size": [
+    1200,
+    1333
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-ticket-detail",
+   "portal": "admin",
+   "title": "Ticket",
+   "params": {
+    "id": "SUP-8841"
+   },
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-ticket-detail--ar-light.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-financials",
+   "portal": "admin",
+   "title": "Financials",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-financials--ar-light.jpg",
+   "size": [
+    1200,
+    1333
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-payout-detail",
+   "portal": "admin",
+   "title": "Payout details",
+   "params": {
+    "id": "PO-066-261029"
+   },
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-payout-detail--ar-light.jpg",
+   "size": [
+    1200,
+    774
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-operations",
+   "portal": "admin",
+   "title": "Operations Analytics",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-operations--ar-light.jpg",
+   "size": [
+    1200,
+    1292
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-performance",
+   "portal": "admin",
+   "title": "Performance",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-performance--ar-light.jpg",
+   "size": [
+    1200,
+    887
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-performance-merchants",
+   "portal": "admin",
+   "title": "Merchant Performance",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-performance-merchants--ar-light.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-performance-report",
+   "portal": "admin",
+   "title": "Drop Accuracy Report",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-performance-report--ar-light.jpg",
+   "size": [
+    1200,
+    1034
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-sustainability",
+   "portal": "admin",
+   "title": "Sustainability & Impact",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-sustainability--ar-light.jpg",
+   "size": [
+    1200,
+    849
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-sustainability-report",
+   "portal": "admin",
+   "title": "Sustainability Impact Report",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-sustainability-report--ar-light.jpg",
+   "size": [
+    1200,
+    1051
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-wallet",
+   "portal": "admin",
+   "title": "Wallet Credit & Vouchers",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-wallet--ar-light.jpg",
+   "size": [
+    1200,
+    898
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-wallet-detail",
+   "portal": "admin",
+   "title": "Wallet details",
+   "params": {
+    "id": "WAL-30410"
+   },
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-wallet-detail--ar-light.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-voucher-new",
+   "portal": "admin",
+   "title": "admin-voucher-new",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-voucher-new--ar-light.jpg",
+   "size": [
+    1200,
+    970
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-voucher-detail",
+   "portal": "admin",
+   "title": "Voucher details",
+   "params": {
+    "id": "VCH-101"
+   },
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-voucher-detail--ar-light.jpg",
+   "size": [
+    1200,
+    971
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-quality",
+   "portal": "admin",
+   "title": "Quality & Safety",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-quality--ar-light.jpg",
+   "size": [
+    1200,
+    844
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-compliance-detail",
+   "portal": "admin",
+   "title": "Compliance details",
+   "params": {
+    "id": "MER-058"
+   },
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-compliance-detail--ar-light.jpg",
+   "size": [
+    1200,
+    775
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-listings",
+   "portal": "admin",
+   "title": "Listings & Templates",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-listings--ar-light.jpg",
+   "size": [
+    1200,
+    811
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-template-new",
+   "portal": "admin",
+   "title": "New Template",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-template-new--ar-light.jpg",
+   "size": [
+    1200,
+    962
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-template-edit",
+   "portal": "admin",
+   "title": "Edit Template",
+   "params": {
+    "id": "tpl_110"
+   },
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-template-edit--ar-light.jpg",
+   "size": [
+    1200,
+    1056
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-templates",
+   "portal": "admin",
+   "title": "Templates",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-templates--ar-light.jpg",
+   "size": [
+    1200,
+    1257
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-cms",
+   "portal": "admin",
+   "title": "CMS",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-cms--ar-light.jpg",
+   "size": [
+    1200,
+    811
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-cms-page",
+   "portal": "admin",
+   "title": "Edit Page",
+   "params": {
+    "id": "pg_4"
+   },
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-cms-page--ar-light.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-cms-banner",
+   "portal": "admin",
+   "title": "Edit Banner",
+   "params": {
+    "id": "ban_2"
+   },
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-cms-banner--ar-light.jpg",
+   "size": [
+    1200,
+    824
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-cms-faq",
+   "portal": "admin",
+   "title": "Edit FAQ",
+   "params": {
+    "id": "faq_1"
+   },
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-cms-faq--ar-light.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-users",
+   "portal": "admin",
+   "title": "Users & Access",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-users--ar-light.jpg",
+   "size": [
+    1200,
+    952
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-settings-profile",
+   "portal": "admin",
+   "title": "Settings",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-settings-profile--ar-light.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-settings",
+   "portal": "admin",
+   "title": "Settings",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-settings--ar-light.jpg",
+   "size": [
+    1200,
+    987
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-settings-notifications",
+   "portal": "admin",
+   "title": "Settings",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-settings-notifications--ar-light.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-settings-security",
+   "portal": "admin",
+   "title": "Settings",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-settings-security--ar-light.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-settings-policies",
+   "portal": "admin",
+   "title": "Settings",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-settings-policies--ar-light.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-policy-about",
+   "portal": "admin",
+   "title": "Settings",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-policy-about--ar-light.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-policy-privacy",
+   "portal": "admin",
+   "title": "Settings",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-policy-privacy--ar-light.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-policy-terms",
+   "portal": "admin",
+   "title": "Settings",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-policy-terms--ar-light.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "admin-policy-refund",
+   "portal": "admin",
+   "title": "Settings",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/admin-policy-refund--ar-light.jpg",
+   "size": [
+    1200,
+    1105
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-settings",
+   "portal": "merchant",
+   "title": "Settings",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/m-settings--ar-light.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-help",
+   "portal": "merchant",
+   "title": "Help",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/m-help--ar-light.jpg",
+   "size": [
+    1200,
+    936
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-reviews",
+   "portal": "merchant",
+   "title": "Reviews",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/m-reviews--ar-light.jpg",
+   "size": [
+    1200,
+    1333
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-reports",
+   "portal": "merchant",
+   "title": "Reports / Dispute",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/m-reports--ar-light.jpg",
+   "size": [
+    1200,
+    769
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-report-detail",
+   "portal": "merchant",
+   "title": "Report details",
+   "params": {
+    "id": "dsp_1042"
+   },
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/m-report-detail--ar-light.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-orders",
+   "portal": "merchant",
+   "title": "Orders & Pickups",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/m-orders--ar-light.jpg",
+   "size": [
+    1200,
+    876
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-listings",
+   "portal": "merchant",
+   "title": "Listings (Bags)",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/m-listings--ar-light.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-inventory",
+   "portal": "merchant",
+   "title": "Inventory",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/m-inventory--ar-light.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-inventory-new",
+   "portal": "merchant",
+   "title": "Inventory",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/m-inventory-new--ar-light.jpg",
+   "size": [
+    1200,
+    1308
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-inventory-detail",
+   "portal": "merchant",
+   "title": "Inventory",
+   "params": {
+    "id": "LIS-2412"
+   },
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/m-inventory-detail--ar-light.jpg",
+   "size": [
+    1200,
+    952
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-create-product",
+   "portal": "merchant",
+   "title": "Create Product",
+   "params": {
+    "templateId": "TPL-01"
+   },
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/m-create-product--ar-light.jpg",
+   "size": [
+    1200,
+    825
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-drivers",
+   "portal": "merchant",
+   "title": "Drivers",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/m-drivers--ar-light.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:32 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-driver-detail",
+   "portal": "merchant",
+   "title": "Drivers",
+   "params": {
+    "id": "DRV-03"
+   },
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/m-driver-detail--ar-light.jpg",
+   "size": [
+    1200,
+    1333
+   ],
+   "capturedAt": "2026-11-19 22:33 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-analytics",
+   "portal": "merchant",
+   "title": "Sales & Analytics",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/m-analytics--ar-light.jpg",
+   "size": [
+    1200,
+    1333
+   ],
+   "capturedAt": "2026-11-19 22:33 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-analytics-days",
+   "portal": "merchant",
+   "title": "Sales & Analytics",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/m-analytics-days--ar-light.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:33 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-customers",
+   "portal": "merchant",
+   "title": "Customers",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/m-customers--ar-light.jpg",
+   "size": [
+    1200,
+    916
+   ],
+   "capturedAt": "2026-11-19 22:33 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-customer-new",
+   "portal": "merchant",
+   "title": "Add Customer",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/m-customer-new--ar-light.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:33 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-customer-detail",
+   "portal": "merchant",
+   "title": "Customers",
+   "params": {
+    "id": "CUS-1010"
+   },
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/m-customer-detail--ar-light.jpg",
+   "size": [
+    1200,
+    1333
+   ],
+   "capturedAt": "2026-11-19 22:33 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-branches",
+   "portal": "merchant",
+   "title": "Branch Management",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/m-branches--ar-light.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:33 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-branch-edit",
+   "portal": "merchant",
+   "title": "Branch Management",
+   "params": {
+    "id": "BR-01"
+   },
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/m-branch-edit--ar-light.jpg",
+   "size": [
+    1200,
+    823
+   ],
+   "capturedAt": "2026-11-19 22:33 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-vendors",
+   "portal": "merchant",
+   "title": "Vendors",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/m-vendors--ar-light.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:33 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-vendor-new",
+   "portal": "merchant",
+   "title": "Add New Sub Vendor",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/m-vendor-new--ar-light.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:33 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-vendor-detail",
+   "portal": "merchant",
+   "title": "Vendors",
+   "params": {
+    "id": "VEN-05"
+   },
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/m-vendor-detail--ar-light.jpg",
+   "size": [
+    1200,
+    750
+   ],
+   "capturedAt": "2026-11-19 22:33 UTC",
+   "demoToday": "2026-11-19"
+  },
+  {
+   "route": "m-templates",
+   "portal": "merchant",
+   "title": "Templates",
+   "params": {},
+   "mode": "AR · Day",
+   "lang": "ar",
+   "theme": "light",
+   "file": "gallery/m-templates--ar-light.jpg",
+   "size": [
+    1200,
+    1028
+   ],
+   "capturedAt": "2026-11-19 22:33 UTC",
+   "demoToday": "2026-11-19"
+  }
+ ]
+}

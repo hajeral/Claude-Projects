@@ -1,0 +1,41 @@
+PASS admin login → OTP → Command Center
+PASS admin login: wrong OTP 000000 shows error
+PASS FLOW-01 merchant sign-up → OTP → Pending verification → admin approves → merchant signs in
+PASS forgot password → reset password → sign in
+PASS logout (profile menu → Log out → confirm → login)
+PASS global search → result navigates
+PASS date-range calendar apply → KPIs refetch with from/to
+PASS notifications panel → deep link
+PASS profile menu → Profile settings (admin + merchant)
+PASS export dialog → toast → download in notifications
+PASS branch switcher → branch-scoped refetch
+PASS Need Help drawer (ticket) + Help screen
+PASS template banner → templates → Create from Template → prefilled product → save
+PASS Add listing → detail → edit → delete
+PASS order modal → assign driver
+PASS refund flow (policy check → submit)
+PASS invite user
+PASS create voucher
+PASS CMS banner publish
+PASS merchant Language tab switches the app to Arabic
+PASS markets: enable UAE → switcher, filters, sign-up, UAE branch in AED → back to QAR (EN)
+PASS markets: enable UAE → switcher, filters, sign-up, UAE branch in AED → back to QAR (AR)
+PASS markets: Qatar defaults (general settings, sign-up, phone codes, time zone)
+PASS F-001 listing edit keeps remaining; quantity below committed → field error
+PASS F-002 order state machine: terminal orders 409 invalid_transition, UI hides disallowed actions
+PASS F-003 / FLOW-08 merchant verifies pickup code in the order modal → completed (single-use, expiry, inline error)
+PASS F-004 merchant Overview KPIs / recent orders / top bags come from the order store
+PASS F-005 support contacts from the markets registry (Need Help drawer + Help screen), editable in Settings → Markets
+PASS pickup codes: one format (6 chars, no ambiguous characters), unique, expire at window end + grace; admin uses the same helper
+PASS commission: 19 % platform default (Settings → General → Commercial), effective-dated, merchant contract override
+PASS demo data: badge in both top bars, sign-in says "Demo: any credentials", no realistic emails / phones / IBANs
+PASS FLOW-02 merchant listing appears in Admin → Drops; admin flag disables it for the merchant
+PASS FLOW-05/06 merchant orders are a filtered projection of admin orders (same IDs, same states)
+PASS FLOW-07 reserving / completing reduces remaining; cancellation restores it
+PASS FLOW-09 admin verifies a pickup (Pickups → Verify code) → one completed state in both portals
+PASS FLOW-10 admin cancel / refund by policy → merchant sees Cancelled / Refunded
+PASS FLOW-12 payouts = completed orders × effective commission: Admin Financials ≡ Admin Merchant ≡ Merchant Analytics
+PASS FLOW-15 merchant dispute / help request ↔ Admin Support with two-way replies
+PASS FLOW-17 merchant reports a review → Admin Moderation → decision shown on merchant Reviews
+
+39/39 flows pass

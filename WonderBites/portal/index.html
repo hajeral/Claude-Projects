@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WonderBites</title>
+<meta name="color-scheme" content="dark light">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<script>
+  /* apply saved language/theme before first paint (no flash) */
+  (function(){try{var l=localStorage.getItem('wb.lang'),th=localStorage.getItem('wb.theme');var h=document.documentElement;var m=(location.hash||'').match(/-(ar|en)$/);l=m?m[1]:(l&&JSON.parse(l));if(l==='ar'){h.lang='ar';h.dir='rtl';}if(th&&JSON.parse(th)==='light')h.dataset.theme='light';}catch(e){}})();
+</script>
+</head>
+<body>
+<button type="button" class="sr-only" onclick="var p=document.getElementById('page');if(p)p.focus()">Skip to content</button>
+<div id="app" aria-live="off"></div>
+<noscript>WonderBites portals need JavaScript enabled.</noscript>
+<!-- core (LEAD) -->
+<script src="assets/js/core/i18n.js"></script>
+<script src="assets/js/core/app.js"></script>
+<script src="assets/js/core/charts.js"></script>
+<script src="assets/js/core/ui.js"></script>
+<script src="assets/js/core/overlays.js"></script>
+<script src="assets/js/api/client.js"></script>
+<script src="assets/js/core/markets.js"></script>
+<!-- module manifests: each team owns its file and lists its scripts there -->
+<script src="assets/js/modules/lead.js"></script>
+<script src="assets/js/modules/api.js"></script>
+<script src="assets/js/modules/d1.js"></script>
+<script src="assets/js/modules/d2.js"></script>
+<script src="assets/js/modules/d3.js"></script>
+<script src="assets/js/modules/d4.js"></script>
+</body>
+</html>

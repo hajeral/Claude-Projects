@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WonderBites — Night Glass cards (EN / العربية)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ================================================================
+   Midnight Plum tokens (from concept-4), RTL card styles A & B
+   RULE: no transitions / animations on cards or chrome. Only charts
+   animate once (class .anim on a board), reduced-motion respected.
+   ================================================================ */
+:root{
+  --night:#1A0F1E; --deep:#3A2343; --plum:#583D62; --mauve:#B783A7;
+  --rose:#C65C75; --berry:#A50B5E; --berry2:#B34F73;
+  --g-deep:#0C432E; --g-mid:#2D6F3F; --g-bright:#11A849; --lime:#B7EF76; --orange:#E87C40;
+  --wm:'Playfair Display', Georgia, serif;
+}
+/* language: fonts (Latin = Playfair + Inter; Arabic = Noto Naskh + IBM Plex Sans Arabic) */
+html[lang="en"]{--ui:'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif; --disp:'Playfair Display', Georgia, serif; --num:'Inter', system-ui, sans-serif; --lh:1.45; --dir:ltr}
+html[lang="ar"]{--ui:'IBM Plex Sans Arabic', 'Noto Sans Arabic', Tahoma, sans-serif; --disp:'Noto Naskh Arabic', 'IBM Plex Sans Arabic', serif; --num:'Noto Naskh Arabic', 'IBM Plex Sans Arabic', serif; --lh:1.6; --dir:rtl}
+/* direction-aware decoration (gradients/glows that run from the start side) */
+html[dir="ltr"]{--g-start:90deg; --g-act:135deg; --g-ban:100deg; --sx:3px; --s-x:0%; --e-x:100%}
+html[dir="rtl"]{--g-start:270deg; --g-act:225deg; --g-ban:260deg; --sx:-3px; --s-x:100%; --e-x:0%}
+.alt{text-align:match-parent}
+.alt:lang(ar){font-family:'IBM Plex Sans Arabic',Tahoma,sans-serif}
+.alt:lang(en){font-family:'Inter',system-ui,sans-serif}
+html[data-theme="dark"]{
+  --bg:#1E1223; --bg-glow1:rgba(198,92,117,.16); --bg-glow2:rgba(88,61,98,.45);
+  --side:#140A17; --side-line:rgba(183,131,167,.14);
+  --card:#2A1A30; --card-2:#352240; --card-3:#3A2343;
+  --line:rgba(183,131,167,.17); --line-2:rgba(183,131,167,.28);
+  --text:#F7F3EE; --muted:#CDBBC7; --faint:#A8919F;
+  --accent:#EC8AA1; --accent-strong:#B34F73;
+  --pos:#B7EF76; --neg:#F59AAE; --warn:#FFAE7A;
+  --glass:rgba(30,18,35,.62); --glass-line:rgba(183,131,167,.18);
+  --grid:rgba(183,131,167,.13);
+  --pill-g-bg:rgba(17,168,73,.16); --pill-g:#9BE8A9;
+  --pill-o-bg:rgba(232,124,64,.17); --pill-o:#FFB88A;
+  --pill-r-bg:rgba(198,92,117,.2);  --pill-r:#F7A3B6;
+  --pill-n-bg:rgba(247,243,238,.08); --pill-n:#C6B5C0;
+  --pill-m-bg:rgba(183,131,167,.2); --pill-m:#E3BEDA;
+  --tint-rose:rgba(198,92,117,.18); --tint-green:rgba(17,168,73,.16); --tint-orange:rgba(232,124,64,.17); --tint-mauve:rgba(183,131,167,.18); --tint-berry:rgba(165,11,94,.28);
+  --ic-rose:#F49AB0; --ic-green:#9BE8A9; --ic-orange:#FFB88A; --ic-mauve:#E3BEDA; --ic-berry:#F58CC0;
+  --row-hover:rgba(183,131,167,.07);
+  --page:#120A15; --page-text:#F7F3EE; --page-muted:#CDBBC7; --frame:rgba(183,131,167,.22);
+  --line-rose:#E07890; --line-lime:#B7EF76; --line-mauve:#B783A7;
+  --glow-rose:drop-shadow(0 0 5px rgba(236,138,161,.55)); --glow-lime:drop-shadow(0 0 5px rgba(183,239,118,.45));
+  /* Style A — Night Glass */
+  --a-s1:rgba(55,35,66,.74); --a-s2:rgba(37,23,44,.74); --a-line:rgba(236,138,161,.17); --a-hi:rgba(255,255,255,.07);
+  --a-shadow:0 26px 50px -30px rgba(0,0,0,.85);
+  --a-glow-rose:rgba(236,138,161,.16); --a-glow-lime:rgba(183,239,118,.13); --a-glow-orange:rgba(255,174,122,.13); --a-glow-mauve:rgba(183,131,167,.16);
+  --a-field:rgba(255,255,255,.04);
+  /* Style B — Ops Panel */
+  --b-s:#24152A; --b-head:rgba(183,131,167,.07); --b-line:rgba(183,131,167,.21); --b-field:#2E1D35;
+  --b-rule-rose:#EC8AA1; --b-rule-lime:#B7EF76; --b-rule-orange:#FFAE7A; --b-rule-mauve:#C9A0BD;
+  --b-rule-glow:0 0 10px;
+}
+html[data-theme="light"]{
+  --bg:#F7F3EE; --bg-glow1:rgba(198,92,117,.08); --bg-glow2:rgba(255,240,222,.9);
+  --side:#1A0F1E; --side-line:rgba(183,131,167,.14);
+  --card:#FFFCF9; --card-2:#F7F1EA; --card-3:#FFF0DE;
+  --line:#EDE5DB; --line-2:#E2D6C9;
+  --text:#1A0F1E; --muted:#5B4B57; --faint:#76646F;
+  --accent:#A8476A; --accent-strong:#B34F73;
+  --pos:#2D6F3F; --neg:#B0284E; --warn:#B4561F;
+  --glass:rgba(247,243,238,.78); --glass-line:#EDE5DB;
+  --grid:#EDE5DB;
+  --pill-g-bg:#E3F2E6; --pill-g:#21613A;
+  --pill-o-bg:#FFEBDA; --pill-o:#A44A16;
+  --pill-r-bg:#FBE3E9; --pill-r:#A12D55;
+  --pill-n-bg:#EFEAE5; --pill-n:#5F5560;
+  --pill-m-bg:#F4E7F0; --pill-m:#7E4471;
+  --tint-rose:#FBE6EB; --tint-green:#E1F0E4; --tint-orange:#FFEAD9; --tint-mauve:#F2E6EF; --tint-berry:#F7DDEA;
+  --ic-rose:#B34F73; --ic-green:#2D6F3F; --ic-orange:#C0601F; --ic-mauve:#8A5A80; --ic-berry:#A50B5E;
+  --row-hover:#FBF6F1;
+  --page:#EFE8E0; --page-text:#1A0F1E; --page-muted:#5B4B57; --frame:#E2D6C9;
+  --line-rose:#C65C75; --line-lime:#2D6F3F; --line-mauve:#8A5A80;
+  --glow-rose:none; --glow-lime:none;
+  --a-s1:rgba(255,252,249,.94); --a-s2:rgba(255,249,243,.94); --a-line:#EDE5DB; --a-hi:#fff;
+  --a-shadow:0 1px 2px rgba(26,15,30,.04),0 14px 30px -22px rgba(58,35,67,.3);
+  --a-glow-rose:rgba(198,92,117,.07); --a-glow-lime:rgba(45,111,63,.07); --a-glow-orange:rgba(232,124,64,.07); --a-glow-mauve:rgba(183,131,167,.08);
+  --a-field:#F7F1EA;
+  --b-s:#FFFCF9; --b-head:#FBF4EC; --b-line:#E2D6C9; --b-field:#F7F1EA;
+  --b-rule-rose:#B34F73; --b-rule-lime:#2D6F3F; --b-rule-orange:#C0601F; --b-rule-mauve:#8A5A80;
+  --b-rule-glow:0 0 0;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--page);color:var(--page-text);font-family:var(--ui);line-height:var(--lh);-webkit-font-smoothing:antialiased}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+[dir="rtl"] svg.i.flip{transform:scaleX(-1)}
+svg.i{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none;display:block}
+.n{direction:ltr;unicode-bidi:isolate;font-variant-numeric:tabular-nums}
+
+
+/* ================= page chrome ================= */
+.hd{padding:36px 48px 26px;color:#F7F3EE;background:radial-gradient(800px 380px at 15% -10%, rgba(198,92,117,.28), transparent 60%),radial-gradient(600px 320px at 100% 120%, rgba(88,61,98,.55), transparent 60%),#1A0F1E}
+.hd .ey{font-size:12px;color:#B7EF76;font-weight:600;display:flex;gap:10px;align-items:center}
+.hd .ey i{width:28px;height:1px;background:#B7EF76;opacity:.6}
+.hd h1{font-family:var(--disp);font-size:38px;font-weight:600;line-height:1.3;margin:8px 0 4px}
+.hd h1 small{display:block;font-size:15px;color:#EC8AA1;font-weight:500;line-height:1.6}
+.hd p{font-size:14.5px;color:#D9C8D3;max-width:900px}
+.hd p.alt{font-size:12.5px;color:#A8919F;text-align:end;margin-top:4px}
+.bar{position:sticky;top:0;z-index:50;display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;padding:12px 48px;background:color-mix(in srgb,var(--page) 88%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--frame)}
+.seg{display:flex;padding:3px;border-radius:999px;background:var(--card-2);border:1px solid var(--frame)}
+.seg button{height:32px;padding:0 14px;border-radius:999px;font-size:13px;font-weight:600;color:var(--page-muted);display:flex;align-items:center;gap:6px;white-space:nowrap}
+.seg button small{font-size:10.5px;opacity:.75;font-weight:500}
+.seg button.on{background:linear-gradient(135deg,#C65C75,#A9466A);color:#fff;box-shadow:0 6px 16px -6px rgba(198,92,117,.75)}
+.seg button svg.i{width:14px;height:14px}
+.bar .lbl{font-size:12px;color:var(--page-muted)}
+.bar .sp{flex:1}
+.cols{padding:24px 48px 64px;display:grid;gap:32px}
+.cols.both{grid-template-columns:1fr 1fr;gap:24px}
+.col[hidden]{display:none}
+.spec{border:1px solid var(--frame);border-radius:16px;padding:22px 24px;background:var(--card);color:var(--text);margin-bottom:20px}
+.spec .tag{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;color:var(--accent);background:var(--tint-rose);padding:2px 10px;border-radius:999px}
+.spec h2{font-family:var(--disp);font-size:28px;font-weight:600;line-height:1.4;margin-top:8px}
+.spec h2 small{margin-inline:10px;font-size:15px;color:var(--accent);font-weight:500;margin-inline-start:10px}
+.spec .rat{font-size:14px;color:var(--muted);margin-top:4px}
+.spec .rat.alt{font-size:12px;color:var(--faint);margin-top:2px;line-height:1.6}
+.spec dl{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px;margin-top:16px}
+.spec dl div{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--card-2)}
+.spec dt{font-size:12.5px;font-weight:700;color:var(--text)}
+.spec dt span{margin-inline:6px;font-size:10.5px;font-weight:500;color:var(--faint);margin-inline-start:6px}
+.spec dd{font-size:12.5px;color:var(--muted);margin-top:2px}
+.spec dd code{font-family:ui-monospace,Menlo,monospace;font-size:11px;direction:ltr;unicode-bidi:isolate;color:var(--text)}
+.sec-h{display:flex;align-items:baseline;gap:10px;margin:22px 0 10px;color:var(--page-text)}
+.sec-h b{font-family:var(--disp);font-size:20px;font-weight:700}
+.sec-h span{font-size:12.5px;color:var(--page-muted)}
+.sec-h .alt{font-size:11.5px}
+.stage{position:relative;direction:ltr;overflow:hidden;border-radius:14px;border:1px solid var(--frame);box-shadow:0 30px 80px -40px rgba(0,0,0,.6)}
+.board{position:absolute;top:0;left:0;width:1440px;transform-origin:0 0;direction:var(--dir);background:var(--bg);color:var(--text);font-size:13px}
+
+/* ================= shared card internals (style-neutral) ================= */
+.kit{padding:32px;background-image:radial-gradient(700px 300px at 10% -60px,var(--bg-glow1),transparent 70%),radial-gradient(600px 260px at 85% -80px,var(--bg-glow2),transparent 70%)}
+.kgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px 20px;margin-bottom:20px}
+.kgrid.k4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.kc{display:flex;align-items:baseline;gap:8px;margin-bottom:8px;font-size:12.5px;font-weight:700;color:var(--muted)}
+.kc span{margin-inline:2px;font-size:10.5px;font-weight:500;color:var(--faint)}
+.s2{grid-column:span 2}.s3{grid-column:span 3}
+.cd{position:relative;min-width:0}
+.cd-h{display:flex;align-items:center;gap:10px;position:relative}
+.cd-t{flex:1;min-width:0;display:flex;align-items:center;gap:8px}
+.cd-t h4{font-size:14px;font-weight:600;white-space:nowrap;line-height:1.4}
+.cd-sub{font-size:11.5px;color:var(--muted);white-space:nowrap}
+.cd-ic{display:grid;place-items:center;flex:none}
+.cnt{font-size:11px;font-weight:600;color:var(--muted);padding:0 8px;height:20px;display:inline-flex;align-items:center;white-space:nowrap}
+.cd-a{display:flex;gap:8px;align-items:center}
+.lnk{color:var(--accent);font-weight:600;font-size:12px;display:inline-flex;gap:3px;align-items:center;white-space:nowrap;cursor:pointer}
+.lnk svg.i{width:13px;height:13px}
+.msel{height:28px;padding:0 10px;font-size:12px;font-weight:500;color:var(--text);display:inline-flex;align-items:center;gap:6px;white-space:nowrap;border:1px solid var(--line)}
+.msel svg.i{width:13px;height:13px;color:var(--muted)}
+.t-rose{background:var(--tint-rose);color:var(--ic-rose)} .t-green{background:var(--tint-green);color:var(--ic-green)} .t-orange{background:var(--tint-orange);color:var(--ic-orange)} .t-mauve{background:var(--tint-mauve);color:var(--ic-mauve)} .t-berry{background:var(--tint-berry);color:var(--ic-berry)}
+.up{color:var(--pos)} .dn{color:var(--neg)}
+/* KPI */
+.k-top{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--muted);font-weight:500;white-space:nowrap}
+.k-v{font-family:var(--num);font-weight:700;line-height:1.25;white-space:nowrap}
+.k-f{display:flex;align-items:center;gap:6px;font-size:11.5px;color:var(--muted);white-space:nowrap}
+.dl{display:inline-flex;align-items:center;gap:2px;font-weight:700;font-size:11.5px;white-space:nowrap}
+.dl svg.i{width:11px;height:11px;stroke-width:2.6}
+.crit{height:20px;padding:0 8px;border-radius:999px;background:#C65C75;color:#fff;font-size:11px;font-weight:600;display:inline-flex;align-items:center}
+/* pills */
+.pl{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;font-weight:600;white-space:nowrap}
+.pl.g{background:var(--pill-g-bg);color:var(--pill-g)} .pl.o{background:var(--pill-o-bg);color:var(--pill-o)} .pl.r{background:var(--pill-r-bg);color:var(--pill-r)} .pl.n{background:var(--pill-n-bg);color:var(--pill-n)} .pl.m{background:var(--pill-m-bg);color:var(--pill-m)}
+.pl .dot{width:6px;height:6px;border-radius:50%;background:currentColor;flex:none}
+.pl svg.i{width:12px;height:12px;stroke-width:2.3}
+/* table */
+.tbl{width:100%;border-collapse:separate;border-spacing:0;font-size:12.5px}
+.tbl th{text-align:start;font-size:11.5px;font-weight:600;color:var(--faint);white-space:nowrap;padding:0 10px}
+.tbl td{padding:0 10px;white-space:nowrap;vertical-align:middle;border-top:1px solid var(--line)}
+.tbl tbody tr:hover td{background:var(--row-hover)}
+.tbl th:first-child,.tbl td:first-child{padding-inline-start:16px} .tbl th:last-child,.tbl td:last-child{padding-inline-end:16px}
+.tbl .e{text-align:end}
+.tbl .mut{color:var(--muted)}
+.tbl .b{font-weight:600}
+.prod{display:flex;align-items:center;gap:10px}
+.prod small{display:block;font-size:11px;color:var(--faint);line-height:1.3}
+.prod b{font-weight:600;display:block;line-height:1.35}
+.ph{width:34px;height:34px;border-radius:8px;flex:none;position:relative;overflow:hidden}
+.ph.sm{width:28px;height:28px;border-radius:7px}
+.ph1{background:radial-gradient(circle at 30% 35%,#F6C27A 0 18%,transparent 19%),radial-gradient(circle at 68% 62%,#E59A4B 0 20%,transparent 21%),linear-gradient(135deg,#B9542A,#7A2E18)}
+.ph2{background:radial-gradient(ellipse at 50% 55%,#E9C08A 0 34%,transparent 35%),linear-gradient(135deg,#C98A4E,#8A5228)}
+.ph3{background:radial-gradient(circle at 35% 40%,#9CC56B 0 18%,transparent 19%),radial-gradient(circle at 66% 60%,#E36B4E 0 16%,transparent 17%),linear-gradient(135deg,#3F6B3A,#25402A)}
+.ph4{background:radial-gradient(circle at 40% 45%,#F3D9E1 0 20%,transparent 21%),radial-gradient(circle at 65% 62%,#C65C75 0 16%,transparent 17%),linear-gradient(135deg,#8E4A5E,#5B2A3B)}
+.ph5{background:radial-gradient(circle at 50% 50%,#F0DDB8 0 24%,transparent 25%),linear-gradient(135deg,#A47C52,#6A4B2E)}
+.ph6{background:repeating-linear-gradient(90deg,#D9A35E 0 6px,#C58A45 6px 12px)}
+.cb{width:16px;height:16px;border-radius:4px;border:1.5px solid var(--line-2);display:inline-block;vertical-align:middle}
+.cb.on{background:var(--accent-strong);border-color:var(--accent-strong);position:relative}
+.cb.on:after{content:"";position:absolute;inset-inline-start:4px;top:1px;width:4px;height:8px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg)}
+.acts{display:flex;gap:6px;justify-content:flex-end}
+.ab{width:30px;height:30px;display:grid;place-items:center;color:var(--ic-rose);background:var(--tint-rose)}
+.ab.del{color:var(--ic-berry);background:var(--tint-berry)}
+.ab svg.i{width:15px;height:15px}
+.price{display:flex;flex-direction:column;line-height:1.35}
+.price b{font-weight:700}
+.price small{font-size:11px;color:var(--faint)}
+.price small s{color:var(--faint)}
+.price small em{font-style:normal;color:var(--pos);font-weight:700}
+.avail{width:96px}
+.avail .t{font-size:11.5px}
+.trk{height:6px;border-radius:4px;background:var(--card-3);overflow:hidden}
+html[data-theme="light"] .trk{background:#EDE5DB}
+.trk i{display:block;height:100%;border-radius:4px;background:linear-gradient(90deg,#2D6F3F,#11A849)}
+html[data-theme="dark"] .trk i{background:linear-gradient(90deg,#11A849,#B7EF76)}
+.trk i.o{background:linear-gradient(90deg,#E87C40,#F7A46F)}
+/* lists */
+.li{display:flex;align-items:flex-start;gap:10px;position:relative}
+.li .ic{width:30px;height:30px;display:grid;place-items:center;flex:none}
+.li .ic svg.i{width:15px;height:15px}
+.li .tx{flex:1;min-width:0}
+.li .tt{font-size:12.5px;font-weight:600;line-height:1.5}
+.li .mm{font-size:11.5px;color:var(--muted);display:block}
+.li .mm b{font-weight:700}
+.li .tm{font-size:11px;color:var(--faint);white-space:nowrap}
+.li .x{color:var(--faint)}
+.li .x svg.i{width:13px;height:13px}
+/* legends */
+.leg{display:flex;flex-direction:column;gap:7px;flex:1;min-width:0}
+.leg div{display:flex;align-items:center;gap:8px;font-size:12.5px}
+.leg span{color:var(--muted);flex:1;white-space:nowrap}
+.leg i{width:9px;height:9px;border-radius:3px;flex:none}
+.leg b{font-weight:600}
+.lgd{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:11.5px;color:var(--muted)}
+.lgd span{display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.lgd i{width:12px;height:3px;border-radius:2px;display:block}
+.lgd i.dash{background:repeating-linear-gradient(90deg,currentColor 0 3px,transparent 3px 6px)!important;color:var(--line-mauve)}
+.lgd i.sq{width:9px;height:9px;border-radius:2px}
+/* charts — data area stays LTR */
+.chart{position:relative;direction:ltr}
+.chart svg{display:block;width:100%;overflow:visible}
+.ax{font-size:10.5px;fill:var(--faint);font-family:var(--ui)}
+.gl{stroke:var(--grid);stroke-dasharray:3 5}
+.ln-rose{stroke:var(--line-rose);filter:var(--glow-rose)}
+.ln-lime{stroke:var(--line-lime);filter:var(--glow-lime)}
+.ln-mauve{stroke:var(--line-mauve)}
+.tipw{position:absolute;transform:translate(-50%,calc(-100% - 12px))}
+.tip{direction:var(--dir);background:var(--card-3);border:1px solid var(--line-2);padding:6px 10px;font-size:10.5px;color:var(--faint);white-space:nowrap;box-shadow:0 10px 24px -10px rgba(0,0,0,.6)}
+html[data-theme="light"] .tip{background:#fff}
+.tip b{display:block;font-size:13px;color:var(--text);font-weight:700}
+.tip em{font-style:normal;color:var(--pos);font-weight:700;margin-inline-start:6px}
+.hist div{display:flex;align-items:center;gap:8px;font-size:12px;margin-bottom:6px}
+.hist .trk{flex:1;height:7px}
+.hist b{width:30px;text-align:end;font-weight:600}
+.stars{display:flex;gap:2px}
+/* toggles & fields */
+.tog{position:relative;flex:none;cursor:pointer}
+.tog:after{content:"";position:absolute;top:3px;inset-inline-start:3px;background:#fff}
+.tog.on:after{inset-inline-start:auto;inset-inline-end:3px}
+.fld label{display:block;font-size:12px;font-weight:600;margin-bottom:6px}
+.fi{height:40px;display:flex;align-items:center;gap:8px;padding:0 12px;font-size:13px;color:var(--text);font-weight:500;border:1px solid var(--line)}
+.fi svg.i{width:15px;height:15px;color:var(--muted)}
+.fi .chev{margin-inline-start:auto;color:var(--faint)}
+.setrow{display:flex;align-items:center;gap:14px;padding:12px 0;border-top:1px solid var(--line)}
+.setrow:first-child{border-top:0}
+.setrow .l{flex:1}
+.setrow .l b{display:block;font-size:13px;font-weight:600}
+.setrow .l small{display:block;font-size:11.5px;color:var(--muted)}
+.setrow .st{font-size:11.5px;font-weight:700;width:30px;text-align:end}
+/* sustainability */
+.sust{color:#F7F3EE;background:linear-gradient(160deg,#0F4C33 0%,#0C3A28 60%,#0A2E21 100%)}
+.sust .cd-t h4{color:#fff}
+.st4{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.st4>div{text-align:center;padding:10px 6px 8px;background:rgba(255,255,255,.04);border:1px solid rgba(183,239,118,.26)}
+.st4 svg.i{width:17px;height:17px;color:#B7EF76;margin:0 auto 2px}
+.st4 b{display:block;font-size:16px;font-weight:700}
+.st4 small{display:block;font-size:10.5px;color:#C6E3D0;line-height:1.35;min-height:28px}
+.st4 em{display:flex;justify-content:center;gap:3px;align-items:center;font-style:normal;font-size:10.5px;color:#B7EF76;font-weight:600;border-top:1px dashed rgba(183,239,118,.3);margin-top:6px;padding-top:4px}
+.st4 em svg.i{width:11px;height:11px;margin:0}
+.sust-ft{display:flex;align-items:center;gap:6px;margin-top:12px;padding-top:10px;border-top:1px solid rgba(183,239,118,.2);font-size:12px;color:#C6E3D0}
+.sust-ft b{color:#B7EF76;font-size:16px;font-weight:700}
+.sust-ft a{margin-inline-start:auto;color:#fff;font-weight:600;display:flex;align-items:center;gap:4px}
+.sust-ft a svg.i{width:13px;height:13px}
+/* ops */
+.ops{display:flex;align-items:center;gap:12px;padding:12px;background:linear-gradient(135deg,rgba(17,168,73,.18),rgba(12,67,46,.2));border:1px solid rgba(17,168,73,.35)}
+html[data-theme="light"] .ops{background:#E7F3EA;border-color:#C6E2CD}
+.ops .oi{width:38px;height:38px;background:#0C432E;color:#B7EF76;display:grid;place-items:center;flex:none}
+.ops b{font-size:15px;font-weight:700;display:flex;align-items:center;gap:7px}
+.ops b i{width:8px;height:8px;border-radius:50%;background:#11A849;box-shadow:0 0 0 4px rgba(17,168,73,.25)}
+.ops small{font-size:12px;color:var(--muted)}
+.ophr{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}
+.ophr div small{display:flex;align-items:center;gap:4px;font-size:11px;color:var(--faint)}
+.ophr div small svg.i{width:12px;height:12px}
+.ophr div b{font-size:13.5px;font-weight:700}
+.opbtn{margin-top:12px;height:36px;display:flex;align-items:center;justify-content:center;gap:6px;font-size:12.5px;font-weight:600;border:1px dashed var(--line-2);color:var(--text)}
+.opbtn svg.i{width:14px;height:14px}
+/* banner */
+.banner{display:flex;align-items:center;gap:16px;padding:18px 24px;color:#fff;position:relative;overflow:hidden;background:linear-gradient(var(--g-ban),#A9466A 0%,#C65C75 35%,#5A1F45 78%,#3A2343 100%);border:1px solid rgba(236,138,161,.35)}
+html[data-theme="light"] .banner{background:linear-gradient(var(--g-ban),#B34F73 0%,#C65C75 38%,#8E2E5C 100%);border:0}
+.banner .wb{width:44px;height:44px;background:#FFFCF9;color:#B34F73;font-family:var(--wm);font-weight:600;font-size:18px;display:grid;place-items:center;flex:none;direction:ltr}
+.banner h3{font-family:var(--disp);font-size:21px;font-weight:700;line-height:1.4}
+.banner p{font-size:12.5px;opacity:.92}
+.banner .bb{margin-inline-start:auto;height:42px;padding:0 18px;background:#FFFCF9;color:#A9466A;font-weight:700;font-size:13px;display:inline-flex;align-items:center;gap:8px;white-space:nowrap;position:relative;z-index:1}
+.banner .bb svg.i{width:15px;height:15px}
+.bags{width:190px;height:64px;position:relative;flex:none;margin-block:-18px;align-self:flex-end}
+.bags i{position:absolute;bottom:0;border-radius:6px 6px 2px 2px;background:linear-gradient(180deg,#E9C48E,#B8823F)}
+.bags i:nth-child(1){inset-inline-start:10px;width:58px;height:52px}
+.bags i:nth-child(2){inset-inline-start:58px;width:66px;height:40px;background:linear-gradient(180deg,#F3DDB8,#C9A16A)}
+.bags i:nth-child(3){inset-inline-start:118px;width:38px;height:58px;background:linear-gradient(180deg,#FFFCF9,#E6DCCF)}
+.bags i:nth-child(4){inset-inline-start:150px;width:32px;height:36px;border-radius:50% 50% 6px 6px;background:linear-gradient(180deg,#F6E7D3,#D2B48D)}
+.qrow{display:flex;align-items:center;gap:10px;padding:9px 0;border-top:1px solid var(--line);font-size:12.5px}
+.qrow:first-child{border-top:0}
+.qrow .nm{flex:1;font-weight:500;white-space:nowrap}
+.qrow svg.sp{width:64px;height:22px}
+
+/* ================= app shell (RTL) ================= */
+.app{display:flex;min-height:1000px}
+.side{width:256px;flex:none;background:var(--side);color:#F7F3EE;padding:24px 16px 22px;display:flex;flex-direction:column;border-inline-start:1px solid var(--side-line);
+  background-image:radial-gradient(260px 220px at var(--s-x) 0%, rgba(198,92,117,.12), transparent 70%),radial-gradient(300px 300px at var(--e-x) 100%, rgba(88,61,98,.35), transparent 70%)}
+.logo{padding:0 10px 14px;text-align:start}
+.logo .wm{font-family:var(--wm);font-size:28px;font-weight:500;line-height:1;color:#F7F3EE}
+.logo .tag{font-size:10.5px;font-weight:600;color:#EC8AA1;margin-top:6px}
+html[lang="en"] .logo .tag{font-size:7.5px;letter-spacing:.24em;font-weight:700;margin-top:8px}
+.role{display:flex;align-items:center;gap:7px;padding:10px 10px 14px;border-bottom:1px solid var(--side-line);margin-bottom:10px;font-weight:600;font-size:14px}
+.vt{width:15px;height:15px;border-radius:50%;background:#11A849;display:inline-grid;place-items:center;box-shadow:0 0 8px rgba(17,168,73,.6)}
+.vt svg.i{width:9px;height:9px;stroke:#fff;stroke-width:3.4}
+.mid{display:flex;align-items:center;gap:10px;padding:10px 8px 14px;border-bottom:1px solid var(--side-line);margin-bottom:10px}
+.mlogo{width:38px;height:38px;border-radius:50%;flex:none;background:radial-gradient(circle at 35% 30%,#FFD58A,#E8A13A 55%,#B9681C);box-shadow:0 0 0 2px #1A0F1E,0 0 0 3px rgba(255,213,138,.5)}
+.mid .nm{font-weight:600;font-size:13.5px;display:flex;align-items:center;gap:6px;white-space:nowrap}
+.mid .br{font-size:11.5px;color:#BFA9B8}
+.nav{display:flex;flex-direction:column;gap:1px}
+.nav a{display:flex;align-items:center;gap:11px;height:36px;padding:0 12px;border-radius:10px;color:#CDBBC7;font-size:13.5px;font-weight:500;white-space:nowrap;cursor:pointer}
+.nav a svg.i{width:17px;height:17px;color:#A8919F}
+.nav a:hover{background:rgba(183,131,167,.1);color:#fff}
+.nav a.on{background:linear-gradient(var(--g-act),#C65C75 0%,#A9466A 100%);color:#fff;box-shadow:0 8px 22px -8px rgba(198,92,117,.75),inset 0 1px 0 rgba(255,255,255,.18)}
+.nav a.on svg.i{color:#fff}
+.nav a .bd{margin-inline-start:auto;font-size:10.5px;font-weight:700;background:#C65C75;color:#fff;border-radius:99px;padding:0 7px}
+.impact{margin-top:18px;border-radius:12px;padding:10px 12px;background:linear-gradient(160deg,#0F4C33,#0C3A28);border:1px solid rgba(183,239,118,.22);box-shadow:0 0 24px -10px rgba(183,239,118,.4)}
+.impact h5{font-size:11px;font-weight:600;color:#B7EF76;display:flex;align-items:center;gap:6px;margin-bottom:4px}
+.impact h5 svg.i{width:12px;height:12px}
+.impact .row{display:flex;justify-content:space-between}
+.impact b{display:block;font-size:14px;font-weight:700;color:#fff}
+.impact small{font-size:10.5px;color:#9FCBB0}
+.ucard{margin-top:10px;border-radius:12px;padding:10px;border:1px solid var(--side-line);background:rgba(255,255,255,.03);display:flex;align-items:center;gap:10px}
+.av{width:34px;height:34px;border-radius:50%;flex:none;background:linear-gradient(140deg,#E9B8A6,#8C5A4A);position:relative;box-shadow:0 0 0 2px rgba(255,255,255,.12)}
+.av:before{content:"";position:absolute;inset-inline-start:30%;top:16%;width:40%;height:40%;border-radius:50%;background:#F3D3C2}
+.av:after{content:"";position:absolute;inset-inline-end:-1px;bottom:0;width:9px;height:9px;border-radius:50%;background:#11A849;border:2px solid var(--side)}
+.ucard b{font-size:13px;font-weight:600;display:block}
+.ucard small{font-size:11px;color:#BFA9B8}
+.ucard .chev{margin-inline-start:auto;color:#BFA9B8}
+.main{flex:1;min-width:0;display:flex;flex-direction:column;background-image:radial-gradient(700px 300px at 8% -60px,var(--bg-glow1),transparent 70%),radial-gradient(600px 260px at 80% -80px,var(--bg-glow2),transparent 70%)}
+.top{display:flex;align-items:center;gap:10px;padding:18px 32px 16px;background:var(--glass);backdrop-filter:blur(18px) saturate(1.2);border-bottom:1px solid var(--glass-line)}
+.top h1{font-family:var(--disp);font-size:28px;font-weight:600;line-height:1.35;display:flex;align-items:center;gap:8px;white-space:nowrap}
+.top h1 svg.i{width:24px;height:24px;color:#F2B04A}
+.top p{font-size:12.5px;color:var(--muted);white-space:nowrap}
+.top .sp{flex:1}
+.ctl{height:40px;border-radius:11px;background:var(--card);border:1px solid var(--line);display:flex;align-items:center;gap:8px;padding:0 12px;font-size:13px;font-weight:500;color:var(--text);white-space:nowrap}
+.ctl [dir="rtl"] svg.i.flip{transform:scaleX(-1)}
+svg.i{width:16px;height:16px;color:var(--muted)}
+.ctl.search{width:250px;color:var(--faint);font-weight:400;overflow:hidden}
+.ctl.ico{width:40px;padding:0;justify-content:center;position:relative}
+.ctl .badge{position:absolute;top:-6px;inset-inline-end:-6px;min-width:18px;height:18px;border-radius:9px;background:#C65C75;color:#fff;font-size:10px;font-weight:700;display:grid;place-items:center;border:2px solid var(--bg)}
+.avm{display:flex;align-items:center;gap:4px;color:var(--muted)}
+.content{padding:22px 32px 36px;display:flex;flex-direction:column;gap:16px}
+.row{display:grid;gap:16px}
+
+/* ================================================================
+   STYLE A — زجاج الليل · Night Glass
+   ================================================================ */
+.sA .cd{background:linear-gradient(180deg,var(--a-s1),var(--a-s2));backdrop-filter:blur(14px) saturate(1.15);border:1px solid var(--a-line);border-radius:16px;box-shadow:inset 0 1px 0 var(--a-hi),var(--a-shadow);overflow:hidden;--gc:var(--a-glow-rose)}
+.sA .cd:before{content:"";position:absolute;top:-70px;inset-inline-start:-70px;width:260px;height:180px;background:radial-gradient(closest-side,var(--gc),transparent);pointer-events:none}
+.sA .cd.tone-lime{--gc:var(--a-glow-lime)} .sA .cd.tone-orange{--gc:var(--a-glow-orange)} .sA .cd.tone-mauve{--gc:var(--a-glow-mauve)}
+.sA .cd-h{padding:16px 18px 6px}
+.sA .cd-b{padding:10px 18px 18px;position:relative}
+.sA .cd-b.flush{padding:6px 0 6px}
+.sA .cd-ic{width:28px;height:28px;border-radius:9px}
+.sA .cd-ic svg.i{width:15px;height:15px}
+.sA .cnt{border-radius:999px;background:rgba(183,131,167,.12)}
+html[data-theme="light"] .sA .cnt{background:#F2E9EF}
+.sA .msel{border-radius:999px;background:var(--a-field)}
+.sA .kpi .cd-b{padding:16px 18px 0}
+.sA .k-top .cd-ic{width:30px;height:30px}
+.sA .k-v{font-size:28px;margin-top:10px}
+.sA .k-f{margin-top:4px}
+.sA .k-sp{display:block;width:calc(100% + 36px);margin-inline:-18px;height:40px;margin-top:8px}
+.sA .dl{padding:0 7px;height:20px;border-radius:999px}
+.sA .dl.up{background:var(--pill-g-bg)} .sA .dl.dn{background:var(--pill-r-bg)}
+.sA .pl{height:24px;padding:0 10px;border-radius:999px}
+.sA .pl svg.i{display:none}
+html[data-theme="dark"] .sA .pl .dot{box-shadow:0 0 6px currentColor}
+.sA .tbl th{height:38px;border-bottom:1px solid var(--line)}
+.sA .tbl tbody tr:first-child td{border-top:0}
+.sA .tbl td{height:52px;border-top-color:rgba(183,131,167,.1)}
+html[data-theme="light"] .sA .tbl td{border-top-color:#F1EAE2}
+.sA .ab{border-radius:10px}
+.sA .li{padding:10px 12px;border-radius:12px;background:rgba(255,255,255,.035);border:1px solid rgba(183,131,167,.1);margin-bottom:8px}
+html[data-theme="light"] .sA .li{background:#FBF6F1;border-color:#F0E7DE}
+.sA .li.hot{border-color:rgba(236,138,161,.4);background:linear-gradient(var(--g-start),rgba(198,92,117,.18),rgba(255,255,255,.03) 75%)}
+html[data-theme="light"] .sA .li.hot{background:linear-gradient(var(--g-start),#FBE3E9,#FBF6F1 75%);border-color:#F3C6D2}
+.sA .li .ic{border-radius:10px}
+.sA .tip{border-radius:10px}
+.sA .tog{width:42px;height:24px;border-radius:999px;background:var(--card-3);border:1px solid var(--line-2)}
+.sA .tog:after{width:16px;height:16px;border-radius:50%;background:var(--faint)}
+.sA .tog.on{background:linear-gradient(var(--g-act),#C65C75,#A9466A);border-color:transparent}
+html[data-theme="dark"] .sA .tog.on{box-shadow:0 0 14px -3px rgba(198,92,117,.85)}
+.sA .tog.on:after{background:#fff}
+.sA .fi{border-radius:11px;background:var(--a-field)}
+.sA .fi.focus{border-color:#C65C75;box-shadow:0 0 0 4px rgba(198,92,117,.18)}
+.sA .sust{border:1px solid rgba(183,239,118,.24);box-shadow:0 0 44px -18px rgba(183,239,118,.55);background:linear-gradient(160deg,rgba(15,76,51,.92),rgba(10,46,33,.92));--gc:rgba(183,239,118,.16)}
+.sA .st4>div{border-radius:12px}
+.sA .ops{border-radius:12px} .sA .ops .oi{border-radius:11px}
+.sA .opbtn{border-radius:11px}
+.sA .banner{border-radius:18px;box-shadow:0 20px 50px -25px rgba(198,92,117,.9)}
+.sA .banner .wb{border-radius:12px} .sA .banner .bb{border-radius:12px}
+.sA .tbl-wrap{padding:0}
+
+/* ================================================================
+   STYLE B — لوحة التشغيل · Ops Panel
+   ================================================================ */
+.sB .cd{background:var(--b-s);border:1px solid var(--b-line);border-radius:8px;box-shadow:inset 0 1px 0 rgba(255,255,255,.025),0 12px 28px -22px rgba(0,0,0,.8);--rc:var(--b-rule-rose)}
+.sB .cd:before{content:"";position:absolute;top:-1px;inset-inline-start:14px;width:56px;height:2px;border-radius:0 0 2px 2px;background:var(--rc);box-shadow:var(--b-rule-glow) var(--rc);z-index:1}
+.sB .cd.tone-lime{--rc:var(--b-rule-lime)} .sB .cd.tone-orange{--rc:var(--b-rule-orange)} .sB .cd.tone-mauve{--rc:var(--b-rule-mauve)}
+.sB .cd-h{height:44px;padding:0 14px;background:var(--b-head);border-bottom:1px solid var(--b-line);border-radius:8px 8px 0 0}
+.sB .cd-t h4{font-size:13.5px}
+.sB .cd-b{padding:12px 14px 14px;position:relative}
+.sB .cd-b.flush{padding:0}
+.sB .cd-ic{width:18px;height:18px;background:none!important}
+.sB .cd-ic [dir="rtl"] svg.i.flip{transform:scaleX(-1)}
+svg.i{width:16px;height:16px}
+.sB .cnt{border-radius:5px;border:1px solid var(--b-line);background:var(--b-s)}
+.sB .msel{border-radius:6px;background:var(--b-field);height:26px}
+.sB .kpi .cd-h{height:38px}
+.sB .kpi .cd-b{padding:10px 14px 12px}
+.sB .kpi{overflow:hidden}
+.sB .k-row{display:flex;align-items:flex-end;justify-content:space-between;gap:8px}
+.sB .k-row>div{flex:none}
+.sB .k-v{font-size:25px}
+.sB .k-sp{flex:1 1 auto;min-width:0;max-width:110px;height:30px;margin-bottom:4px}
+.sB .k-f{margin-top:4px;padding-top:8px;border-top:1px dashed var(--b-line)}
+.sB .dl{padding:0}
+.sB .pl{height:22px;padding:0 7px 0 8px;border-radius:5px;border:1px solid color-mix(in srgb,currentColor 38%,transparent)}
+.sB .pl .dot{display:none}
+.sB .tbl th{height:34px;background:var(--b-head);border-bottom:1px solid var(--b-line);font-size:11.5px}
+.sB .tbl tbody tr:first-child td{border-top:0}
+.sB .tbl td{height:44px;border-top-color:var(--b-line)}
+.sB .tbl td+td,.sB .tbl th+th{border-inline-start:1px solid color-mix(in srgb,var(--b-line) 55%,transparent)}
+.sB .ab{border-radius:6px;width:28px;height:28px;background:transparent;border:1px solid color-mix(in srgb,currentColor 35%,transparent)}
+.sB .li{padding:10px 14px;border-top:1px solid var(--b-line)}
+.sB .li:first-child{border-top:0}
+.sB .li.hot{box-shadow:inset var(--sx) 0 0 var(--b-rule-rose);background:linear-gradient(var(--g-start),rgba(198,92,117,.12),transparent 60%)}
+html[data-theme="light"] .sB .li.hot{background:linear-gradient(var(--g-start),#FCEBEF,transparent 60%)}
+.sB .li .ic{border-radius:6px;width:28px;height:28px}
+.sB .tip{border-radius:5px}
+.sB .tog{width:38px;height:22px;border-radius:5px;background:var(--b-field);border:1px solid var(--line-2)}
+.sB .tog:after{width:14px;height:14px;border-radius:3px;background:var(--faint)}
+.sB .tog.on{background:var(--g-mid);border-color:var(--g-mid)}
+html[data-theme="dark"] .sB .tog.on{background:#1C6B3B;border-color:#3FA164;box-shadow:0 0 10px -2px rgba(183,239,118,.55)}
+.sB .tog.on:after{background:#fff}
+.sB .fi{border-radius:6px;background:var(--b-field);border-color:var(--b-line);height:38px}
+.sB .fi.focus{border-color:#EC8AA1;box-shadow:inset 0 0 0 1px #EC8AA1}
+html[data-theme="light"] .sB .fi.focus{border-color:#B34F73;box-shadow:inset 0 0 0 1px #B34F73}
+.sB .cd.sust{border-radius:8px;border:1px solid rgba(183,239,118,.3);--rc:#B7EF76;background:linear-gradient(160deg,#0F4C33 0%,#0C3A28 60%,#0A2E21 100%)}
+.sB .sust .cd-h{background:rgba(0,0,0,.16);border-bottom-color:rgba(183,239,118,.22)}
+.sB .st4>div{border-radius:6px}
+.sB .ops{border-radius:6px} .sB .ops .oi{border-radius:6px}
+.sB .opbtn{border-radius:6px;border-style:solid;background:var(--b-field)}
+.sB .banner{border-radius:8px}
+.sB .banner .wb{border-radius:6px} .sB .banner .bb{border-radius:6px}
+.sB .banner:before{content:"";position:absolute;top:0;inset-inline-start:24px;width:72px;height:2px;background:#FFF0DE;box-shadow:0 0 10px rgba(255,240,222,.8)}
+.sB .qrow{padding:8px 14px}
+
+/* ================= chart motion (charts only) ================= */
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes fade{from{opacity:0}}
+@keyframes gy{from{transform:scaleY(0)}}
+@keyframes gw{from{width:0}}
+.anim .draw{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.1s cubic-bezier(.3,.7,.3,1) forwards}
+.anim .sweep{stroke-dasharray:100;stroke-dashoffset:100;animation:draw 1.1s cubic-bezier(.3,.7,.3,1) forwards}
+.anim .afill{animation:fade .9s .35s ease-out both}
+.anim .grow{transform-box:fill-box;transform-origin:50% 100%;animation:gy .8s cubic-bezier(.3,.7,.3,1) both}
+.anim .gw{animation:gw .9s cubic-bezier(.3,.7,.3,1) both}
+.anim .tipw{animation:fade .4s 1s both}
+@media (prefers-reduced-motion:reduce){.anim *{animation:none!important}.anim .draw,.anim .sweep{stroke-dasharray:none!important;stroke-dashoffset:0!important}}
+
+/* ================================================================
+   ART-DIRECTOR REFINEMENTS (html.ref)
+   1) Table status badges carry an icon (from Ops Panel)
+   2) Glow hierarchy: hero glow only on Priority Alerts + Sustainability
+      Impact; every other card glows softly (from Folio)
+   ================================================================ */
+html.ref .sA .tbl .pl .dot{display:none}
+html.ref .sA .tbl .pl svg.i{display:inline-block;width:12px;height:12px}
+html.ref .sA .tbl .pl{padding:0 9px 0 8px;gap:5px}
+html.ref .sA .cd:not(.hero):before{opacity:.4}
+html.ref .sA .cd.hero:before{width:440px;height:300px;top:-110px;inset-inline-start:-110px;opacity:1}
+html.ref[data-theme="dark"] .sA .cd.hero-rose{border-color:rgba(236,138,161,.42);box-shadow:inset 0 1px 0 var(--a-hi),0 0 0 1px rgba(236,138,161,.14),0 0 60px -14px rgba(198,92,117,.6),var(--a-shadow);--gc:rgba(198,92,117,.3)}
+html.ref[data-theme="dark"] .sA .cd.hero-lime{border-color:rgba(183,239,118,.42);box-shadow:0 0 0 1px rgba(183,239,118,.12),0 0 70px -14px rgba(183,239,118,.6);--gc:rgba(183,239,118,.26)}
+html.ref[data-theme="light"] .sA .cd.hero-rose{border-color:#EDB6C4;box-shadow:0 0 0 1px rgba(198,92,117,.12),0 14px 40px -16px rgba(198,92,117,.45)}
+html.ref[data-theme="light"] .sA .cd.hero-lime{box-shadow:0 14px 40px -16px rgba(17,168,73,.45)}
+#refSeg button small{opacity:.7;font-size:10px;margin-inline-start:4px}
+</style>
+</head>
+<body>
+
+<header class="hd" id="hd"></header>
+
+<div class="bar">
+  <div class="seg" id="modeSeg">
+    <button data-mode="A" class="on"></button>
+    <button data-mode="B"></button>
+    <button data-mode="both"></button>
+  </div>
+  <span class="lbl" id="lblRef">Version</span>
+  <div class="seg" id="refSeg">
+    <button data-ref="0">Designer’s original</button>
+    <button data-ref="1" class="on">With art-director refinements</button>
+  </div>
+  <span class="sp"></span>
+  <span class="lbl" id="lblLang"></span>
+  <div class="seg" id="langSeg">
+    <button data-lang="en" class="on" lang="en">EN</button>
+    <button data-lang="ar" lang="ar" style="font-family:'IBM Plex Sans Arabic',Tahoma,sans-serif">العربية</button>
+  </div>
+  <span class="lbl" id="lblTheme"></span>
+  <div class="seg" id="themeSeg">
+    <button data-theme="dark" class="on"></button>
+    <button data-theme="light"></button>
+  </div>
+</div>
+
+<main class="cols" id="cols">
+  <section class="col" id="colA"></section>
+  <section class="col" id="colB" hidden></section>
+</main>
+
+<script>
+/* ================================================================
+   STATE (in memory) + STRING DICTIONARY
+   Source strings are the original English portal copy; AR maps each
+   to Modern Standard Arabic. {n}-style placeholders take numerals.
+   ================================================================ */
+const state={lang:'en',mode:'A',theme:'dark'};
+const AR={
+/* page chrome */
+'Phase 2 · Designer 2 · Midnight Plum (EN / Arabic RTL)':'الاختيار المعتمد · Midnight Plum (الإنجليزية / العربية)',
+'Two card styles with operational clarity':'بطاقات زجاج الليل',
+'INTRO':'اقتراحان يستبدلان تصميم البطاقات الحالي في مفهوم «Midnight Plum» دون تغيير أي وظيفة أو قسم أو حقل. البطاقات ثابتة تماماً، فالتوهّج إضاءة ساكنة لا حركة فيه، والرسوم البيانية وحدها تتحرك مرة واحدة عند التحميل أو تبديل اللغة. كل نصوص الواجهة تحقق تباين WCAG AA في الوضعين الليلي والنهاري.',
+'Style A':'النمط أ','Style B':'النمط ب','Side by side':'جنباً إلى جنب','Language':'اللغة','Appearance':'المظهر','Night':'ليلي','Day':'نهاري',
+'Card kit':'مجموعة البطاقات','Every card type from both portals':'كل أنواع البطاقات في البوابتين',
+'Admin · A1 · 1440px':'المشرف · A1 · بعرض 1440px','Merchant · M1 · 1440px':'التاجر · M1 · بعرض 1440px','Overview':'نظرة عامة',
+/* kit captions */
+'KPI card · positive delta':'بطاقة مؤشر · صعود','KPI card · negative delta':'بطاقة مؤشر · هبوط','KPI card · critical badge':'بطاقة مؤشر · شارة حرجة','KPI card · currency (QAR)':'بطاقة مؤشر مالية',
+'Area / line chart card':'بطاقة رسم مساحي / خطي','Donut card':'بطاقة رسم دائري','Table card · 5 rows, status pills, row actions':'بطاقة جدول · 5 صفوف مع حالات وإجراءات',
+'Bar chart card':'بطاقة رسم أعمدة','Alert / notifications list card':'بطاقة قائمة التنبيهات','Sustainability impact card':'بطاقة أثر الاستدامة','List card with sparklines':'بطاقة قائمة مع مؤشرات صغيرة',
+'Operational-status card':'بطاقة الحالة التشغيلية','Form / settings card':'بطاقة نموذج / إعدادات','Settings card with toggles':'بطاقة إعدادات مع مفاتيح تبديل','Template promo banner':'شريط القوالب الترويجي',
+/* generic */
+'View All':'عرض الكل','This Week':'هذا الأسبوع','last week':'عن الأسبوع الماضي','this week':'هذا الأسبوع','vs. previous period':'مقارنة بالفترة السابقة','Last 6 Months':'آخر 6 أشهر',
+'View':'عرض','Edit':'تعديل','Delete':'حذف','Dismiss':'إغلاق','On':'مفعّل','Off':'متوقف',
+/* statuses */
+'Live':'مباشر','Active':'نشط','Completed':'مكتمل','Excellent':'ممتاز','Ready':'جاهز','Pending':'معلّق','Sold Out':'نفد','Watch':'مراقبة','Blocked':'محظور','Cancelled':'ملغى','Expired':'منتهي','Processing':'قيد المعالجة',
+/* KPIs */
+'Live Drops':'العروض المباشرة','vs. yesterday':'مقارنة بالأمس','Reserved Today':'حجوزات اليوم','vs. avg':'مقارنة بالمتوسط','Pickups Completed':'الاستلامات المكتملة','fulfilment':'نسبة الإنجاز',
+'Open Issues':'المشكلات المفتوحة','{n} Critical':'{n} حرجة','1 critical':'مشكلة حرجة واحدة','open':'مفتوحة','Drop Accuracy':'دقة العروض',
+'Total Sales':'إجمالي المبيعات','Total Orders':'إجمالي الطلبات','Pending Pickups':'الاستلامات المعلّقة','Completed Orders':'الطلبات المكتملة','Cancelled Orders':'الطلبات الملغاة','GMV':'القيمة الإجمالية للبضائع',
+/* charts */
+'Sales Overview':'نظرة على المبيعات','Pickup Passport Monitoring':'مراقبة جواز الاستلام','passports':'جوازاً','Active & Verified':'نشط وموثّق','Expiring Soon':'ينتهي قريباً','Needs Attention':'يحتاج إلى متابعة','Inactive':'غير نشط',
+'{n} Passport attention':'{n} جوازاً تحتاج إلى متابعة','Review Now':'راجع الآن',
+'Inventory Status':'حالة المخزون','Total Bags':'إجمالي الأكياس','In Stock':'متوفر','Low Stock':'مخزون منخفض','Paused':'متوقف مؤقتاً',
+'Financial Trends (Monthly)':'الاتجاهات المالية (شهرياً)','GMV (QAR)':'القيمة الإجمالية (ر.ق)','Net Revenue (QAR)':'صافي الإيرادات (ر.ق)','Commission Revenue (QAR)':'إيرادات العمولة (ر.ق)',
+'Jan':'يناير','Feb':'فبراير','Mar':'مارس','Apr':'أبريل','May':'مايو','Jun':'يونيو','Jul':'يوليو',
+/* tables */
+'All Drops':'جميع العروض','Summary of all drops':'ملخص جميع العروض','Drops':'العروض','Restaurants':'المطعم','Category':'الفئة','Price':'السعر','Availability':'التوفر','Window':'النافذة','City':'المدينة','Status':'الحالة','Actions':'الإجراءات',
+'{n} reserved':'{n} محجوز',
+'Deli Surprise Box':'صندوق ديلي المفاجئ','Morning Pastry Box':'صندوق معجنات الصباح','Harvest Veg Box':'صندوق خضار الحصاد','Sweet Treats Mix':'تشكيلة الحلويات','Bakery Leftover Bag':'كيس بقايا المخبز','Artisan Bread Bag':'كيس الخبز الحرفي',
+'Sunrise Bakehouse':'مخبز صن رايز','Fig & Bloom Bakery':'مخبز فيغ آند بلوم','Green Bowl Kitchen':'مطبخ جرين بول','Olive Grove Café':'مقهى أوليف جروف','Corner Deli Co.':'كورنر ديلي','Marina Grill House':'مشويات مارينا هاوس','Harvest & Co.':'هارفست وشركاه',
+'Bakery':'مخابز','Grocery':'بقالة','Desserts':'حلويات','Dubai':'دبي','Sharjah':'الشارقة',
+'Recent Orders':'أحدث الطلبات','Manage drops':'إدارة العروض','Drop':'العرض','Merchant':'التاجر','Location':'الموقع','Reserved':'المحجوز','Picked Up':'المستلم',
+'Al Wasl Rd':'شارع الوصل','Jumeirah 1':'جميرا 1','Business Bay':'الخليج التجاري','Dubai Marina':'دبي مارينا','Al Barsha':'البرشاء',
+'Issue Alerts':'تنبيهات المشكلات','{n} open':'{n} مفتوحة','ID':'المعرّف','Type':'النوع','Time':'الوقت',
+'Spoiled inventory':'مخزون تالف','Late pickup window':'تأخر نافذة الاستلام','Item mismatch':'عدم تطابق المنتج','Hygiene complaint':'شكوى نظافة','No-show merchant':'عدم حضور التاجر',
+/* alerts */
+'Priority Alerts':'التنبيهات ذات الأولوية','Green Bowl Kitchen — spoiled inventory reported':'مطبخ جرين بول — الإبلاغ عن مخزون تالف','Critical':'حرج',
+'Drop {n} pickup window closes soon':'نافذة استلام العرض {n} تُغلق قريباً','Warning':'تحذير','{n} min left':'متبقٍ {n} دقيقة',
+'New merchant onboarding awaiting review':'تاجر جديد بانتظار مراجعة الانضمام','Information':'معلومة','Fresh Fig Co.':'فريش فيغ','Olive & Thyme':'أوليف آند ثايم',
+'Weekly quality report is ready':'تقرير الجودة الأسبوعي جاهز','Monitor':'مراقبة','Auto-generated':'مُنشأ تلقائياً',
+'Alerts & Notifications':'التنبيهات والإشعارات','{n} bags sold out':'نفاد {n} أكياس','Artisan Bread Bag reached zero stock':'وصل كيس الخبز الحرفي إلى صفر مخزون',
+'Pickup window closing soon':'نافذة الاستلام تُغلق قريباً','{n} orders awaiting collection by {t}':'{n} طلبات بانتظار الاستلام قبل {t}','Payout processed':'تمت معالجة الدفعة','{n} settled to your account':'تم تحويل {n} إلى حسابك',
+/* sustainability / ops / settings */
+'Sustainability Impact':'أثر الاستدامة','Meals saved':'وجبات تم إنقاذها','CO₂ offset':'تعويض ثاني أكسيد الكربون','Gallons water saved':'غالون مياه موفَّرة','Waste diverted':'نفايات تم تحويلها','{n} month':'{n} شهرياً',
+'Equivalent to {n} car miles avoided':'ما يعادل {n} ميل من رحلات السيارات','Learn More':'اعرف المزيد',
+'Operational Status':'الحالة التشغيلية','Open':'مفتوح','Accepting pickups':'يستقبل طلبات الاستلام',"Today's Hours":'ساعات اليوم','Pickup Window':'نافذة الاستلام','Tap to change branch state':'اضغط لتغيير حالة الفرع',
+'Platform Basics':'أساسيات المنصة','Platform Name':'اسم المنصة','Shown in emails, receipts, and the public-facing app.':'يظهر في الرسائل والإيصالات والتطبيق العام.',
+'Default Time Zone':'المنطقة الزمنية الافتراضية','Used for scheduling drops and generating reports.':'تُستخدم لجدولة العروض وإعداد التقارير.','Gulf Standard Time':'توقيت الخليج',
+'Default Currency':'العملة الافتراضية','Applied to new merchant accounts.':'تُطبَّق على حسابات التجار الجدد.','AED — UAE Dirham':'درهم إماراتي (د.إ)',
+'Operational Defaults':'الإعدادات التشغيلية الافتراضية','Auto-cancel unclaimed drops':'الإلغاء التلقائي للعروض غير المحجوزة','Automatically cancel a drop if no reservations by pickup window.':'إلغاء العرض تلقائياً إذا لم توجد حجوزات حتى نافذة الاستلام.',
+'Require pickup passport verification':'اشتراط التحقق من جواز الاستلام','Consumers must scan a passport code before pickup is marked complete.':'يجب على المستهلك مسح رمز الجواز قبل اعتماد الاستلام.',
+'Allow merchant self-onboarding':'السماح للتجار بالتسجيل الذاتي','New merchants can create an account without admin approval.':'يمكن للتجار الجدد إنشاء حساب دون موافقة المشرف.',
+'Merchant Quality Watch':'مراقبة جودة التجار','Top Selling Bags':'الأكياس الأكثر مبيعاً','{n} sold':'{n} مُباعة','Reviews':'التقييمات',
+'Amina K.':'أمينة ك.','Yusuf R.':'يوسف ر.','Lina H.':'لينا ح.','Omar S.':'عمر س.','Fatima A.':'فاطمة أ.','Shaikh A.':'شيخة أ.',
+'Create more. Rescue more. Impact more.':'أنشئ أكثر. أنقذ أكثر. أثّر أكثر.','Save time by using templates to create new bags in one click.':'وفّر الوقت باستخدام القوالب لإنشاء أكياس جديدة بنقرة واحدة.','Create from Template':'أنشئ من قالب',
+/* shell */
+'Command Center':'مركز القيادة','Pickups':'الاستلامات','Orders & Reservations':'الطلبات والحجوزات','Merchants':'التجار','Consumers':'المستهلكون','Financials':'المالية','Operations Analytics':'تحليلات العمليات','Wallet & Vouchers':'المحفظة والقسائم','Quality & Safety':'الجودة والسلامة','Issues & Alerts':'المشكلات والتنبيهات','Support':'الدعم','Performance':'الأداء','Sustainability & Impact':'الاستدامة والأثر','Listings & Templates':'القوائم والقوالب','CMS':'إدارة المحتوى','Users & Access':'المستخدمون والصلاحيات','Settings':'الإعدادات',
+'Orders & Pickups':'الطلبات والاستلام','Listings (Bags)':'القوائم (الأكياس)','Inventory':'المخزون','Driver':'السائقون','Analytics':'التحليلات','Customers':'العملاء','Branches':'الفروع','Reports / Dispute':'البلاغات / النزاعات','Templates':'القوالب',
+'GOOD FINDS. CLOSE BY.':'اكتشافات طيبة. قريبة منك.','Admin':'المشرف','Al Wasl Branch, Dubai':'فرع الوصل، دبي',"This month's impact":'أثر هذا الشهر','meals':'وجبة','water':'لتر مياه',
+'Sarah Al Manasoori':'سارة المنصوري','Super administrator':'مشرفة عامة','Need Help?':'تحتاج مساعدة؟',
+'Search drops, merchants, issues…':'ابحث في العروض والتجار والمشكلات…','Export':'تصدير','Notifications':'الإشعارات','WonderBites — UAE':'WonderBites — الإمارات',
+"Live view of today's drops, pickups, quality signals, and marketplace health.":'عرض مباشر لعروض اليوم والاستلامات ومؤشرات الجودة وصحة السوق.',
+'Good morning, Sara':'صباح الخير، سارة',"Here's how Fig & Bloom Bakery is doing today.":'إليكِ أداء مخبز فيغ آند بلوم اليوم.',
+};
+const missing=new Set();
+const t=s=>{if(state.lang!=='ar')return s;if(s in AR)return AR[s];missing.add(s);return s};
+const tf=(s,v)=>Object.entries(v).reduce((a,[k,x])=>a.split('{'+k+'}').join(x),t(s));
+const L=(en,ar)=>state.lang==='ar'?ar:en;               /* long-form spec prose kept as explicit pairs */
+const OTHER=()=>state.lang==='ar'?'en':'ar';
+window.__missing=missing;
+
+/* ================= icons ================= */
+const P={
+grid:'<rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/>',
+bag:'<path d="M6 7h12l1 13H5L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/>',
+package:'<path d="M21 8l-9-5-9 5v8l9 5 9-5V8z"/><path d="M3 8l9 5 9-5M12 13v8"/>',
+clipboard:'<rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4h6v3H9zM9 12h6M9 16h4"/>',
+store:'<path d="M3 9l2-5h14l2 5M3 9v11h18V9M3 9h18M9 20v-6h6v6"/>',
+users:'<circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.5a3.5 3.5 0 0 1 0 7M18 14a6 6 0 0 1 3.5 6"/>',
+bars:'<path d="M3 21h18M6 17v-5M11 17V7M16 17v-3M20 17V4"/>',
+activity:'<path d="M3 12h4l3-8 4 16 3-8h4"/>',
+wallet:'<rect x="3" y="6" width="18" height="14" rx="2"/><path d="M16 13h2M3 10h18M6 6V4h11v2"/>',
+shield:'<path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/>',
+alert:'<path d="M12 3.5l9.5 17h-19L12 3.5z"/><path d="M12 10v4.5M12 17.5v.3"/>',
+headset:'<path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/>',
+gauge:'<path d="M4 18a9 9 0 1 1 16 0"/><path d="M12 14l4-4"/><circle cx="12" cy="14" r="1.3"/>',
+leaf:'<path d="M5 20c0-9 5-15 15-15 0 10-6 15-14 15"/><path d="M5 20c3-4 6-7 10-9"/>',
+layers:'<path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/>',
+file:'<path d="M14 3H6v18h12V7l-4-4z"/><path d="M14 3v4h4M9 13h6M9 17h6"/>',
+key:'<circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M17 6l3 3M15 8l2 2"/>',
+gear:'<circle cx="12" cy="12" r="3"/><path d="M12 2.5v3M12 18.5v3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M2.5 12h3M18.5 12h3M4.6 19.4l2.1-2.1M17.3 6.7l2.1-2.1"/>',
+search:'<circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/>',
+cal:'<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/>',
+upload:'<path d="M12 15V4M7 9l5-5 5 5M4 15v4a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-4"/>',
+bell:'<path d="M6 8a6 6 0 0 1 12 0c0 7 3 8 3 8H3s3-1 3-8M10 20a2 2 0 0 0 4 0"/>',
+chev:'<path d="M6 9l6 6 6-6"/>',
+fwd:'<path d="M9 6l6 6-6 6"/>', /* "forward / view all": points right in LTR; .flip mirrors it in RTL */
+x:'<path d="M6 6l12 12M18 6L6 18"/>',
+eye:'<path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/>',
+edit:'<path d="M4 20h4L19 9l-4-4L4 16v4zM13.5 6.5l4 4"/>',
+trash:'<path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13M10 11v6M14 11v6"/>',
+check:'<path d="M5 12.5l4.5 4.5L19 7"/>',
+checkc:'<circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.8 2.8L16 9.5"/>',
+clock:'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+up:'<path d="M12 19V5M6 11l6-6 6 6"/>', down:'<path d="M12 5v14M6 13l6 6 6-6"/>',
+truck:'<path d="M2 6h12v10H2zM14 9h4l4 4v3h-8"/><circle cx="6.5" cy="18" r="2"/><circle cx="17.5" cy="18" r="2"/>',
+star:'<path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9L12 3z"/>',
+sun:'<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>',
+moon:'<path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/>',
+branch:'<path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/>',
+basket:'<path d="M3 10h18l-2 10H5L3 10zM8 10l4-6 4 6M9 14v3M15 14v3"/>',
+pin:'<path d="M12 21s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/>',
+radio:'<circle cx="12" cy="12" r="2"/><path d="M7.8 7.8a6 6 0 0 0 0 8.4M16.2 7.8a6 6 0 0 1 0 8.4M5 5a10 10 0 0 0 0 14M19 5a10 10 0 0 1 0 14"/>',
+ban:'<circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8"/>',
+xc:'<circle cx="12" cy="12" r="9"/><path d="M9 9l6 6M15 9l-6 6"/>',
+minus:'<circle cx="12" cy="12" r="9"/><path d="M8 12h8"/>',
+loader:'<path d="M12 3a9 9 0 1 0 9 9"/>',
+water:'<path d="M12 3s6 7 6 11a6 6 0 0 1-12 0c0-4 6-11 6-11z"/>',
+recycle:'<path d="M7 19H3.5l3-5M17 19h3.5l-3-5M9 7.5L12 3l3 4.5M10 19h4"/>',
+co2:'<path d="M7 18a5 5 0 1 1 1-9.9A6 6 0 0 1 19 10a4 4 0 0 1-1 8z"/>',
+trend:'<path d="M3 17l6-6 4 4 8-8M15 7h6v6"/>',
+coins:'<ellipse cx="9" cy="7" rx="6" ry="3"/><path d="M3 7v5c0 1.7 2.7 3 6 3s6-1.3 6-3V7M9 15v2c0 1.7 2.7 3 6 3s6-1.3 6-3v-5c0-1.7-2.7-3-6-3"/>',
+refresh:'<path d="M21 12a9 9 0 1 1-3-6.7L21 8M21 3v5h-5"/>',
+};
+const ic=(n,cls='')=>`<svg class="i ${cls}" viewBox="0 0 24 24" aria-hidden="true">${P[n]||''}</svg>`;
+const N=v=>`<span class="n">${v}</span>`;
+/* units: AED ↔ د.إ , QAR ↔ ر.ق ; times PM ↔ م ; relative m/h ↔ د/س ; dates Jun 20 ↔ 20 يونيو */
+const AED=v=>L(`AED ${N(v)}`,`${N(v)} د.إ`), QAR=v=>L(`QAR ${N(v)}`,`${N(v)} ر.ق`);
+const PM=r=>L(`${N(r)} PM`,`${N(r)} م`), AM=r=>L(`${N(r)} AM`,`${N(r)} ص`);
+const AGO=m=>m>=60?L(`${N(m/60)}h`,`${N(m/60)} س`):L(`${N(m)}m`,`${N(m)} د`);
+const D=(mon,d)=>L(`${mon} ${d}`,`${d} ${t(mon)}`);            /* plain text, also used inside SVG */
+const DH=(mon,d)=>L(`${mon} ${N(d)}`,`${N(d)} ${t(mon)}`);       /* HTML version */
+let UID=0;
+
+/* ================= primitives ================= */
+const PILL={'Live':['g','radio'],'Active':['g','checkc'],'Completed':['g','checkc'],'Excellent':['g','checkc'],'Ready':['o','clock'],'Pending':['o','clock'],'Sold Out':['o','minus'],'Watch':['o','alert'],'Blocked':['r','ban'],'Cancelled':['r','xc'],'Expired':['n','clock'],'Processing':['m','loader']};
+const pill=s=>{const [c,i]=PILL[s]||['n','minus'];return `<span class="pl ${c}"><span class="dot"></span>${ic(i)}${t(s)}</span>`};
+const dl=(v,dir)=>`<span class="dl ${dir==='up'?'up':'dn'}">${ic(dir==='up'?'up':'down')}${N(v)}</span>`;
+const lnk=(s='View All')=>`<a class="lnk">${t(s)}${ic('fwd','flip')}</a>`;
+const msel=s=>`<span class="msel">${t(s)}${ic('chev')}</span>`;
+function card({title,sub='',icon,tone='rose',count,actions='',body,cls='',bcls=''}){
+  const tc={rose:'t-rose',lime:'t-green',orange:'t-orange',mauve:'t-mauve'}[tone];
+  return `<section class="cd tone-${tone} ${cls}"><header class="cd-h"><div class="cd-t">${icon?`<span class="cd-ic ${tc}">${ic(icon)}</span>`:''}<h4>${title}</h4>${count?`<span class="cnt">${count}</span>`:''}${sub?`<span class="cd-sub">${sub}</span>`:''}</div><div class="cd-a">${actions}</div></header><div class="cd-b ${bcls}">${body}</div></section>`;
+}
+/* charts: time axis always runs left→right (data not mirrored); legends/titles/tooltips follow the language */
+function smooth(p){let d=`M${p[0][0].toFixed(1)} ${p[0][1].toFixed(1)}`;for(let i=0;i<p.length-1;i++){const a=p[i-1]||p[i],b=p[i],c=p[i+1],e=p[i+2]||c;d+=` C${(b[0]+(c[0]-a[0])/6).toFixed(1)} ${(b[1]+(c[1]-a[1])/6).toFixed(1)},${(c[0]-(e[0]-b[0])/6).toFixed(1)} ${(c[1]-(e[1]-b[1])/6).toFixed(1)},${c[0].toFixed(1)} ${c[1].toFixed(1)}`}return d}
+const scl=(v,w,h,mn,mx,l,tp)=>v.map((x,i)=>[l+i*(w/(v.length-1)),tp+h-((x-mn)/(mx-mn))*h]);
+function spark(vals,cls='ln-lime'){const W=120,H=36,p=scl(vals,W,H-8,Math.min(...vals),Math.max(...vals),0,4);const d=smooth(p);const id='sg'+(++UID);
+  return `<svg class="k-sp" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none"><defs><linearGradient id="${id}" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="currentColor" stop-opacity=".22"/><stop offset="1" stop-color="currentColor" stop-opacity="0"/></linearGradient></defs><g style="color:${cls==='ln-lime'?'var(--line-lime)':'var(--line-rose)'}"><path class="afill" d="${d} L${W} ${H} L0 ${H}Z" fill="url(#${id})"/><path class="draw ${cls}" pathLength="1" d="${d}" fill="none" stroke-width="1.8" vector-effect="non-scaling-stroke"/></g></svg>`}
+function areaChart({vals,W=560,H=240,min=0,max,ticks,yfmt=v=>v,xl,tipI,tip,cls='ln-rose'}){
+  const Lx=38,T=10,w=W-Lx-6,h=H-T-26,p=scl(vals,w,h,min,max,Lx,T);const d=smooth(p);const id='ag'+(++UID);
+  const g=ticks.map(v=>{const y=T+h-((v-min)/(max-min))*h;return `<line class="gl" x1="${Lx}" x2="${W-6}" y1="${y}" y2="${y}"/><text class="ax" x="${Lx-8}" y="${y+3.5}" text-anchor="end">${yfmt(v)}</text>`}).join('');
+  const xs=xl.map((s,i)=>s?`<text class="ax" x="${Lx+i*(w/(xl.length-1))}" y="${H-6}" text-anchor="${i===0?'start':i===xl.length-1?'end':'middle'}">${s}</text>`:'').join('');
+  const col=cls==='ln-lime'?'var(--line-lime)':'var(--line-rose)';const tp=tipI!=null?p[tipI]:null;
+  return `<div class="chart"><svg viewBox="0 0 ${W} ${H}"><defs><linearGradient id="${id}" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="${col}" stop-opacity=".3"/><stop offset="1" stop-color="${col}" stop-opacity="0"/></linearGradient></defs>${g}${xs}<path class="afill" d="${d} L${p[p.length-1][0]} ${T+h} L${Lx} ${T+h}Z" fill="url(#${id})"/><path class="draw ${cls}" pathLength="1" d="${d}" fill="none" stroke-width="2.2"/>${tp?`<line x1="${tp[0]}" x2="${tp[0]}" y1="${tp[1]}" y2="${T+h}" stroke="${col}" stroke-dasharray="2 3" class="afill"/><circle class="afill" cx="${tp[0]}" cy="${tp[1]}" r="4.5" fill="var(--bg)" stroke="${col}" stroke-width="2.2"/>`:''}</svg>${tp?`<div class="tipw" style="inset-inline-start:${tp[0]/W*100}%;top:${tp[1]/H*100}%"><div class="tip">${tip}</div></div>`:''}</div>`;
+}
+function donut(segs,size,stroke,center){const r=(size-stroke)/2,c=size/2,id='dm'+(++UID);let off=0;
+  const arcs=segs.map(s=>{const a=`<circle cx="${c}" cy="${c}" r="${r}" fill="none" stroke="${s.c}" stroke-width="${stroke}" pathLength="100" stroke-dasharray="${Math.max(s.v-.8,0)} 100" stroke-dashoffset="${-off}" transform="rotate(-90 ${c} ${c})"/>`;off+=s.v;return a}).join('');
+  return `<div class="chart" style="width:${size}px;height:${size}px;flex:none"><svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}"><defs><mask id="${id}"><circle class="sweep" cx="${c}" cy="${c}" r="${r}" fill="none" stroke="#fff" stroke-width="${stroke+4}" pathLength="100" transform="rotate(-90 ${c} ${c})"/></mask></defs><circle cx="${c}" cy="${c}" r="${r}" fill="none" stroke="var(--card-3)" stroke-width="${stroke}"/><g mask="url(#${id})">${arcs}</g></svg><div style="position:absolute;inset:0;display:grid;place-items:center;text-align:center;direction:var(--dir)">${center}</div></div>`}
+function barChart(){const months=['Feb','Mar','Apr','May','Jun','Jul'],s=[[150,168,160,182,190,211],[60,72,68,80,86,96],[90,100,94,110,118,126]],col=['var(--line-rose)','#B783A7','var(--line-lime)'];
+  const W=420,H=210,Lx=40,T=8,h=H-T-26,bw=(W-Lx-6)/6;
+  const g=[0,50,100,150,200,250].map(v=>{const y=T+h-(v/250)*h;return `<line class="gl" x1="${Lx}" x2="${W-6}" y1="${y}" y2="${y}"/><text class="ax" x="${Lx-8}" y="${y+3.5}" text-anchor="end">${v}K</text>`}).join('');
+  const bars=months.map((m,i)=>{const x=Lx+i*bw+bw/2-22;return s.map((ser,j)=>{const hh=ser[i]/250*h;return `<rect class="grow" style="animation-delay:${(i*60+j*30)}ms" x="${x+j*15}" y="${T+h-hh}" width="13" height="${hh}" rx="2.5" fill="${col[j]}"/>`}).join('')+`<text class="ax" x="${Lx+i*bw+bw/2}" y="${H-6}" text-anchor="middle">${t(m)}</text>`}).join('');
+  return `<div class="lgd" style="margin-bottom:6px"><span><i class="sq" style="background:var(--line-rose)"></i>${t('GMV (QAR)')}</span><span><i class="sq" style="background:#B783A7"></i>${t('Net Revenue (QAR)')}</span><span><i class="sq" style="background:var(--line-lime)"></i>${t('Commission Revenue (QAR)')}</span></div><div class="chart"><svg viewBox="0 0 ${W} ${H}">${g}${bars}</svg></div>`}
+const actBtns=()=>`<div class="acts"><button class="ab" title="${t('View')}">${ic('eye')}</button><button class="ab" title="${t('Edit')}">${ic('edit')}</button><button class="ab del" title="${t('Delete')}">${ic('trash')}</button></div>`;
+function table(cols,rows){return `<div class="tbl-wrap"><table class="tbl"><thead><tr>${cols.map(c=>`<th class="${c[1]||''}">${c[0]}</th>`).join('')}</tr></thead><tbody>${rows.map(r=>`<tr>${r.map((v,i)=>`<td class="${cols[i][1]||''}">${v}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`}
+
+/* ================= card builders ================= */
+function kpi({label,icon,tone='rose',v,d,foot,spk,sdir='up',badge=''}){
+  const tc={rose:'t-rose',lime:'t-green',orange:'t-orange',mauve:'t-mauve'}[tone];
+  return `<section class="cd kpi tone-${tone}"><div class="cd-b"><div class="k-top"><span class="cd-ic ${tc}">${ic(icon)}</span>${label}${badge}</div><div class="k-row"><div><div class="k-v">${v}</div><div class="k-f">${d||''}<span>${foot}</span></div></div>${spk?spark(spk,sdir==='up'?'ln-lime':'ln-rose'):''}</div></div></section>`;
+}
+const KPI_A1=()=>[
+ {label:t('Live Drops'),icon:'radio',tone:'rose',v:N('18'),d:dl('3','up'),foot:t('vs. yesterday'),spk:[10,12,11,14,13,16,18]},
+ {label:t('Reserved Today'),icon:'cal',tone:'lime',v:N('356'),d:dl('+16.4%','up'),foot:t('vs. avg'),spk:[200,240,230,280,300,320,356]},
+ {label:t('Pickups Completed'),icon:'clock',tone:'orange',v:N('32'),d:dl('92.6%','up'),foot:t('fulfilment'),spk:[20,22,25,24,28,30,32]},
+ {label:t('Open Issues'),icon:'alert',tone:'mauve',badge:`<span class="crit">${tf('{n} Critical',{n:N('01')}).replace('</span> ','</span>&nbsp;')}</span>`,v:N('10'),d:'',foot:`<b style="color:var(--neg)">${t('1 critical')}</b> ${t('open')}`,spk:[6,7,9,8,11,9,10],sdir:'down'},
+ {label:t('Drop Accuracy'),icon:'pin',tone:'rose',v:N('96.4%'),d:dl('+1.2%','up'),foot:t('this week'),spk:[91,93,93,94,95,95.6,96.4]},
+];
+const KPI_M1=()=>[
+ {label:t('Total Sales'),icon:'bag',tone:'rose',v:AED('24,560'),d:dl('+18.6%','up'),foot:t('last week'),spk:[10,14,12,16,15,19,18,22]},
+ {label:t('Total Orders'),icon:'basket',tone:'lime',v:N('356'),d:dl('+16.4%','up'),foot:t('last week'),spk:[8,10,9,13,12,15,14,17]},
+ {label:t('Pending Pickups'),icon:'clock',tone:'orange',v:N('32'),d:dl('−8%','down'),foot:t('last week'),spk:[18,16,17,14,15,12,13,11],sdir:'down'},
+ {label:t('Completed Orders'),icon:'checkc',tone:'mauve',v:N('289'),d:dl('+19.3%','up'),foot:t('last week'),spk:[9,11,10,14,13,16,17,19]},
+ {label:t('Cancelled Orders'),icon:'xc',tone:'rose',v:N('12'),d:dl('−4%','down'),foot:t('last week'),spk:[16,15,16,13,14,12,13,12],sdir:'down'},
+];
+function salesCard(W=560,H=250){const sv=[2,11,18,13,14,21.5,21.5,30,40];
+  return card({title:t('Sales Overview'),icon:'trend',tone:'rose',actions:msel('This Week'),body:`<div style="display:flex;align-items:baseline;gap:8px;margin-bottom:6px"><span class="k-v" style="font-size:24px">${AED('24,560')}</span>${dl('+18.6%','up')}<span class="cd-sub">${t('last week')}</span></div>`+
+   areaChart({vals:sv,W,H,max:40,ticks:[0,10,20,30,40],yfmt:v=>v?v+'k':'0',xl:[D('Jun',20),'',D('Jun',21),D('Jun',22),D('Jun',23),D('Jun',24),D('Jun',25),'',D('Jun',26)],tipI:5,tip:`${DH('Jun',24)} · ${N('18:00')}<b>${AED('21,480')}&nbsp;&nbsp;<em class="n">+3.4%</em></b>`})})}
+function dropAccCard(H=300){const v=[91.2,93.8,93.1,93.0,94.6,94.7,95.6,96.4];
+  return card({title:t('Drop Accuracy'),icon:'pin',tone:'rose',actions:msel('This Week'),body:`<div style="display:flex;align-items:baseline;gap:8px;margin-bottom:6px"><span class="k-v" style="font-size:24px">${N('96.4%')}</span>${dl('+1.2%','up')}<span class="cd-sub">${t('this week')}</span></div>`+
+   areaChart({vals:v,W:620,H,min:90,max:97,ticks:[90,92,94,96],yfmt:v=>v+'%',xl:[D('Jul',13),'14','15','16','17','18','19',D('Jul',20)],tipI:6,tip:`${DH('Jul',19)} · ${N('00:00')}<b>${N('95.6%')}&nbsp;&nbsp;<em class="n">+3.4%</em></b>`})})}
+const legRow=(c,l,v)=>`<div><i style="background:${c}"></i><span>${t(l)}</span><b class="n">${v}</b></div>`;
+function passportCard(){
+  return card({title:t('Pickup Passport Monitoring'),icon:'shield',tone:'lime',actions:lnk(),body:`<div style="display:flex;gap:16px;align-items:center">${donut([{v:62,c:'#11A849'},{v:20,c:'#B783A7'},{v:10,c:'#E87C40'},{v:8,c:'#76646F'}],136,18,`<div><b class="n" style="font-family:var(--num);font-size:22px;display:block;line-height:1.2">1,842</b><span style="font-size:11px;color:var(--muted)">${t('passports')}</span></div>`)}
+   <div class="leg">${legRow('#11A849','Active & Verified','62%')}${legRow('#B783A7','Expiring Soon','20%')}${legRow('#E87C40','Needs Attention','10%')}${legRow('#76646F','Inactive','8%')}</div></div>
+   <div class="li hot" style="margin:14px 0 0;align-items:center"><span class="ic t-rose">${ic('alert')}</span><div class="tx"><div class="tt">${tf('{n} Passport attention',{n:N('78')})}</div></div>${lnk('Review Now')}</div>`})}
+function inventoryCard(){
+  return card({title:t('Inventory Status'),icon:'package',tone:'lime',body:`<div style="display:flex;gap:16px;align-items:center">${donut([{v:22/45*100,c:'#11A849'},{v:7/45*100,c:'#B783A7'},{v:6/45*100,c:'#E87C40'},{v:5/45*100,c:'#C65C75'},{v:5/45*100,c:'#76646F'}],132,20,`<div><b class="n" style="font-family:var(--num);font-size:22px;display:block;line-height:1.2">45</b><span style="font-size:11px;color:var(--muted)">${t('Total Bags')}</span></div>`)}
+   <div class="leg">${legRow('#11A849','In Stock','22')}${legRow('#B783A7','Low Stock','7')}${legRow('#E87C40','Sold Out','6')}${legRow('#C65C75','Paused','5')}${legRow('#76646F','Expired','5')}</div></div>`})}
+const finTrends=()=>card({title:t('Financial Trends (Monthly)'),icon:'bars',tone:'mauve',actions:msel('Last 6 Months'),body:barChart()});
+function dropsTable(){
+  const R=[['Deli Surprise Box','DR-3391','ph1','Sunrise Bakehouse','Bakery','45','15','67%',14,20,['8:00–9:00','pm'],'Dubai','Active'],
+   ['Morning Pastry Box','DR-3388','ph2','Fig & Bloom Bakery','Bakery','40','14','65%',18,20,['7:30–8:30','am'],'Dubai','Active'],
+   ['Harvest Veg Box','DR-3384','ph3','Green Bowl Kitchen','Grocery','36','12','67%',15,15,['6:00–7:00','pm'],'Dubai','Sold Out'],
+   ['Sweet Treats Mix','DR-3377','ph4','Olive Grove Café','Desserts','30','10','67%',8,12,['5:00–6:00','pm'],'Sharjah','Pending'],
+   ['Bakery Leftover Bag','DR-3350','ph5','Corner Deli Co.','Bakery','45','15','67%',0,20,['8:00–9:00','pm'],'Dubai','Expired']]
+   .map((r,ix)=>{const pct=Math.round(r[8]/r[9]*100);return [`<span class="cb ${ix===1?'on':''}"></span>`,`<div class="prod"><span class="ph ${r[2]}"></span><div><b>${t(r[0])}</b><small class="n">${r[1]}</small></div></div>`,t(r[3]),`<span class="mut">${t(r[4])}</span>`,
+    `<div class="price"><b>${AED(r[6])}</b><small><s class="n">${r[5]}</s> <em>${L(N(r[7])+' off',N('−'+r[7]))}</em></small></div>`,
+    `<div class="avail"><div class="t">${tf('{n} reserved',{n:N(r[8]+'/'+r[9])})}</div><div class="trk"><i class="${pct>=100?'o':''}" style="width:${Math.max(pct,2)}%"></i></div></div>`,r[10][1]==='am'?AM(r[10][0]):PM(r[10][0]),t(r[11]),pill(r[12]),actBtns()]});
+  return card({title:t('All Drops'),sub:t('Summary of all drops'),icon:'bag',tone:'rose',count:N('10'),bcls:'flush',body:table([[`<span class="cb"></span>`],[t('Drops')],[t('Restaurants')],[t('Category')],[t('Price')],[t('Availability')],[t('Window')],[t('City')],[t('Status')],[t('Actions'),'e']],R)});
+}
+function recentOrdersAdmin(){
+  const R=[['#3021','Fig & Bloom Bakery','ph1','Al Wasl Rd','5:30–6:00','Live','24','18'],['#3020','Sunrise Bakehouse','ph2','Jumeirah 1','6:00–6:30','Live','20','15'],['#3019','Green Bowl Kitchen','ph3','Business Bay','7:00–7:30','Ready','16','9'],['#3018','Marina Grill House','ph5','Dubai Marina','8:00–8:30','Live','30','22'],['#3017','Olive Grove Café','ph4','Al Barsha','8:30–9:00','Pending','12','0']]
+   .map(r=>[`<b class="n">${r[0]}</b>`,`<div class="prod"><span class="ph sm ${r[2]}"></span><b>${t(r[1])}</b></div>`,`<span class="mut">${t(r[3])}</span>`,PM(r[4]),pill(r[5]),`<b class="n">${r[6]}</b>`,`<b class="n">${r[7]}</b>`]);
+  return card({title:t('Recent Orders'),icon:'clipboard',tone:'rose',actions:lnk('Manage drops'),bcls:'flush',body:table([[t('Drop')],[t('Merchant')],[t('Location')],[t('Window')],[t('Status')],[t('Reserved'),'e'],[t('Picked Up'),'e']],R)});
+}
+function issueAlerts(){ /* all rows Blocked, matching the reference (coordinator edit) */
+  const R=[['#1092','Spoiled inventory','Green Bowl Kitchen','Blocked',4],['#1091','Late pickup window','Sunrise Bakehouse','Blocked',18],['#1090','Item mismatch','Marina Grill House','Blocked',32],['#1089','Hygiene complaint','Corner Deli Co.','Blocked',60],['#1088','No-show merchant','Harvest & Co.','Blocked',120]]
+   .map(r=>[`<b class="n">${r[0]}</b>`,t(r[1]),`<span class="mut">${t(r[2])}</span>`,pill(r[3]),`<span class="mut">${AGO(r[4])}</span>`]);
+  return card({title:t('Issue Alerts'),icon:'alert',tone:'orange',count:tf('{n} open',{n:N('10')}).replace('</span> ','</span>&nbsp;'),actions:lnk(),bcls:'flush',body:table([[t('ID')],[t('Type')],[t('Merchant')],[t('Status')],[t('Time'),'e']],R)});
+}
+function priorityAlerts(n=5){
+  const A=[['alert','t-rose',t('Green Bowl Kitchen — spoiled inventory reported'),'Merchant',t('Critical'),12,true],['clock','t-orange',tf('Drop {n} pickup window closes soon',{n:N('#482')}),'Warning',tf('{n} min left',{n:N('15')}),12],['store','t-mauve',t('New merchant onboarding awaiting review'),'Information',t('Fresh Fig Co.'),24],['bars','t-green',t('Weekly quality report is ready'),'Monitor',t('Auto-generated'),60],['store','t-mauve',t('New merchant onboarding awaiting review'),'Information',t('Olive & Thyme'),120]].slice(0,n);
+  return card({title:t('Priority Alerts'),cls:'hero hero-rose',icon:'bell',tone:'rose',count:N(String(n)),actions:lnk(),bcls:'flush',body:`<div class="alist" style="padding:4px 12px 4px">${A.map(a=>`<div class="li ${a[6]?'hot':''}"><span class="ic ${a[1]}">${ic(a[0])}</span><div class="tx"><div class="tt">${a[2]}</div><div class="mm"><b>${t(a[3])}</b> · <span>${a[4]}</span></div></div><span class="tm">${AGO(a[5])}</span><button class="x" title="${t('Dismiss')}">${ic('x')}</button></div>`).join('')}</div>`});
+}
+function notesCard(){
+  const A=[['alert','t-rose',tf('{n} bags sold out',{n:N('3')}),t('Artisan Bread Bag reached zero stock'),5,true],['clock','t-orange',t('Pickup window closing soon'),tf('{n} orders awaiting collection by {t}',{n:N('4'),t:N('20:00')}),18],['wallet','t-green',t('Payout processed'),tf('{n} settled to your account',{n:AED('18,240')}),60]];
+  return card({title:t('Alerts & Notifications'),icon:'bell',tone:'orange',actions:lnk(),bcls:'flush',body:`<div style="padding:4px 12px 4px">${A.map(a=>`<div class="li ${a[5]?'hot':''}"><span class="ic ${a[1]}">${ic(a[0])}</span><div class="tx"><div class="tt">${a[2]}</div><div class="mm">${a[3]}</div></div><span class="tm">${AGO(a[4])}</span></div>`).join('')}</div>`});
+}
+function sustCard(){
+  const S=[['leaf','12.4k','Meals saved',tf('{n} month',{n:N('8%')})],['co2','6.1t','CO₂ offset',N('5%')],['water','3.8k','Gallons water saved',N('6%')],['recycle','92%','Waste diverted',N('1.4%')]];
+  return card({title:t('Sustainability Impact'),icon:'leaf',tone:'lime',cls:'sust hero hero-lime',body:`<div class="st4">${S.map(s=>`<div>${ic(s[0])}<b class="n">${s[1]}</b><small>${t(s[2])}</small><em>${ic('trend')}${s[3]}</em></div>`).join('')}</div><div class="sust-ft"><span>${tf('Equivalent to {n} car miles avoided',{n:`<b class="n">9,300</b>`})}</span><a>${t('Learn More')}${ic('fwd','flip')}</a></div>`});
+}
+function opsCard(){
+  return card({title:t('Operational Status'),icon:'store',tone:'lime',body:`<div class="ops"><span class="oi">${ic('store')}</span><div><b><i></i>${t('Open')}</b><small>${t('Accepting pickups')}</small></div></div><div class="ophr"><div><small>${ic('clock')}${t("Today's Hours")}</small><b class="n">8:00 – 21:00</b></div><div><small>${ic('bag')}${t('Pickup Window')}</small><b class="n">18:00 – 20:00</b></div></div><button class="opbtn" style="width:100%">${ic('refresh')}${t('Tap to change branch state')}</button>`});
+}
+function basicsCard(){
+  const f=(l,d,v,icn,focus)=>`<div class="setrow" style="align-items:flex-start"><div class="l"><b>${t(l)}</b><small>${t(d)}</small></div><div class="fi ${focus?'focus':''}" style="width:236px;flex:none;white-space:nowrap;overflow:hidden">${icn?ic(icn):''}${v}${focus?'':`<span class="chev">${ic('chev')}</span>`}</div></div>`;
+  return card({title:t('Platform Basics'),icon:'gear',tone:'mauve',body:f('Platform Name','Shown in emails, receipts, and the public-facing app.','<span lang="en" style="font-family:Inter,sans-serif">WonderBites</span>','',true)+f('Default Time Zone','Used for scheduling drops and generating reports.',`${t('Gulf Standard Time')} · ${N('GMT+4')}`,'clock')+f('Default Currency','Applied to new merchant accounts.',t('AED — UAE Dirham'),'coins')});
+}
+function defaultsCard(){
+  const tg=(l,d,on)=>`<div class="setrow"><div class="l"><b>${t(l)}</b><small>${t(d)}</small></div><span class="st ${on?'up':''}" style="${on?'':'color:var(--faint)'}">${t(on?'On':'Off')}</span><button class="tog ${on?'on':''}" role="switch" aria-checked="${on}"></button></div>`;
+  return card({title:t('Operational Defaults'),icon:'shield',tone:'mauve',body:tg('Auto-cancel unclaimed drops','Automatically cancel a drop if no reservations by pickup window.',true)+tg('Require pickup passport verification','Consumers must scan a passport code before pickup is marked complete.',true)+tg('Allow merchant self-onboarding','New merchants can create an account without admin approval.',false)});
+}
+function qualityCard(){
+  const Q=[['Fig & Bloom Bakery','94','Excellent',[60,64,63,70,72,78,82,94]],['Marina Grill House','88','Excellent',[70,72,75,74,80,82,86,88]],['Harvest & Co.','45','Watch',[62,58,60,55,52,50,47,45]],['Corner Deli Co.','32','Watch',[50,48,44,46,40,38,35,32]]];
+  return card({title:t('Merchant Quality Watch'),icon:'star',tone:'orange',actions:lnk(),bcls:'flush',body:`<div style="padding:2px 18px 6px" class="qwrap">${Q.map(q=>`<div class="qrow"><span class="nm">${t(q[0])}</span><b class="n">${q[1]}</b>${spark(q[3],q[2]==='Excellent'?'ln-lime':'ln-rose').replace('class="k-sp"','class="sp"')}<span style="width:86px;text-align:end">${pill(q[2])}</span></div>`).join('')}</div>`});
+}
+function topBags(){
+  const B=[['Morning Pastry Box','86','ph1'],['Artisan Bread Bag','71','ph6'],['Deli Surprise Box','92','ph2'],['Sweet Treats Mix','65','ph4'],['Bakery Leftover Bag','201','ph5']];
+  return card({title:t('Top Selling Bags'),icon:'bag',tone:'rose',actions:lnk(),bcls:'flush',body:`<div style="padding:0 16px 6px">${B.map((b,i)=>`<div class="qrow"><b class="n" style="width:12px;color:var(--faint)">${i+1}</b><span class="ph sm ${b[2]}"></span><div style="flex:1;min-width:0"><div style="font-weight:600;white-space:nowrap">${t(b[0])}</div><div style="font-size:11px;color:var(--faint)">${tf('{n} sold',{n:N(b[1])})}</div></div><b style="white-space:nowrap">${AED('2,580')}</b></div>`).join('')}</div>`});
+}
+function recentOrdersM(){
+  const O=[['#3021','Amina K.','Morning Pastry Box','Completed','65'],['#3020','Yusuf R.','Artisan Bread Bag','Processing','40'],['#3019','Lina H.','Deli Surprise Box','Ready','55'],['#3018','Omar S.','Sweet Treats Mix','Cancelled','30'],['#3017','Fatima A.','Morning Pastry Box','Completed','45'],['#3016','Shaikh A.','Bakery Leftover Bag','Ready','75']];
+  return card({title:t('Recent Orders'),icon:'clipboard',tone:'rose',actions:lnk(),bcls:'flush',body:`<div style="padding:0 16px 6px">${O.map(o=>`<div class="qrow"><b class="n" style="width:42px">${o[0]}</b><div style="flex:1;min-width:0"><div style="font-weight:600">${t(o[1])}</div><div style="font-size:11px;color:var(--faint);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${t(o[2])}</div></div>${pill(o[3])}<b style="width:62px;text-align:end;white-space:nowrap">${AED(o[4])}</b><span style="color:var(--faint)">${ic('fwd','flip')}</span></div>`).join('')}</div>`});
+}
+function reviewsCard(){
+  const H=[[5,440],[4,250],[3,90],[2,40],[1,22]];const st=[1,1,1,1,0].map(f=>`<svg class="i" viewBox="0 0 24 24" style="width:14px;height:14px;fill:${f?'#F2B04A':'none'};stroke:${f?'#F2B04A':'var(--line-2)'}">${P.star}</svg>`).join('');
+  return card({title:t('Reviews'),icon:'star',tone:'orange',actions:lnk(),body:`<div style="display:flex;align-items:baseline;gap:6px"><b class="n" style="font-family:var(--num);font-size:30px;line-height:1.2">4.2</b><span class="n" style="color:var(--muted)">(842)</span></div><div class="stars" style="margin:2px 0 10px">${st}</div><div class="hist">${H.map(([s,c])=>`<div><span class="n" style="width:8px">${s}</span><div class="trk"><i class="gw ${s<=2?'o':''}" style="width:${c/440*100}%"></i></div><b class="n">${c}</b></div>`).join('')}</div>`});
+}
+const banner=()=>`<section class="banner"><span class="wb">WB</span><div><h3>${t('Create more. Rescue more. Impact more.')}</h3><p>${t('Save time by using templates to create new bags in one click.')}</p></div><button class="bb">${ic('layers')}${t('Create from Template')}</button><div class="bags"><i></i><i></i><i></i><i></i></div></section>`;
+
+/* ================= card kit ================= */
+const cap=(en)=>`<div class="kc">${t(en)}<span class="alt" lang="${OTHER()}" dir="${OTHER()==='ar'?'rtl':'ltr'}">${state.lang==='ar'?en:AR[en]}</span></div>`;
+function kit(){const KA=KPI_A1(),KM=KPI_M1();
+  return `<div class="kit">
+   <div class="kgrid k4">
+    <div>${cap('KPI card · positive delta')}${kpi(KM[0])}</div>
+    <div>${cap('KPI card · negative delta')}${kpi(KM[2])}</div>
+    <div>${cap('KPI card · critical badge')}${kpi(KA[3])}</div>
+    <div>${cap('KPI card · currency (QAR)')}${kpi({label:t('GMV'),icon:'trend',tone:'lime',v:QAR('211,540'),d:dl('+18.6%','up'),foot:t('vs. previous period'),spk:[62,70,66,78,86,92,104,112]})}</div>
+   </div>
+   <div class="kgrid">
+    <div class="s2">${cap('Area / line chart card')}${salesCard(880,300)}</div>
+    <div>${cap('Donut card')}${passportCard()}</div>
+   </div>
+   <div class="kgrid"><div class="s3">${cap('Table card · 5 rows, status pills, row actions')}${dropsTable()}</div></div>
+   <div class="kgrid">
+    <div>${cap('Bar chart card')}${finTrends()}</div>
+    <div>${cap('Alert / notifications list card')}${priorityAlerts(4)}</div>
+    <div>${cap('Sustainability impact card')}${sustCard()}<div style="height:20px"></div>${cap('List card with sparklines')}${qualityCard()}</div>
+   </div>
+   <div class="kgrid">
+    <div>${cap('Operational-status card')}${opsCard()}</div>
+    <div>${cap('Form / settings card')}${basicsCard()}</div>
+    <div>${cap('Settings card with toggles')}${defaultsCard()}</div>
+   </div>
+   <div>${cap('Template promo banner')}${banner()}</div>
+  </div>`;
+}
+
+/* ================= app shell ================= */
+const ADMIN_NAV=[['Command Center','grid'],['Drops','bag'],['Pickups','package'],['Orders & Reservations','clipboard'],['Merchants','store'],['Consumers','users'],['Financials','bars'],['Operations Analytics','activity'],['Wallet & Vouchers','wallet'],['Quality & Safety','shield'],['Issues & Alerts','alert',4],['Support','headset'],['Performance','gauge'],['Sustainability & Impact','leaf'],['Listings & Templates','layers'],['CMS','file'],['Users & Access','key'],['Settings','gear']];
+const MER_NAV=[['Overview','grid'],['Orders & Pickups','package'],['Listings (Bags)','bag'],['Inventory','clipboard'],['Driver','truck'],['Analytics','bars'],['Customers','users'],['Branches','branch'],['Reviews','star'],['Reports / Dispute','file'],['Templates','layers'],['Settings','gear']];
+const impact=()=>`<div class="impact"><h5>${ic('leaf')}${t("This month's impact")}</h5><div class="row"><div><b class="n">52.4k</b><small>${t('meals')}</small></div><div><b class="n">24.1t</b><small>CO₂</small></div><div><b class="n">11.8k L</b><small>${t('water')}</small></div></div></div>`;
+function side(k,active){
+  const nav=(k==='a'?ADMIN_NAV:MER_NAV).map(([l,i,b])=>`<a class="${l===active?'on':''}">${ic(i)}${t(l)}${b?`<span class="bd n">${b}</span>`:''}</a>`).join('');
+  const id=k==='a'?`<div class="role">${t('Admin')} <span class="vt">${ic('check')}</span></div>`:`<div class="mid"><span class="mlogo"></span><div><div class="nm">${t('Fig & Bloom Bakery')} <span class="vt">${ic('check')}</span></div><div class="br">${t('Al Wasl Branch, Dubai')}</div></div></div>`;
+  const foot=k==='a'?`<div class="ucard"><span class="av"></span><div><b>${t('Sarah Al Manasoori')}</b><small>${t('Super administrator')}</small></div><span class="chev">${ic('chev')}</span></div>`:`<div class="ucard">${ic('headset')}<b>${t('Need Help?')}</b><span class="chev">${ic('fwd','flip')}</span></div>`;
+  return `<aside class="side"><div class="logo"><div class="wm" lang="en">WonderBites</div><div class="tag">${t('GOOD FINDS. CLOSE BY.')}</div></div>${id}<nav class="nav">${nav}</nav>${impact()}${foot}</aside>`;
+}
+const dateRange=()=>`${DH('Jun',20)} – ${DH('Jul',20)}`;
+const topA=()=>`<div class="ctl search">${ic('search')}${t('Search drops, merchants, issues…')}</div><div class="ctl">${ic('cal')}<span>${dateRange()}</span>${ic('chev')}</div><div class="ctl">${ic('upload')}${t('Export')}</div><div class="ctl ico" title="${t('Notifications')}">${ic('bell')}<span class="badge n">4</span></div><div class="avm"><span class="av"></span>${ic('chev')}</div>`;
+const topM=()=>`<div class="ctl" style="min-width:190px">${ic('store')}${t('WonderBites — UAE')}<span style="flex:1"></span>${ic('chev')}</div><div class="ctl">${ic('cal')}<span>${dateRange()}</span>${ic('chev')}</div><div class="ctl ico" title="${t('Notifications')}">${ic('bell')}<span class="badge n">4</span></div><div class="avm"><span class="av"></span>${ic('chev')}</div>`;
+function shell(k,active,title,sub,top,body){return `<div class="app">${side(k,active)}<div class="main"><header class="top"><div><h1>${title}</h1><p>${sub}</p></div><span class="sp"></span>${top}</header><div class="content">${body}</div></div></div>`}
+function A1(){
+  return shell('a','Command Center',t('Command Center'),t("Live view of today's drops, pickups, quality signals, and marketplace health."),topA(),
+  `<div class="row" style="grid-template-columns:repeat(5,minmax(0,1fr))">${KPI_A1().map(kpi).join('')}</div>
+   <div class="row" style="grid-template-columns:350px minmax(0,1fr)">${priorityAlerts(5)}${recentOrdersAdmin()}</div>
+   <div class="row" style="grid-template-columns:350px minmax(0,1fr)">${passportCard()}${issueAlerts()}</div>
+   <div class="row" style="grid-template-columns:minmax(0,1fr) 430px">${dropAccCard(330)}<div style="display:flex;flex-direction:column;gap:16px">${qualityCard()}${sustCard()}</div></div>
+   ${banner()}`);
+}
+function M1(){
+  return shell('m','Overview',`${t('Good morning, Sara')} ${ic('sun')}`,t("Here's how Fig & Bloom Bakery is doing today."),topM(),
+  `<div class="row" style="grid-template-columns:repeat(5,minmax(0,1fr))">${KPI_M1().map(kpi).join('')}</div>
+   <div class="row" style="grid-template-columns:minmax(0,1fr) 310px 370px">${salesCard(420,290)}${topBags()}${recentOrdersM()}</div>
+   <div class="row" style="grid-template-columns:300px 236px 220px minmax(0,1fr)">${inventoryCard()}${opsCard()}${reviewsCard()}${notesCard()}</div>
+   ${banner()}`);
+}
+
+/* ================= specs (EN + AR pairs) ================= */
+const SPEC={
+ A:{name:['Night Glass','زجاج الليل'],tag:['Style A','النمط أ'],
+  rat:['Translucent plum glass lit by a static rose halo from the start corner, so each card reads as a lit pane against the night canvas. Hierarchy comes from light rather than borders, which keeps all-day monitoring calm.',
+       'زجاج بلوني شفاف تضيئه هالة وردية ساكنة من زاوية البداية، فتبدو كل بطاقة كلوح مضيء على خلفية الليل. يأتي التسلسل البصري من الضوء لا من الحدود، فتبقى المتابعة طوال اليوم هادئة.'],
+  dl:[[['Surface','السطح'],['Glass gradient <code>rgba(55,35,66,.74)→rgba(37,23,44,.74)</code> with <code>blur(14px)</code>; Day: <code>#FFFCF9</code> at 94%','تدرّج زجاجي <code>rgba(55,35,66,.74)→rgba(37,23,44,.74)</code> مع <code>blur(14px)</code>؛ نهاراً <code>#FFFCF9</code> بنسبة 94%']],
+   [['Border','الحدود'],['<code>1px rgba(236,138,161,.17)</code> plus a top inner highlight <code>inset 0 1px rgba(255,255,255,.07)</code>','<code>1px rgba(236,138,161,.17)</code> مع إضاءة علوية داخلية <code>inset 0 1px rgba(255,255,255,.07)</code>']],
+   [['Radius','نصف القطر'],['Cards <code>16px</code> · inputs and buttons <code>11–12px</code> · fully rounded pills','بطاقات <code>16px</code> · حقول وأزرار <code>11–12px</code> · شارات دائرية كاملة']],
+   [['Glow recipe','وصفة التوهّج'],['Static <code>radial 260×180</code> halo at the start corner (top-left in EN, top-right in AR) in the card tone: rose 16%, lime 13%, orange 13%. Chart lines get <code>drop-shadow 5px</code>. Nothing moves.','هالة ساكنة <code>radial 260×180</code> عند زاوية البداية (يمين أعلى بالعربية) بلون نبرة البطاقة: وردي 16%، ليموني 13%، برتقالي 13%. خطوط الرسوم بتوهّج <code>drop-shadow 5px</code>. بلا أي حركة']],
+   [['Header layout','ترويسة البطاقة'],['No divider: 28px tinted icon → title 14/600 → round count chip; links and selects sit at the end','بلا فاصل: أيقونة ملوّنة 28px ← العنوان 14/600 ← عدّاد دائري، والروابط والقوائم عند نهاية السطر']],
+   [['Padding','الحشو'],['Header <code>16/18px</code>, body <code>18px</code>, table rows <code>52px</code>, grid gap <code>16px</code>','<code>16/18px</code> للترويسة، <code>18px</code> للمحتوى، صفوف الجداول <code>52px</code>، شبكة الفراغات <code>16px</code>']],
+   [['Status & badges','الحالات والشارات'],['Round tinted pill with a static glowing dot and 11.5/600 text; text contrast meets AA in both themes','شارة دائرية بخلفية ملوّنة ونقطة متوهّجة ساكنة ونص 11.5/600، وتباين النص AA في الوضعين']],
+   [['KPI','المؤشرات'],['Value at 28 (Inter Bold in EN, Noto Naskh in AR), then the delta chip, then a full-bleed sparkline','الرقم بحجم 28 (Inter عريض بالإنجليزية، Noto Naskh بالعربية)، ثم شارة التغيّر، ثم مؤشر صغير بعرض البطاقة']]]},
+ B:{name:['Ops Panel','لوحة التشغيل'],tag:['Style B','النمط ب'],
+  rat:['Solid, dense panels with 8px corners, a clear header band and a short glowing status rule on top in the card tone, so the screen reads like an instrument panel. Built for operators who scan data fast.',
+       'لوحات صلبة كثيفة بزوايا 8px وشريط ترويسة واضح، ويميّز كل بطاقة خط حالة قصير متوهّج في أعلاها بلون نبرتها، فتُقرأ الشاشة كلوحة عدادات. مصمَّم للمشغّلين الذين يمسحون البيانات بسرعة.'],
+  dl:[[['Surface','السطح'],['Solid <code>#24152A</code>, no transparency; header band <code>rgba(183,131,167,.07)</code>; Day: <code>#FFFCF9</code> / <code>#FBF4EC</code>','لون صلب <code>#24152A</code> بلا شفافية، وترويسة <code>rgba(183,131,167,.07)</code>؛ نهاراً <code>#FFFCF9</code> وترويسة <code>#FBF4EC</code>']],
+   [['Border','الحدود'],['<code>1px rgba(183,131,167,.21)</code> plus thin column dividers inside tables','<code>1px rgba(183,131,167,.21)</code> مع فواصل أعمدة رفيعة داخل الجداول']],
+   [['Radius','نصف القطر'],['Cards <code>8px</code> · inputs and buttons <code>6px</code> · badges <code>5px</code>','بطاقات <code>8px</code> · حقول وأزرار <code>6px</code> · شارات <code>5px</code>']],
+   [['Glow recipe','وصفة التوهّج'],['<code>56×2px</code> status rule at the start of the top edge with <code>0 0 10px</code> in the tone colour (rose, lime, orange, mauve); no glow in Day. Fully static.','خط حالة بطول <code>56×2px</code> عند بداية الحافة العليا مع <code>0 0 10px</code> بلون النبرة (وردي، ليموني، برتقالي، بنفسجي)؛ نهاراً بلا توهّج. ساكن تماماً']],
+   [['Header layout','ترويسة البطاقة'],['44px band with a divider: 16px tone icon → title 13.5/600 → square count chip; actions at the end','شريط بارتفاع 44px تحته فاصل: أيقونة بلون النبرة 16px ← العنوان 13.5/600 ← عدّاد مربّع، والإجراءات عند النهاية']],
+   [['Padding','الحشو'],['<code>14px</code> horizontal, <code>12px</code> body, table rows <code>44px</code>, grid gap <code>16px</code>','<code>14px</code> أفقياً، <code>12px</code> للمحتوى، صفوف الجداول <code>44px</code>، شبكة الفراغات <code>16px</code>']],
+   [['Status & badges','الحالات والشارات'],['Near-square badge with a <code>1px</code> border in the status colour at 38%, plus an icon (check, clock, ban) and text, so status reads without colour','شارة شبه مربّعة بإطار <code>1px</code> من لون الحالة بشفافية 38%، مع أيقونة (صح، ساعة، حظر) ونص، فتُقرأ الحالة دون الاعتماد على اللون']],
+   [['KPI','المؤشرات'],['Value at 25 with the sparkline on the same line at the end; the delta sits in a footer behind a dashed rule','الرقم بحجم 25، والمؤشر الصغير على السطر نفسه عند النهاية، والتغيّر في تذييل يفصله خط متقطّع']]]}
+};
+const ix=()=>state.lang==='ar'?1:0, ox=()=>state.lang==='ar'?0:1;
+const altAttr=()=>`class="alt" lang="${OTHER()}" dir="${OTHER()==='ar'?'rtl':'ltr'}"`;
+function specHTML(k){const s=SPEC[k];return `<div class="spec"><span class="tag">${s.tag[ix()]} · <span ${altAttr()} style="font-size:inherit;color:inherit">${s.tag[ox()]}</span></span><h2>${s.name[ix()]}<small ${altAttr()}>${s.name[ox()]}</small></h2><p class="rat">${s.rat[ix()]}</p><p class="rat" ${altAttr().replace('class="alt"','')} style="font-size:12px;color:var(--faint);margin-top:2px;line-height:1.6;text-align:match-parent">${s.rat[ox()]}</p><dl>${s.dl.map(d=>`<div><dt>${d[0][ix()]}<span ${altAttr()}>${d[0][ox()]}</span></dt><dd>${d[1][ix()]}</dd></div>`).join('')}</dl></div>`}
+const secH=(main,sub,altText)=>`<div class="sec-h"><b>${main}</b><span>${sub}</span><span ${altAttr()}>${altText}</span></div>`;
+function column(k){
+  return specHTML(k)+
+  secH(t('Card kit'),t('Every card type from both portals'),state.lang==='ar'?'Card kit':AR['Card kit'])+`<div class="stage"><div class="board s${k}">${kit()}</div></div>`+
+  secH(t('Command Center'),t('Admin · A1 · 1440px'),state.lang==='ar'?'Admin Command Center':AR['Command Center'])+`<div class="stage"><div class="board s${k}">${A1()}</div></div>`+
+  secH(t('Overview'),t('Merchant · M1 · 1440px'),state.lang==='ar'?'Merchant Overview':AR['Overview'])+`<div class="stage"><div class="board s${k}">${M1()}</div></div>`;
+}
+function chrome(){
+  document.getElementById('hd').innerHTML=`<div class="ey"><i></i>${(state.lang==='ar'?t('Phase 2 · Designer 2 · Midnight Plum (EN / Arabic RTL)'):'Art director’s pick · Midnight Plum (EN / Arabic RTL)')}</div><h1>${state.lang==='ar'?t('Two card styles with operational clarity'):'Night Glass cards'}<small ${altAttr()}>${state.lang==='ar'?'Night Glass cards':AR['Two card styles with operational clarity']}</small></h1>
+   <p>${state.lang==='ar'?AR.INTRO:'The chosen card style for the Midnight Plum portals, replacing Concept 4’s card design without changing any function, section or field. Cards are fully static: the glow is fixed light, and only charts animate, once on load or on a language switch. All UI text meets WCAG AA in Night and Day.'}</p>`;
+  const mb=document.querySelectorAll('#modeSeg button');[['Style A','Style A'],['Style B','Style B'],['Side by side','Side by side']].forEach(([k],i)=>mb[i].innerHTML=`${t(k)}${state.lang==='ar'?` <small lang="en">${k}</small>`:''}`);
+  const th=document.querySelectorAll('#themeSeg button');th[0].innerHTML=ic('moon')+t('Night');th[1].innerHTML=ic('sun')+t('Day');
+  document.getElementById('lblTheme').textContent=t('Appearance');document.getElementById('lblLang').textContent=t('Language');
+}
+
+/* ================= mount / controls ================= */
+const colA=document.getElementById('colA'),colB=document.getElementById('colB'),cols=document.getElementById('cols');
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+function fit(){document.querySelectorAll('.col:not([hidden]) .stage').forEach(st=>{const b=st.firstElementChild;const s=st.clientWidth/1440;b.style.transform=`scale(${s})`;st.style.height=(b.offsetHeight*s)+'px'})}
+function animate(){document.querySelectorAll('.board').forEach(b=>b.classList.remove('anim'));if(reduce)return;void document.body.offsetWidth;document.querySelectorAll('.col:not([hidden]) .board').forEach(b=>b.classList.add('anim'))}
+function render(){
+  const h=document.documentElement;h.lang=state.lang;h.dir=state.lang==='ar'?'rtl':'ltr';
+  document.title=state.lang==='ar'?'WonderBites — أنماط البطاقات (المصمم 2) · Midnight Plum':'WonderBites — Card styles (Designer 2) · Midnight Plum';
+  UID=0;chrome();colA.innerHTML=column('A');colB.innerHTML=column('B');
+  document.querySelectorAll('#langSeg button').forEach(b=>b.classList.toggle('on',b.dataset.lang===state.lang));
+  setMode(state.mode);
+}
+function setMode(m){state.mode=m;colA.hidden=m==='B';colB.hidden=m==='A';cols.classList.toggle('both',m==='both');document.querySelectorAll('#modeSeg button').forEach(b=>b.classList.toggle('on',b.dataset.mode===m));fit();animate()}
+function setLang(l){if(l===state.lang&&colA.innerHTML)return;state.lang=l;render();if(document.fonts)document.fonts.ready.then(fit)}
+document.getElementById('modeSeg').addEventListener('click',e=>{const b=e.target.closest('button');if(b)setMode(b.dataset.mode)});
+document.getElementById('langSeg').addEventListener('click',e=>{const b=e.target.closest('button');if(b)setLang(b.dataset.lang)});
+document.getElementById('themeSeg').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;state.theme=b.dataset.theme;document.documentElement.dataset.theme=state.theme;document.querySelectorAll('#themeSeg button').forEach(x=>x.classList.toggle('on',x===b))});
+document.addEventListener('click',e=>{const tg=e.target.closest('.tog');if(tg){tg.classList.toggle('on');const on=tg.classList.contains('on');tg.setAttribute('aria-checked',on);const s=tg.previousElementSibling;if(s){s.textContent=t(on?'On':'Off');s.className='st '+(on?'up':'');s.style.color=on?'':'var(--faint)'}}});
+window.addEventListener('resize',fit);
+/* optional hash: #en / #ar and #A / #B / #both, e.g. #ar-both */
+const hp=location.hash.slice(1).split(/[-,&]/);
+if(hp.includes('ar'))state.lang='ar';
+const hm=hp.find(x=>['A','B','both'].includes(x));state.mode='A';
+render();
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fit);
+</script>
+<style>#modeSeg{display:none!important}#colB{display:none!important}</style>
+<script>document.addEventListener('DOMContentLoaded',()=>{try{setMode('A')}catch(e){}});</script>
+<script>
+(function(){
+  const AR={'Version':'النسخة','Designer’s original':'نسخة المصمم','With art-director refinements':'مع تحسينات المدير الفني'};
+  const root=document.documentElement; root.classList.add('ref');
+  const seg=document.getElementById('refSeg'), lbl=document.getElementById('lblRef');
+  const en={lbl:'Version',b:['Designer’s original','With art-director refinements']};
+  function label(){const ar=root.lang==='ar'; lbl.textContent=ar?AR[en.lbl]:en.lbl; seg.querySelectorAll('button').forEach((b,i)=>b.textContent=ar?AR[en.b[i]]:en.b[i]);}
+  seg.addEventListener('click',e=>{const b=e.target.closest('button'); if(!b) return; root.classList.toggle('ref',b.dataset.ref==='1'); seg.querySelectorAll('button').forEach(x=>x.classList.toggle('on',x===b));});
+  new MutationObserver(label).observe(root,{attributes:true,attributeFilter:['lang']}); label();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+# Phase 2 — Arabic RTL + Card Styles (Midnight Plum)
+
+Base: Concept 4 "Midnight Plum" at `/home/claude/wb/concept-4/index.html` (read it first; reuse its tokens, glow, glass top bar, night/day CSS variables). All rules in `/home/claude/wb/BRIEF.md` still apply: **no change to functionality, sections, fields, columns, filters, actions, nav items or flow.**
+
+## Arabic RTL rules (shared by everyone, keep consistent)
+- `<html lang="ar" dir="rtl">`. Layout fully mirrored: sidebar on the RIGHT, top-bar order mirrored, table columns read right→left (first column at right), checkboxes/thumbnails at the right, actions column at the left, filter bar starts at right, KPI order starts at right.
+- Use CSS logical properties (`margin-inline-start`, `padding-inline-end`, `inset-inline-start`, `border-inline-start`, `text-align: start`) — no hard-coded left/right.
+- Mirror directional icons (chevrons, back/next arrows, "view all →" becomes "←", trend arrows stay up/down). Do NOT mirror logos, checkmarks, media/play icons, or the charts' data.
+- Charts: keep the time axis running left→right (standard for numeric data), but place legends, titles and tooltips in RTL order.
+- Numbers: Western digits (0–9) with `direction: ltr; unicode-bidi: isolate` on numeric spans so "+18.6%", "AED 24,560", "5:30–6:00pm", "#3021", "MO-5210" render correctly. Currency label "د.إ" for AED (e.g. "٢٤٬٥٦٠" is NOT used — write "24,560 د.إ"), QAR → "ر.ق".
+- Fonts (Google Fonts): UI/body/tables **IBM Plex Sans Arabic** (400/500/600/700); display titles, page headings, big KPI numerals **Noto Naskh Arabic** (600/700) as the Arabic counterpart of Playfair. Keep the Latin "WonderBites" wordmark in Playfair Display with the Arabic tagline "اكتشافات طيبة. قريبة منك." Increase Arabic line-height (~1.6) and avoid letter-spacing/uppercase on Arabic text.
+- Copy: natural Modern Standard Arabic, concise UI wording (e.g. Command Center = مركز القيادة، Drops = العروض، Pickups = الاستلامات، Orders & Reservations = الطلبات والحجوزات، Merchants = التجار، Consumers = المستهلكون، Financials = المالية، Operations Analytics = تحليلات العمليات، Wallet & Vouchers = المحفظة والقسائم، Quality & Safety = الجودة والسلامة، Issues & Alerts = المشكلات والتنبيهات، Support = الدعم، Performance = الأداء، Sustainability & Impact = الاستدامة والأثر، Listings & Templates = القوائم والقوالب، CMS = إدارة المحتوى، Users & Access = المستخدمون والصلاحيات، Settings = الإعدادات. Merchant: Overview = نظرة عامة، Orders & Pickups = الطلبات والاستلام، Listings (Bags) = القوائم (الأكياس)، Inventory = المخزون، Driver = السائقون، Analytics = التحليلات، Customers = العملاء، Branches = الفروع، Reviews = التقييمات، Reports / Dispute = البلاغات / النزاعات، Templates = القوالب). Names of people/merchants can be Arabic (سارة المنصوري، مخبز فيغ آند بلوم – فرع الوصل، دبي).
+
+## Motion rule
+**No animation on cards or UI chrome** (no hover transitions, no entrance fades, no pulsing glow). Glow is static light. **Only charts animate**, once on load/screen switch: line/area draws, bars grow, donut sweeps, sparklines draw. Respect `prefers-reduced-motion` (show final state).

@@ -1,0 +1,1088 @@
+[
+ {
+  "route": "m-overview",
+  "params": {},
+  "scope": "#page",
+  "items": [
+   {
+    "effects": [
+     "route:m-analytics",
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "section[link] \"إجمالي المبيعات 4,338 ر.ق +18.6% عن الفترة السابقة\"",
+    "sig": "section|link||m-analytics|||||إجمالي المبيعات # ر.ق +#% عن الفترة السابقة",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:m-orders",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "section[link] \"إجمالي الطلبات 279 +16.4% عن الفترة السابقة\"",
+    "sig": "section|link||m-orders|||||إجمالي الطلبات # +#% عن الفترة السابقة",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:m-orders",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "section[link] \"الاستلامات المعلّقة 3 مدفوع، لم يُستلم بعد\"",
+    "sig": "section|link||m-orders|||||الاستلامات المعلّقة # مدفوع، لم يُستلم بعد",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:m-orders",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "section[link] \"الطلبات المكتملة 271 +19.3% عن الفترة السابقة\"",
+    "sig": "section|link||m-orders|||||الطلبات المكتملة # +#% عن الفترة السابقة",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:m-orders",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "section[link] \"الطلبات الملغاة 0 −4% عن الفترة السابقة\"",
+    "sig": "section|link||m-orders|||||الطلبات الملغاة # −#% عن الفترة السابقة",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-open",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"الفترة: هذا الأسبوع\"",
+    "sig": "button||||||||الفترة: هذا الأسبوع",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "api",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"الفترة: هذا الأسبوع\" › button[menuitem] \"هذا الأسبوع\"",
+    "sig": "button|menuitem|||||||هذا الأسبوع",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "api",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"الفترة: هذا الأسبوع\" › button[menuitem] \"آخر 7 أيام\"",
+    "sig": "button|menuitem|||||||آخر # أيام",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "api",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"الفترة: هذا الأسبوع\" › button[menuitem] \"هذا الشهر\"",
+    "sig": "button|menuitem|||||||هذا الشهر",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "route:m-analytics",
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "a \"عرض تقرير المبيعات\"",
+    "sig": "a|||m-analytics|||||عرض تقرير المبيعات",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:m-listings",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "a \"عرض الكل\"",
+    "sig": "a|||m-listings|||||عرض الكل",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:m-inventory-detail",
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"1 كيس بقايا المخبز 68 مُباعة 680 ر.ق\"",
+    "sig": "button|||m-inventory-detail|||||# كيس بقايا المخبز # مُباعة # ر.ق",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:m-inventory-detail",
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"2 كيس مفاجأة سندويشات الديلي 65 مُباعة 650 ر.ق\"",
+    "sig": "button|||m-inventory-detail|||||# كيس مفاجأة سندويشات الديلي # مُباعة # ر.ق",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:m-inventory-detail",
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"3 صندوق بقالة التين الطازج 64 مُباعة 1,280 ر.ق\"",
+    "sig": "button|||m-inventory-detail|||||# صندوق بقالة التين الطازج # مُباعة # ر.ق",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:m-inventory-detail",
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"4 صندوق معجنات الصباح 64 مُباعة 960 ر.ق\"",
+    "sig": "button|||m-inventory-detail|||||# صندوق معجنات الصباح # مُباعة # ر.ق",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:m-inventory-detail",
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"5 كيس الخبز الحرفي 64 مُباعة 768 ر.ق\"",
+    "sig": "button|||m-inventory-detail|||||# كيس الخبز الحرفي # مُباعة # ر.ق",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:m-orders",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "a \"عرض الكل\"",
+    "sig": "a|||m-orders|||||عرض الكل",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:m-orders",
+     "overlay-open",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"#3001 عائشة المنصوري 1 أكياس · 9:20 ص جاهز 15 ر.ق\"",
+    "sig": "button|||m-orders|||||## عائشة المنصوري # أكياس · # ص جاهز # ر.ق",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"#3001 عائشة المنصوري 1 أكياس · 9:20 ص جاهز 15 ر.ق\" › button \"إغلاق\"",
+    "sig": "button||||||||إغلاق",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"#3001 عائشة المنصوري 1 أكياس · 9:20 ص جاهز 15 ر.ق\" › button \"تحقق من الرمز وأكمل الطلب\"",
+    "sig": "button||verify||||||تحقق من الرمز وأكمل الطلب",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-open",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"#3001 عائشة المنصوري 1 أكياس · 9:20 ص جاهز 15 ر.ق\" › button \"إلغاء الطلب\"",
+    "sig": "button||cancel||||||إلغاء الطلب",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "route:m-orders",
+     "overlay-open",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"#3002 عمر السويدي 1 أكياس · 8:55 ص خرج للتوصيل 10 ر.ق\"",
+    "sig": "button|||m-orders|||||## عمر السويدي # أكياس · # ص خرج للتوصيل # ر.ق",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"#3002 عمر السويدي 1 أكياس · 8:55 ص خرج للتوصيل 10 ر.ق\" › button \"إغلاق\"",
+    "sig": "button||||||||إغلاق",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-open"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"#3002 عمر السويدي 1 أكياس · 8:55 ص خرج للتوصيل 10 ر.ق\" › button \"تحديد كتم التوصيل\"",
+    "sig": "button||complete||||||تحديد كتم التوصيل",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "route:m-orders",
+     "overlay-open",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"#3003 فاطمة الزعابي 1 أكياس · 8:10 ص قيد المعالجة 20 ر.ق\"",
+    "sig": "button|||m-orders|||||## فاطمة الزعابي # أكياس · # ص قيد المعالجة # ر.",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"#3003 فاطمة الزعابي 1 أكياس · 8:10 ص قيد المعالجة 20 ر.ق\" › button \"إغلاق\"",
+    "sig": "button||||||||إغلاق",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"#3003 فاطمة الزعابي 1 أكياس · 8:10 ص قيد المعالجة 20 ر.ق\" › button \"تعيين السائق\"",
+    "sig": "button||assign||||||تعيين السائق",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-open",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"#3003 فاطمة الزعابي 1 أكياس · 8:10 ص قيد المعالجة 20 ر.ق\" › button \"إلغاء الطلب\"",
+    "sig": "button||cancel||||||إلغاء الطلب",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "route:m-orders",
+     "overlay-open",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"#3004 خالد رحمن 1 أكياس · 7:02 ص مكتمل 10 ر.ق\"",
+    "sig": "button|||m-orders|||||## خالد رحمن # أكياس · # ص مكتمل # ر.ق",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"#3004 خالد رحمن 1 أكياس · 7:02 ص مكتمل 10 ر.ق\" › button \"إغلاق\"",
+    "sig": "button||||||||إغلاق",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "route:m-orders",
+     "overlay-open",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"#3005 ليلى حسن 1 أكياس · 6:40 ص تم التوصيل 12 ر.ق\"",
+    "sig": "button|||m-orders|||||## ليلى حسن # أكياس · # ص تم التوصيل # ر.ق",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"#3005 ليلى حسن 1 أكياس · 6:40 ص تم التوصيل 12 ر.ق\" › button \"إغلاق\"",
+    "sig": "button||||||||إغلاق",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-open"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"#3005 ليلى حسن 1 أكياس · 6:40 ص تم التوصيل 12 ر.ق\" › button \"تأكيد اكتمال الطلب\"",
+    "sig": "button||complete||||||تأكيد اكتمال الطلب",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "route:m-orders",
+     "overlay-open",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"#3006 يوسف العامري 1 أكياس · 5:05 ص قيد المعالجة 20 ر.ق\"",
+    "sig": "button|||m-orders|||||## يوسف العامري # أكياس · # ص قيد المعالجة # ر.ق",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"#3006 يوسف العامري 1 أكياس · 5:05 ص قيد المعالجة 20 ر.ق\" › button \"إغلاق\"",
+    "sig": "button||||||||إغلاق",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"#3006 يوسف العامري 1 أكياس · 5:05 ص قيد المعالجة 20 ر.ق\" › button \"تحقق من الرمز وأكمل الطلب\"",
+    "sig": "button||verify||||||تحقق من الرمز وأكمل الطلب",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-open",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"#3006 يوسف العامري 1 أكياس · 5:05 ص قيد المعالجة 20 ر.ق\" › button \"إلغاء الطلب\"",
+    "sig": "button||cancel||||||إلغاء الطلب",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "route:m-inventory",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "a \"عرض الكل\"",
+    "sig": "a|||m-inventory|||||عرض الكل",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:m-inventory",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"متوفر 24 59%\"",
+    "sig": "button|||m-inventory|||||متوفر # #%",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:m-inventory",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"مخزون منخفض 0 0%\"",
+    "sig": "button|||m-inventory|||||مخزون منخفض # #%",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:m-inventory",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"نفد 14 34%\"",
+    "sig": "button|||m-inventory|||||نفد # #%",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:m-inventory",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"متوقف مؤقتاً 3 7%\"",
+    "sig": "button|||m-inventory|||||متوقف مؤقتاً # #%",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:m-inventory",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"منتهي 0 0%\"",
+    "sig": "button|||m-inventory|||||منتهي # #%",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-open"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"اضغط لتغيير حالة الفرع\"",
+    "sig": "button||||||||اضغط لتغيير حالة الفرع",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-close"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"اضغط لتغيير حالة الفرع\" › button \"إغلاق\"",
+    "sig": "button||||||||إغلاق",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-close"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"اضغط لتغيير حالة الفرع\" › button \"إلغاء\"",
+    "sig": "button||||||||إلغاء",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "toast",
+     "api",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"اضغط لتغيير حالة الفرع\" › button \"إغلاق الفرع\"",
+    "sig": "button||||||||إغلاق الفرع",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "route:m-settings",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "a \"تعديل الساعات\"",
+    "sig": "a|||m-settings|||||تعديل الساعات",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:m-reviews",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "a \"عرض الكل\"",
+    "sig": "a|||m-reviews|||||عرض الكل",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:m-notifications",
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "a \"عرض الكل\"",
+    "sig": "a|||m-notifications|||||عرض الكل",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:m-inventory",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"نفاد 3 أكياس وصل كيس الخبز الحرفي إلى صفر مخزون 13 س\"",
+    "sig": "button||||||||نفاد # أكياس وصل كيس الخبز الحرفي إلى صفر مخزون ",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:m-orders",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"نافذة الاستلام تُغلق قريباً 4 طلبات بانتظار الاستلام قبل 20:\"",
+    "sig": "button||||||||نافذة الاستلام تُغلق قريباً # طلبات بانتظار الاس",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:m-analytics",
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"تمت معالجة الدفعة تم تحويل 18,240 ر.ق إلى حسابك 14 س\"",
+    "sig": "button||||||||تمت معالجة الدفعة تم تحويل # ر.ق إلى حسابك # س",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:m-templates",
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"أنشئ من قالب\"",
+    "sig": "button|||m-templates|||||أنشئ من قالب",
+    "depth": 1
+   }
+  ],
+  "secs": 48.6
+ },
+ {
+  "route": "m-orders",
+  "params": {},
+  "scope": "#page",
+  "items": [
+   {
+    "effects": [
+     "route:m-drivers",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "section[link] \"السائقون النشطون 3 متاحون أو في التوصيل\"",
+    "sig": "section|link||m-drivers|||||السائقون النشطون # متاحون أو في التوصيل",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"مسح عوامل التصفية\"",
+    "sig": "button||||||||مسح عوامل التصفية",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-open",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"استيراد\"",
+    "sig": "button||import||||||استيراد",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"استيراد\" › button \"إغلاق\"",
+    "sig": "button||||||||إغلاق",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "filechooser"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"استيراد\" › div[button] \"اسحب ملفاً أو اختره CSV أو XLSX، حتى 5 ميغابايت\"",
+    "sig": "div|button|||||||اسحب ملفاً أو اختره CSV أو XLSX، حتى # ميغابايت",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "toast",
+     "download"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"استيراد\" › button \"تنزيل ملف نموذجي\"",
+    "sig": "button||tpl||||||تنزيل ملف نموذجي",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"استيراد\" › button \"إلغاء\"",
+    "sig": "button||||||||إلغاء",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "toast"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"استيراد\" › button \"التحقق من الملف\"",
+    "sig": "button||||||||التحقق من الملف",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-open",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"تصدير\"",
+    "sig": "button||export||||||تصدير",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"تصدير\" › button \"إغلاق\"",
+    "sig": "button||||||||إغلاق",
+    "depth": 2
+   },
+   {
+    "effects": [],
+    "errors": [],
+    "verdict": "already-active",
+    "overlayOpened": false,
+    "desc": "button \"تصدير\" › button \"CSV\"",
+    "sig": "button||||||||CSV",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"تصدير\" › button \"Excel (XLSX)\"",
+    "sig": "button||||||||Excel (XLSX)",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"تصدير\" › button \"PDF\"",
+    "sig": "button||||||||PDF",
+    "depth": 2
+   },
+   {
+    "effects": [],
+    "errors": [],
+    "verdict": "already-active",
+    "overlayOpened": false,
+    "desc": "button \"تصدير\" › input \"filtered\"",
+    "sig": "input|||||scope|||filtered",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"تصدير\" › input \"current_page\"",
+    "sig": "input|||||scope|||current_page",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"تصدير\" › input \"all\"",
+    "sig": "input|||||scope|||all",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"تصدير\" › button \"إلغاء\"",
+    "sig": "button||||||||إلغاء",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "toast",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"تصدير\" › button \"بدء التصدير\"",
+    "sig": "button||||||||بدء التصدير",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "api",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"الطلب\"",
+    "sig": "button||||||||الطلب",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-open",
+     "api",
+     "state:unread",
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"عرض التفاصيل\"",
+    "sig": "button|||||||row|عرض التفاصيل",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"عرض التفاصيل\" › button \"إغلاق\"",
+    "sig": "button||||||||إغلاق",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"عرض التفاصيل\" › button \"تحقق من الرمز وأكمل الطلب\"",
+    "sig": "button||verify||||||تحقق من الرمز وأكمل الطلب",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-open",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"عرض التفاصيل\" › button \"إلغاء الطلب\"",
+    "sig": "button||cancel||||||إلغاء الطلب",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-open",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"التحقق من رمز الاستلام\"",
+    "sig": "button|||||||row|التحقق من رمز الاستلام",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"التحقق من رمز الاستلام\" › button \"إغلاق\"",
+    "sig": "button||||||||إغلاق",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"التحقق من رمز الاستلام\" › button \"تحقق من الرمز وأكمل الطلب\"",
+    "sig": "button||verify||||||تحقق من الرمز وأكمل الطلب",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-open",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"التحقق من رمز الاستلام\" › button \"إلغاء الطلب\"",
+    "sig": "button||cancel||||||إلغاء الطلب",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-open",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"إلغاء الطلب\"",
+    "sig": "button|||||||row|إلغاء الطلب",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"إلغاء الطلب\" › button \"إغلاق\"",
+    "sig": "button||||||||إغلاق",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"إلغاء الطلب\" › button \"الإبقاء على الطلب\"",
+    "sig": "button||||||||الإبقاء على الطلب",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"إلغاء الطلب\" › button \"إلغاء الطلب\"",
+    "sig": "button||||||||إلغاء الطلب",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"1\"",
+    "sig": "button||||||||#",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "api",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"الصفحة التالية\"",
+    "sig": "button||||||||الصفحة التالية",
+    "depth": 1
+   },
+   {
+    "desc": "select[name=status] → active",
+    "depth": 1,
+    "effects": [
+     "api",
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok"
+   }
+  ],
+  "secs": 27.1
+ }
+]

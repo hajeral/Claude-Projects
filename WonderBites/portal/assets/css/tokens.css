@@ -1,0 +1,84 @@
+/* =====================================================================
+   WonderBites — Midnight Plum × Night Glass (refined) — TOKENS   [LEAD]
+   Night (default) + Day themes · EN (LTR) / AR (RTL) fonts & direction
+   ===================================================================== */
+:root{
+  /* brand */
+  --night:#1A0F1E; --deep:#3A2343; --plum:#583D62; --mauve:#B783A7;
+  --rose:#C65C75; --rose-2:#CB6372; --berry:#A50B5E; --rose-ink:#B34F73;
+  --cream:#F7F3EE; --cream-card:#FFFCF9; --peach:#FFF0DE; --cream-line:#EDE5DB;
+  --g-deep:#0C432E; --g-mid:#2D6F3F; --g-bright:#11A849; --lime:#B7EF76; --orange:#E87C40;
+  /* layout (client audit: 24px gutters, 68px header, 16px card radius) */
+  --side-w:248px; --head-h:68px; --gap:24px; --pad:20px; --r-card:16px; --r-ctl:11px; --r-sm:8px; --r-pill:999px;
+  --fs-xs:11px; --fs-sm:12px; --fs-md:13px; --fs-lg:14.5px; --fs-title:28px;
+  --wm:'Playfair Display', Georgia, serif;
+  --mono:ui-monospace, SFMono-Regular, Menlo, monospace;
+  --focus-ring:0 0 0 3px rgba(236,138,161,.55);
+  color-scheme:dark;
+}
+/* language → fonts & reading direction helper */
+html[lang="en"]{--font-ui:'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif; --font-display:'Playfair Display', Georgia, serif; --font-num:'Inter', system-ui, sans-serif; --lh:1.45; --dir:ltr}
+html[lang="ar"]{--font-ui:'IBM Plex Sans Arabic', 'Noto Sans Arabic', Tahoma, sans-serif; --font-display:'Noto Naskh Arabic', 'IBM Plex Sans Arabic', serif; --font-num:'Noto Naskh Arabic', 'IBM Plex Sans Arabic', serif; --lh:1.6; --dir:rtl}
+/* direction-aware decoration (gradients that start on the reading-start side) */
+html[dir="ltr"]{--g-start:90deg; --g-act:135deg; --g-ban:100deg; --sx:3px; --s-x:0%; --e-x:100%}
+html[dir="rtl"]{--g-start:270deg; --g-act:225deg; --g-ban:260deg; --sx:-3px; --s-x:100%; --e-x:0%}
+
+/* ------------------------------ NIGHT ------------------------------ */
+html[data-theme="dark"]{
+  --bg:#1E1223; --bg-glow1:rgba(198,92,117,.16); --bg-glow2:rgba(88,61,98,.45);
+  --side:#140A17; --side-line:rgba(183,131,167,.14); --side-text:#CDBBC7; --side-faint:#A8919F;
+  --card:#2A1A30; --card-2:#352240; --card-3:#3A2343; --field:rgba(255,255,255,.045); --field-solid:#2E1D35;
+  --line:rgba(183,131,167,.17); --line-2:rgba(183,131,167,.28); --line-soft:rgba(183,131,167,.1);
+  --text:#F7F3EE; --muted:#CDBBC7; --faint:#A8919F;
+  --accent:#EC8AA1; --accent-strong:#B34F73; --on-accent:#FFFFFF;
+  --pos:#B7EF76; --neg:#F59AAE; --warn:#FFAE7A;
+  --glass:rgba(30,18,35,.66); --glass-line:rgba(183,131,167,.18);
+  --overlay-bg:rgba(10,5,12,.6); --pop:#2E1C35; --pop-line:rgba(236,138,161,.22);
+  --grid:rgba(183,131,167,.13);
+  --pill-g-bg:rgba(17,168,73,.16); --pill-g:#9BE8A9;
+  --pill-o-bg:rgba(232,124,64,.17); --pill-o:#FFB88A;
+  --pill-r-bg:rgba(198,92,117,.2);  --pill-r:#F7A3B6;
+  --pill-n-bg:rgba(247,243,238,.08); --pill-n:#C6B5C0;
+  --pill-m-bg:rgba(183,131,167,.2); --pill-m:#E3BEDA;
+  --tint-rose:rgba(198,92,117,.18); --tint-green:rgba(17,168,73,.16); --tint-orange:rgba(232,124,64,.17); --tint-mauve:rgba(183,131,167,.18); --tint-berry:rgba(165,11,94,.28);
+  --ic-rose:#F49AB0; --ic-green:#9BE8A9; --ic-orange:#FFB88A; --ic-mauve:#E3BEDA; --ic-berry:#F58CC0;
+  --row-hover:rgba(183,131,167,.07); --thead:transparent;
+  --line-rose:#E07890; --line-lime:#B7EF76; --line-mauve:#B783A7; --line-green:#11A849; --line-orange:#FFAE7A; --line-grey:#76646F; --line-berry:#C2457F;
+  --glow-rose:drop-shadow(0 0 5px rgba(236,138,161,.55)); --glow-lime:drop-shadow(0 0 5px rgba(183,239,118,.45));
+  /* Night Glass card */
+  --a-s1:rgba(55,35,66,.74); --a-s2:rgba(37,23,44,.74); --a-line:rgba(236,138,161,.17); --a-hi:rgba(255,255,255,.07);
+  --a-shadow:0 26px 50px -30px rgba(0,0,0,.85);
+  --glow-c-rose:rgba(236,138,161,.16); --glow-c-lime:rgba(183,239,118,.13); --glow-c-orange:rgba(255,174,122,.13); --glow-c-mauve:rgba(183,131,167,.16);
+  --glow-o:.4;  /* art-director refinement: non-hero glow at ~40% */
+  --skel:rgba(183,131,167,.12);
+}
+/* ------------------------------- DAY ------------------------------- */
+html[data-theme="light"]{
+  color-scheme:light;
+  --bg:#F7F3EE; --bg-glow1:rgba(198,92,117,.08); --bg-glow2:rgba(255,240,222,.9);
+  --side:#1A0F1E; --side-line:rgba(183,131,167,.14); --side-text:#CDBBC7; --side-faint:#A8919F;
+  --card:#FFFCF9; --card-2:#F7F1EA; --card-3:#FFF0DE; --field:#F7F1EA; --field-solid:#F7F1EA;
+  --line:#EDE5DB; --line-2:#E2D6C9; --line-soft:#F1EAE2;
+  --text:#1A0F1E; --muted:#5B4B57; --faint:#76646F;
+  --accent:#A8476A; --accent-strong:#B34F73; --on-accent:#FFFFFF;
+  --pos:#2D6F3F; --neg:#B0284E; --warn:#B4561F;
+  --glass:rgba(247,243,238,.8); --glass-line:#EDE5DB;
+  --overlay-bg:rgba(26,15,30,.38); --pop:#FFFCF9; --pop-line:#E2D6C9;
+  --grid:#EDE5DB;
+  --pill-g-bg:#E3F2E6; --pill-g:#21613A;
+  --pill-o-bg:#FFEBDA; --pill-o:#A44A16;
+  --pill-r-bg:#FBE3E9; --pill-r:#A12D55;
+  --pill-n-bg:#EFEAE5; --pill-n:#5F5560;
+  --pill-m-bg:#F4E7F0; --pill-m:#7E4471;
+  --tint-rose:#FBE6EB; --tint-green:#E1F0E4; --tint-orange:#FFEAD9; --tint-mauve:#F2E6EF; --tint-berry:#F7DDEA;
+  --ic-rose:#B34F73; --ic-green:#2D6F3F; --ic-orange:#C0601F; --ic-mauve:#8A5A80; --ic-berry:#A50B5E;
+  --row-hover:#FBF6F1; --thead:transparent;
+  --line-rose:#C65C75; --line-lime:#2D6F3F; --line-mauve:#8A5A80; --line-green:#11A849; --line-orange:#E87C40; --line-grey:#9C8E97; --line-berry:#A50B5E;
+  --glow-rose:none; --glow-lime:none;
+  --a-s1:rgba(255,252,249,.94); --a-s2:rgba(255,249,243,.94); --a-line:#EDE5DB; --a-hi:#fff;
+  --a-shadow:0 1px 2px rgba(26,15,30,.04),0 14px 30px -22px rgba(58,35,67,.3);
+  --glow-c-rose:rgba(198,92,117,.07); --glow-c-lime:rgba(45,111,63,.07); --glow-c-orange:rgba(232,124,64,.07); --glow-c-mauve:rgba(183,131,167,.08);
+  --glow-o:.4;
+  --skel:#EFE7DE;
+  --focus-ring:0 0 0 3px rgba(179,79,115,.45);
+}

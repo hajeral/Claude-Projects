@@ -1,0 +1,4190 @@
+[
+ {
+  "route": "admin-command-center (chrome)",
+  "params": {},
+  "scope": ".side, .top",
+  "items": [
+   {
+    "effects": [
+     "api",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "a \"WonderBites\"",
+    "sig": "a|||admin-command-center|||||WonderBites",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "api",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "a \"Command Center\"",
+    "sig": "a|||admin-command-center|||||Command Center",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:admin-drops",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "a \"Drops\"",
+    "sig": "a|||admin-drops|||||Drops",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:admin-pickups",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "a \"Pickups\"",
+    "sig": "a|||admin-pickups|||||Pickups",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:admin-orders",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "a \"Orders & Reservations\"",
+    "sig": "a|||admin-orders|||||Orders & Reservations",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:admin-merchants",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "a \"Merchants\"",
+    "sig": "a|||admin-merchants|||||Merchants",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:admin-consumers",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "a \"Consumers\"",
+    "sig": "a|||admin-consumers|||||Consumers",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:admin-financials",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "a \"Financials\"",
+    "sig": "a|||admin-financials|||||Financials",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:admin-operations",
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "a \"Operations Analytics\"",
+    "sig": "a|||admin-operations|||||Operations Analytics",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:admin-wallet",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "a \"Wallet & Vouchers\"",
+    "sig": "a|||admin-wallet|||||Wallet & Vouchers",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:admin-quality",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "a \"Quality & Safety\"",
+    "sig": "a|||admin-quality|||||Quality & Safety",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:admin-issues",
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "a \"Issues & Alerts 4\"",
+    "sig": "a|||admin-issues|||||Issues & Alerts #",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:admin-support",
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "a \"Support\"",
+    "sig": "a|||admin-support|||||Support",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:admin-performance",
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "a \"Performance\"",
+    "sig": "a|||admin-performance|||||Performance",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:admin-sustainability",
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "a \"Sustainability & Impact\"",
+    "sig": "a|||admin-sustainability|||||Sustainability & Impact",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:admin-listings",
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "a \"Listings & Templates\"",
+    "sig": "a|||admin-listings|||||Listings & Templates",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:admin-cms",
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "a \"CMS\"",
+    "sig": "a|||admin-cms|||||CMS",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:admin-users",
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "a \"Users & Access\"",
+    "sig": "a|||admin-users|||||Users & Access",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:admin-settings",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "a \"Settings\"",
+    "sig": "a|||admin-settings|||||Settings",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:admin-sustainability",
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"This month's impact 52.4k meals 24.1t CO₂ 11.8k L water\"",
+    "sig": "button|||admin-sustainability|||||This month's impact #k meals #t CO₂ #k L water",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-open",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"Sarah Al Manasoori Super administrator\"",
+    "sig": "button||||profile||||Sarah Al Manasoori Super administrator",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:admin-settings-profile",
+     "overlay-close",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Sarah Al Manasoori Super administrator\" › button[menuitem] \"Profile settings\"",
+    "sig": "button|menuitem|||||||Profile settings",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Sarah Al Manasoori Super administrator\" › button \"EN\"",
+    "sig": "button||||||||EN",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "api",
+     "state:lang",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Sarah Al Manasoori Super administrator\" › button \"العربية\"",
+    "sig": "button||||||||العربية",
+    "depth": 2
+   },
+   {
+    "effects": [],
+    "errors": [],
+    "verdict": "already-active",
+    "overlayOpened": false,
+    "desc": "button \"Sarah Al Manasoori Super administrator\" › button \"Night\"",
+    "sig": "button||||||||Night",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change",
+     "state:theme"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Sarah Al Manasoori Super administrator\" › button \"Day\"",
+    "sig": "button||||||||Day",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change",
+     "api",
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Sarah Al Manasoori Super administrator\" › button[menuitem] \"Help & support\"",
+    "sig": "button|menuitem|||||||Help & support",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "route:launcher",
+     "overlay-close"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Sarah Al Manasoori Super administrator\" › button[menuitem] \"Switch portal\"",
+    "sig": "button|menuitem|||||||Switch portal",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Sarah Al Manasoori Super administrator\" › button[menuitem] \"Log out\"",
+    "sig": "button|menuitem|||||||Log out",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-open",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"Market: All markets\"",
+    "sig": "button||||market||||Market: All markets",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "toast",
+     "api",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Market: All markets\" › button[menuitemradio] \"All markets Totals in QAR\"",
+    "sig": "button|menuitemradio|||||||All markets Totals in QAR",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "toast",
+     "api",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Market: All markets\" › button[menuitemradio] \"Qatar QAR · +974 · Asia/Qatar\"",
+    "sig": "button|menuitemradio|||||||Qatar QAR · +# · Asia/Qatar",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "toast",
+     "api",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Market: All markets\" › button[menuitemradio] \"United Arab Emirates AED · +971 · Asia/Dubai\"",
+    "sig": "button|menuitemradio|||||||United Arab Emirates AED · +# · Asia/Dubai",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "toast",
+     "api",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Market: All markets\" › button[menuitemradio] \"Saudi Arabia SAR · +966 · Asia/Riyadh\"",
+    "sig": "button|menuitemradio|||||||Saudi Arabia SAR · +# · Asia/Riyadh",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "route:admin-settings-markets",
+     "overlay-close",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Market: All markets\" › button[menuitem] \"Manage markets\"",
+    "sig": "button|menuitem|||||||Manage markets",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-open",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"Search drops, merchants, issues… /\"",
+    "sig": "button||||search||||Search drops, merchants, issues… /",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-change",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Search drops, merchants, issues… /\" › button[option] \"DR-3391\"",
+    "sig": "button|option|||||||DR-#",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Search drops, merchants, issues… /\" › button[option] \"Green Bowl\"",
+    "sig": "button|option|||||||Green Bowl",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Search drops, merchants, issues… /\" › button[option] \"#1092\"",
+    "sig": "button|option|||||||##",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Search drops, merchants, issues… /\" › button[option] \"Sunrise\"",
+    "sig": "button|option|||||||Sunrise",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-open",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"Oct 20 – Nov 19\"",
+    "sig": "button||||date||||Oct # – Nov #",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-change"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Oct 20 – Nov 19\" › button \"Today\"",
+    "sig": "button||||||||Today",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Oct 20 – Nov 19\" › button \"Last 7 days\"",
+    "sig": "button||||||||Last # days",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Oct 20 – Nov 19\" › button \"This month\"",
+    "sig": "button||||||||This month",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Oct 20 – Nov 19\" › button \"Last month\"",
+    "sig": "button||||||||Last month",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Oct 20 – Nov 19\" › button \"Custom\"",
+    "sig": "button||||||||Custom",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Oct 20 – Nov 19\" › button \"Previous month\"",
+    "sig": "button||||||||Previous month",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Oct 20 – Nov 19\" › button \"October 1, 2026\"",
+    "sig": "button||||||||October #, #",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Oct 20 – Nov 19\" › button \"Next month\"",
+    "sig": "button||||||||Next month",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Oct 20 – Nov 19\" › button \"November 1, 2026\"",
+    "sig": "button||||||||November #, #",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Oct 20 – Nov 19\" › button \"Cancel\"",
+    "sig": "button||||||||Cancel",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "toast",
+     "api",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Oct 20 – Nov 19\" › button \"Apply\"",
+    "sig": "button||||||||Apply",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-open",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"Export\"",
+    "sig": "button||||export||||Export",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Export\" › button \"Close\"",
+    "sig": "button||||||||Close",
+    "depth": 2
+   },
+   {
+    "effects": [],
+    "errors": [],
+    "verdict": "already-active",
+    "overlayOpened": false,
+    "desc": "button \"Export\" › button \"CSV\"",
+    "sig": "button||||||||CSV",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Export\" › button \"Excel (XLSX)\"",
+    "sig": "button||||||||Excel (XLSX)",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Export\" › button \"PDF\"",
+    "sig": "button||||||||PDF",
+    "depth": 2
+   },
+   {
+    "effects": [],
+    "errors": [],
+    "verdict": "already-active",
+    "overlayOpened": false,
+    "desc": "button \"Export\" › input \"filtered\"",
+    "sig": "input|||||scope|||filtered",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Export\" › input \"current_page\"",
+    "sig": "input|||||scope|||current_page",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Export\" › input \"all\"",
+    "sig": "input|||||scope|||all",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Export\" › button \"Cancel\"",
+    "sig": "button||||||||Cancel",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "toast",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Export\" › button \"Start export\"",
+    "sig": "button||||||||Start export",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-open",
+     "api",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"Notifications\"",
+    "sig": "button||||notifications||||Notifications",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-change",
+     "toast",
+     "api",
+     "state:unread",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Notifications\" › button \"Mark all as read\"",
+    "sig": "button||||||||Mark all as read",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Notifications\" › button[tab] \"All\"",
+    "sig": "button|tab|||||||All",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change",
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Notifications\" › button[tab] \"Unread\"",
+    "sig": "button|tab|||||||Unread",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change",
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Notifications\" › button[tab] \"Downloads\"",
+    "sig": "button|tab|||||||Downloads",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "route:admin-issues",
+     "overlay-change",
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Notifications\" › button \"Green Bowl Kitchen — spoiled inventory reported Critical · M\"",
+    "sig": "button||||||||Green Bowl Kitchen — spoiled inventory reported ",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "route:admin-drops",
+     "overlay-change",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Notifications\" › button \"Drop #482 pickup window closes soon Warning · 15 min left 13\"",
+    "sig": "button||||||||Drop ## pickup window closes soon Warning · # mi",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "route:admin-merchants",
+     "overlay-close",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Notifications\" › button \"New merchant onboarding awaiting review Information · Fresh \"",
+    "sig": "button||||||||New merchant onboarding awaiting review Informat",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "route:admin-quality",
+     "overlay-close",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Notifications\" › button \"Weekly quality report is ready Monitor · Auto-generated 13h\"",
+    "sig": "button||||||||Weekly quality report is ready Monitor · Auto-ge",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "route:admin-financials",
+     "overlay-close",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Notifications\" › button \"Payout batch settled QAR 135,120 paid to 42 merchants 17h\"",
+    "sig": "button||||||||Payout batch settled QAR # paid to # merchants #",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "route:admin-pickups",
+     "overlay-close",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Notifications\" › button \"78 pickup passports need attention Pickup Passport Monitorin\"",
+    "sig": "button||||||||# pickup passports need attention Pickup Passpor",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "route:admin-settings-notifications",
+     "overlay-close",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Notifications\" › a \"Notification settings\"",
+    "sig": "a|||admin-settings-notifications|||||Notification settings",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "route:admin-notifications",
+     "overlay-close",
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Notifications\" › a \"View all\"",
+    "sig": "a|||admin-notifications|||||View all",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "api",
+     "state:lang",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"العربية\"",
+    "sig": "button||lang||||||العربية",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-open",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"Profile menu\"",
+    "sig": "button||||profile||||Profile menu",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:admin-settings-profile",
+     "overlay-close",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Profile menu\" › button[menuitem] \"Profile settings\"",
+    "sig": "button|menuitem|||||||Profile settings",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Profile menu\" › button \"EN\"",
+    "sig": "button||||||||EN",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "api",
+     "state:lang",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Profile menu\" › button \"العربية\"",
+    "sig": "button||||||||العربية",
+    "depth": 2
+   },
+   {
+    "effects": [],
+    "errors": [],
+    "verdict": "already-active",
+    "overlayOpened": false,
+    "desc": "button \"Profile menu\" › button \"Night\"",
+    "sig": "button||||||||Night",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change",
+     "state:theme"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Profile menu\" › button \"Day\"",
+    "sig": "button||||||||Day",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change",
+     "api",
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Profile menu\" › button[menuitem] \"Help & support\"",
+    "sig": "button|menuitem|||||||Help & support",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "route:launcher",
+     "overlay-close"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Profile menu\" › button[menuitem] \"Switch portal\"",
+    "sig": "button|menuitem|||||||Switch portal",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Profile menu\" › button[menuitem] \"Log out\"",
+    "sig": "button|menuitem|||||||Log out",
+    "depth": 2
+   }
+  ],
+  "secs": 84.7
+ },
+ {
+  "route": "m-overview (chrome)",
+  "params": {},
+  "scope": ".side, .top",
+  "items": [
+   {
+    "effects": [
+     "api",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "a \"WonderBites\"",
+    "sig": "a|||m-overview|||||WonderBites",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:m-settings",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Store info\"",
+    "sig": "button|||m-settings|||||Store info",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "api",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "a \"Overview\"",
+    "sig": "a|||m-overview|||||Overview",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:m-orders",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "a \"Orders & Pickups 6\"",
+    "sig": "a|||m-orders|||||Orders & Pickups #",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:m-listings",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "a \"Listings (Bags)\"",
+    "sig": "a|||m-listings|||||Listings (Bags)",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:m-inventory",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "a \"Inventory\"",
+    "sig": "a|||m-inventory|||||Inventory",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:m-drivers",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "a \"Driver\"",
+    "sig": "a|||m-drivers|||||Driver",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:m-analytics",
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "a \"Analytics\"",
+    "sig": "a|||m-analytics|||||Analytics",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:m-customers",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "a \"Customers\"",
+    "sig": "a|||m-customers|||||Customers",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:m-branches",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "a \"Branches\"",
+    "sig": "a|||m-branches|||||Branches",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:m-reviews",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "a \"Reviews\"",
+    "sig": "a|||m-reviews|||||Reviews",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:m-reports",
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "a \"Reports / Dispute\"",
+    "sig": "a|||m-reports|||||Reports / Dispute",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:m-templates",
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "a \"Templates\"",
+    "sig": "a|||m-templates|||||Templates",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:m-settings",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "a \"Settings\"",
+    "sig": "a|||m-settings|||||Settings",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:m-sustainability",
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"This month's impact 412 meals 1.0t CO₂ 9.8k L water\"",
+    "sig": "button|||m-sustainability|||||This month's impact # meals #t CO₂ #k L water",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-open",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"Need Help?\"",
+    "sig": "button||||help||||Need Help?",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Need Help?\" › button \"Close\"",
+    "sig": "button||||||||Close",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Need Help?\" › summary \"How do I create a new surprise bag?\"",
+    "sig": "summary||||||||How do I create a new surprise bag?",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Need Help?\" › summary \"When do I receive my payouts?\"",
+    "sig": "summary||||||||When do I receive my payouts?",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Need Help?\" › summary \"How do I change today’s pickup window?\"",
+    "sig": "summary||||||||How do I change today’s pickup window?",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Need Help?\" › summary \"What happens if a customer doesn’t show up?\"",
+    "sig": "summary||||||||What happens if a customer doesn’t show up?",
+    "depth": 2
+   },
+   {
+    "verdict": "ok",
+    "effects": [
+     "external-link:tel:+97455500800"
+    ],
+    "desc": "button \"Need Help?\" › a \"Call support 5550 0800\"",
+    "sig": "a||||||tel:+97455500800||Call support # #",
+    "depth": 2
+   },
+   {
+    "verdict": "ok",
+    "effects": [
+     "external-link:mailto:support@wonderbites.qa"
+    ],
+    "desc": "button \"Need Help?\" › a \"Email us support@wonderbites.qa\"",
+    "sig": "a||||||mailto:support@wonderbites.qa||Email us support@wonderbites.qa",
+    "depth": 2
+   },
+   {
+    "verdict": "ok",
+    "effects": [
+     "external-link:https://wa.me/97455500801"
+    ],
+    "desc": "button \"Need Help?\" › a \"WhatsApp +97455500801\"",
+    "sig": "a||||||https://wa.me/97455500801||WhatsApp +#",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "toast"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Need Help?\" › button \"Live chat Avg. reply 3 min\"",
+    "sig": "button||||||||Live chat Avg. reply # min",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "route:m-help",
+     "overlay-close",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Need Help?\" › button \"View my tickets\"",
+    "sig": "button||||||||View my tickets",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Need Help?\" › button \"Submit ticket\"",
+    "sig": "button||||||||Submit ticket",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-open",
+     "api",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"West Bay Branch\"",
+    "sig": "button||||branch||||West Bay Branch",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "toast",
+     "api",
+     "state:branch",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"West Bay Branch\" › button[menuitem] \"All branches Every branch, each in its own currency\"",
+    "sig": "button|menuitem|||||||All branches Every branch, each in its own curre",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "toast",
+     "api",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"West Bay Branch\" › button[menuitem] \"West Bay Branch Doha, Qatar · Open · QAR\"",
+    "sig": "button|menuitem|||||||West Bay Branch Doha, Qatar · Open · QAR",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "toast",
+     "api",
+     "state:branch",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"West Bay Branch\" › button[menuitem] \"The Pearl Branch Doha, Qatar · Open · QAR\"",
+    "sig": "button|menuitem|||||||The Pearl Branch Doha, Qatar · Open · QAR",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "toast",
+     "api",
+     "state:branch",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"West Bay Branch\" › button[menuitem] \"Al Sadd Branch Doha, Qatar · Closed · QAR\"",
+    "sig": "button|menuitem|||||||Al Sadd Branch Doha, Qatar · Closed · QAR",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "route:m-branches",
+     "overlay-close",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"West Bay Branch\" › button[menuitem] \"Manage branches\"",
+    "sig": "button|menuitem|||||||Manage branches",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-open",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"Oct 20 – Nov 19\"",
+    "sig": "button||||date||||Oct # – Nov #",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-change"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Oct 20 – Nov 19\" › button \"Today\"",
+    "sig": "button||||||||Today",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Oct 20 – Nov 19\" › button \"Last 7 days\"",
+    "sig": "button||||||||Last # days",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Oct 20 – Nov 19\" › button \"This month\"",
+    "sig": "button||||||||This month",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Oct 20 – Nov 19\" › button \"Last month\"",
+    "sig": "button||||||||Last month",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Oct 20 – Nov 19\" › button \"Custom\"",
+    "sig": "button||||||||Custom",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Oct 20 – Nov 19\" › button \"Previous month\"",
+    "sig": "button||||||||Previous month",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Oct 20 – Nov 19\" › button \"October 1, 2026\"",
+    "sig": "button||||||||October #, #",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Oct 20 – Nov 19\" › button \"Next month\"",
+    "sig": "button||||||||Next month",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Oct 20 – Nov 19\" › button \"November 1, 2026\"",
+    "sig": "button||||||||November #, #",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Oct 20 – Nov 19\" › button \"Cancel\"",
+    "sig": "button||||||||Cancel",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "toast",
+     "api",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Oct 20 – Nov 19\" › button \"Apply\"",
+    "sig": "button||||||||Apply",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-open",
+     "api",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"Notifications\"",
+    "sig": "button||||notifications||||Notifications",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-change",
+     "toast",
+     "api",
+     "state:unread",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Notifications\" › button \"Mark all as read\"",
+    "sig": "button||||||||Mark all as read",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Notifications\" › button[tab] \"All\"",
+    "sig": "button|tab|||||||All",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change",
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Notifications\" › button[tab] \"Unread\"",
+    "sig": "button|tab|||||||Unread",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change",
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Notifications\" › button[tab] \"Downloads\"",
+    "sig": "button|tab|||||||Downloads",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "route:m-inventory",
+     "overlay-close",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Notifications\" › button \"3 bags sold out Artisan Bread Bag reached zero stock 13h\"",
+    "sig": "button||||||||# bags sold out Artisan Bread Bag reached zero s",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "route:m-orders",
+     "overlay-close",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Notifications\" › button \"Pickup window closing soon 4 orders awaiting collection by 2\"",
+    "sig": "button||||||||Pickup window closing soon # orders awaiting col",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "route:m-analytics",
+     "overlay-close",
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Notifications\" › button \"Payout processed QAR 18,240 settled to your account 13h\"",
+    "sig": "button||||||||Payout processed QAR # settled to your account #",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "route:m-reviews",
+     "overlay-close",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Notifications\" › button \"New 5-star review Amina K. reviewed Morning Pastry Box 14h\"",
+    "sig": "button||||||||New #-star review Amina K. reviewed Morning Past",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "route:m-orders",
+     "overlay-change",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Notifications\" › button \"Driver assigned Faisal Noor is delivering MO-5208 16h\"",
+    "sig": "button||||||||Driver assigned Faisal Noor is delivering MO-# #",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "route:m-settings",
+     "overlay-close",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Notifications\" › a \"Notification settings\"",
+    "sig": "a|||m-settings|||||Notification settings",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "route:m-notifications",
+     "overlay-close",
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Notifications\" › a \"View all\"",
+    "sig": "a|||m-notifications|||||View all",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "api",
+     "state:lang",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"العربية\"",
+    "sig": "button||lang||||||العربية",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-open",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"Profile menu\"",
+    "sig": "button||||profile||||Profile menu",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:m-settings",
+     "overlay-close",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Profile menu\" › button[menuitem] \"Profile settings\"",
+    "sig": "button|menuitem|||||||Profile settings",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "route:m-settings",
+     "overlay-close",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Profile menu\" › button[menuitem] \"Store info\"",
+    "sig": "button|menuitem|||||||Store info",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Profile menu\" › button \"EN\"",
+    "sig": "button||||||||EN",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "api",
+     "state:lang",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Profile menu\" › button \"العربية\"",
+    "sig": "button||||||||العربية",
+    "depth": 2
+   },
+   {
+    "effects": [],
+    "errors": [],
+    "verdict": "already-active",
+    "overlayOpened": false,
+    "desc": "button \"Profile menu\" › button \"Night\"",
+    "sig": "button||||||||Night",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change",
+     "state:theme"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Profile menu\" › button \"Day\"",
+    "sig": "button||||||||Day",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change",
+     "api",
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Profile menu\" › button[menuitem] \"Help & support\"",
+    "sig": "button|menuitem|||||||Help & support",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "route:launcher",
+     "overlay-close"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Profile menu\" › button[menuitem] \"Switch portal\"",
+    "sig": "button|menuitem|||||||Switch portal",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Profile menu\" › button[menuitem] \"Log out\"",
+    "sig": "button|menuitem|||||||Log out",
+    "depth": 2
+   }
+  ],
+  "secs": 68.6
+ },
+ {
+  "route": "m-signup",
+  "params": {},
+  "scope": "#page",
+  "items": [
+   {
+    "effects": [],
+    "errors": [],
+    "verdict": "already-active",
+    "overlayOpened": false,
+    "desc": "button \"EN\"",
+    "sig": "button||||||||EN",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "state:lang",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"العربية\"",
+    "sig": "button||||||||العربية",
+    "depth": 1
+   },
+   {
+    "effects": [],
+    "errors": [],
+    "verdict": "already-active",
+    "overlayOpened": false,
+    "desc": "button \"Night\"",
+    "sig": "button||||||||Night",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "state:theme",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Day\"",
+    "sig": "button||||||||Day",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:m-login",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "a \"Sign In\"",
+    "sig": "a|||m-login|||||Sign In",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Show password\"",
+    "sig": "button||||||||Show password",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "input \"on\"",
+    "sig": "input|||||acceptTerms|||on",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-open"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "a \"Terms & Conditions\"",
+    "sig": "a||||||||Terms & Conditions",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-close"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "a \"Terms & Conditions\" › button \"Close\"",
+    "sig": "button||||||||Close",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-open"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "a \"Privacy Policy\"",
+    "sig": "a||||||||Privacy Policy",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-close"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "a \"Privacy Policy\" › button \"Close\"",
+    "sig": "button||||||||Close",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Create account\"",
+    "sig": "button||||||||Create account",
+    "depth": 1
+   }
+  ],
+  "secs": 8.0
+ },
+ {
+  "route": "admin-settings-markets",
+  "params": {},
+  "scope": "#page",
+  "items": [
+   {
+    "effects": [
+     "route:admin-settings-profile",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "a \"Profile\"",
+    "sig": "a|||admin-settings-profile|||||Profile",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:admin-settings",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "a \"General\"",
+    "sig": "a|||admin-settings|||||General",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "api",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "a \"Markets\"",
+    "sig": "a|||admin-settings-markets|||||Markets",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:admin-settings-notifications",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "a \"Notifications\"",
+    "sig": "a|||admin-settings-notifications|||||Notifications",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:admin-settings-security",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "a \"Security\"",
+    "sig": "a|||admin-settings-security|||||Security",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:admin-settings-policies",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "a \"Policies\"",
+    "sig": "a|||admin-settings-policies|||||Policies",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-open",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button[switch] \"Enabled\"",
+    "sig": "button|switch||||||row|Enabled",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "api",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button[switch] \"Enabled\" › button \"Close\"",
+    "sig": "button||||||||Close",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "api",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button[switch] \"Enabled\" › button \"Cancel\"",
+    "sig": "button||||||||Cancel",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "toast",
+     "api",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button[switch] \"Enabled\" › button \"Disable market\"",
+    "sig": "button||||||||Disable market",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-open"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"5 cities\"",
+    "sig": "button|||||||row|# cities",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-close"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"5 cities\" › button \"Close\"",
+    "sig": "button||||||||Close",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "toast",
+     "api",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"5 cities\" › button[switch] \"Active\"",
+    "sig": "button|switch|||||||Active",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-open",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"5 cities\" › button \"\"",
+    "sig": "button||||||||",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-open",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"5 cities\" › button \"Add city\"",
+    "sig": "button||||||||Add city",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-open",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"\"",
+    "sig": "button|||||||row|",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"\" › button \"Close\"",
+    "sig": "button||||||||Close",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"\" › button \"Cancel\"",
+    "sig": "button||||||||Cancel",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "toast",
+     "api",
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"\" › button \"Save changes\"",
+    "sig": "button||||||||Save changes",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "toast",
+     "api",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Save rates\"",
+    "sig": "button||||||||Save rates",
+    "depth": 1
+   }
+  ],
+  "secs": 15.3
+ },
+ {
+  "route": "admin-orders",
+  "params": {},
+  "scope": "#page",
+  "items": [
+   {
+    "effects": [
+     "api",
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "section[link] \"Refunded / Cancelled 2 Needs attention\"",
+    "sig": "section|link||admin-orders|||||Refunded / Cancelled # Needs attention",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "api",
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "section[link] \"Pending Confirmation 2 Awaiting restaurant\"",
+    "sig": "section|link||admin-orders|||||Pending Confirmation # Awaiting restaurant",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Clear Filters\"",
+    "sig": "button||||||||Clear Filters",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-open",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"Export\"",
+    "sig": "button||export||||||Export",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Export\" › button \"Close\"",
+    "sig": "button||||||||Close",
+    "depth": 2
+   },
+   {
+    "effects": [],
+    "errors": [],
+    "verdict": "already-active",
+    "overlayOpened": false,
+    "desc": "button \"Export\" › button \"CSV\"",
+    "sig": "button||||||||CSV",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Export\" › button \"Excel (XLSX)\"",
+    "sig": "button||||||||Excel (XLSX)",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Export\" › button \"PDF\"",
+    "sig": "button||||||||PDF",
+    "depth": 2
+   },
+   {
+    "effects": [],
+    "errors": [],
+    "verdict": "already-active",
+    "overlayOpened": false,
+    "desc": "button \"Export\" › input \"filtered\"",
+    "sig": "input|||||scope|||filtered",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Export\" › input \"current_page\"",
+    "sig": "input|||||scope|||current_page",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Export\" › input \"all\"",
+    "sig": "input|||||scope|||all",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Export\" › button \"Cancel\"",
+    "sig": "button||||||||Cancel",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "toast",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Export\" › button \"Start export\"",
+    "sig": "button||||||||Start export",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "input \"Select all rows\"",
+    "sig": "input||||||||Select all rows",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "api",
+     "state:unread",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Amount\"",
+    "sig": "button||||||||Amount",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "api",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Placed\"",
+    "sig": "button||||||||Placed",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "input \"Select row\"",
+    "sig": "input|||||||row|Select row",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-open",
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"View\"",
+    "sig": "button|||||||row|View",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-close"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"View\" › button \"Close\"",
+    "sig": "button||||||||Close",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "route:admin-consumer-detail",
+     "overlay-close",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"View\" › a \"Layla Hassan\"",
+    "sig": "a|||admin-consumer-detail|||||Layla Hassan",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "route:admin-merchant-detail",
+     "overlay-close",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"View\" › a \"Green Bowl Kitchen\"",
+    "sig": "a|||admin-merchant-detail|||||Green Bowl Kitchen",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-open",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"View\" › button \"Cancel order\"",
+    "sig": "button||||||||Cancel order",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "route:admin-pickups",
+     "overlay-change",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"View\" › button \"View pickup\"",
+    "sig": "button||||||||View pickup",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-open",
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"View\" › button \"Issue refund\"",
+    "sig": "button||||||||Issue refund",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"1\"",
+    "sig": "button||||||||#",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "api",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Next page\"",
+    "sig": "button||||||||Next page",
+    "depth": 1
+   },
+   {
+    "desc": "select[name=status] → reserved",
+    "depth": 1,
+    "effects": [
+     "api",
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok"
+   },
+   {
+    "desc": "select[name=category] → bakery",
+    "depth": 1,
+    "effects": [
+     "api",
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok"
+   },
+   {
+    "desc": "select[name=city] → al_rayyan",
+    "depth": 1,
+    "effects": [
+     "api",
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok"
+   },
+   {
+    "desc": "select[name=dietary] → vegetarian",
+    "depth": 1,
+    "effects": [
+     "api",
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok"
+   },
+   {
+    "desc": "select[name=sort] → createdAt",
+    "depth": 1,
+    "effects": [
+     "api",
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok"
+   }
+  ],
+  "secs": 20.3
+ },
+ {
+  "route": "admin-merchants",
+  "params": {},
+  "scope": "#page",
+  "items": [
+   {
+    "effects": [
+     "api",
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "section[link] \"Pending Verification 2 Awaiting review\"",
+    "sig": "section|link||admin-merchants|||||Pending Verification # Awaiting review",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "api",
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "section[link] \"Verified & Active 6 Selling on platform\"",
+    "sig": "section|link||admin-merchants|||||Verified & Active # Selling on platform",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "api",
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "section[link] \"Suspended 1 Not currently active\"",
+    "sig": "section|link||admin-merchants|||||Suspended # Not currently active",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:admin-quality",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "section[link] \"Avg Quality Score 72 Across scored merchants\"",
+    "sig": "section|link||admin-quality|||||Avg Quality Score # Across scored merchants",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Clear Filters\"",
+    "sig": "button||||||||Clear Filters",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-open",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"Export\"",
+    "sig": "button||export||||||Export",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Export\" › button \"Close\"",
+    "sig": "button||||||||Close",
+    "depth": 2
+   },
+   {
+    "effects": [],
+    "errors": [],
+    "verdict": "already-active",
+    "overlayOpened": false,
+    "desc": "button \"Export\" › button \"CSV\"",
+    "sig": "button||||||||CSV",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Export\" › button \"Excel (XLSX)\"",
+    "sig": "button||||||||Excel (XLSX)",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Export\" › button \"PDF\"",
+    "sig": "button||||||||PDF",
+    "depth": 2
+   },
+   {
+    "effects": [],
+    "errors": [],
+    "verdict": "already-active",
+    "overlayOpened": false,
+    "desc": "button \"Export\" › input \"filtered\"",
+    "sig": "input|||||scope|||filtered",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Export\" › input \"current_page\"",
+    "sig": "input|||||scope|||current_page",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Export\" › input \"all\"",
+    "sig": "input|||||scope|||all",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Export\" › button \"Cancel\"",
+    "sig": "button||||||||Cancel",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "toast",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Export\" › button \"Start export\"",
+    "sig": "button||||||||Start export",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "route:admin-merchant-new",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Add Merchant\"",
+    "sig": "button|||admin-merchant-new|||||Add Merchant",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "api",
+     "state:unread",
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "input \"Select all rows\"",
+    "sig": "input||||||||Select all rows",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "api",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Merchant\"",
+    "sig": "button||||||||Merchant",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "api",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Quality\"",
+    "sig": "button||||||||Quality",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "api",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Revenue\"",
+    "sig": "button||||||||Revenue",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "input \"Select row\"",
+    "sig": "input|||||||row|Select row",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:admin-merchant-detail",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"View\"",
+    "sig": "button|||||||row|View",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"1\"",
+    "sig": "button||||||||#",
+    "depth": 1
+   },
+   {
+    "desc": "select[name=status] → pending",
+    "depth": 1,
+    "effects": [
+     "api",
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok"
+   },
+   {
+    "desc": "select[name=category] → bakery",
+    "depth": 1,
+    "effects": [
+     "api",
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok"
+   },
+   {
+    "desc": "select[name=city] → al_rayyan",
+    "depth": 1,
+    "effects": [
+     "api",
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok"
+   },
+   {
+    "desc": "select[name=sort] → joinedAt",
+    "depth": 1,
+    "effects": [
+     "api",
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok"
+   }
+  ],
+  "secs": 17.0
+ },
+ {
+  "route": "admin-financials",
+  "params": {},
+  "scope": "#page",
+  "items": [
+   {
+    "effects": [
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "section[button] \"Pending Merchant Payouts QAR 36,938 0% No change\"",
+    "sig": "section|button|||||||Pending Merchant Payouts QAR # #% No change",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "api",
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "section[button] \"Refund Value QAR 420 −7.8% vs. previous period\"",
+    "sig": "section|button|||||||Refund Value QAR # −#% vs. previous period",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:admin-wallet",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "section[link] \"Voucher / Credits Liability QAR 6,412 +12.2% vs. previous pe\"",
+    "sig": "section|link||admin-wallet|||||Voucher / Credits Liability QAR # +#% vs. previo",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-open",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"About this card\"",
+    "sig": "button||||||||About this card",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-open",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"Period: This Period\"",
+    "sig": "button||||||||Period: This Period",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "api",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Period: This Period\" › button[menuitem] \"This Period\"",
+    "sig": "button|menuitem|||||||This Period",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "api",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Period: This Period\" › button[menuitem] \"Previous Period\"",
+    "sig": "button|menuitem|||||||Previous Period",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "api",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Period: This Period\" › button[menuitem] \"This Month\"",
+    "sig": "button|menuitem|||||||This Month",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "api",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Period: This Period\" › button[menuitem] \"This Week\"",
+    "sig": "button|menuitem|||||||This Week",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-open",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"Granularity: Daily\"",
+    "sig": "button||||||||Granularity: Daily",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "api",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Granularity: Daily\" › button[menuitem] \"Daily\"",
+    "sig": "button|menuitem|||||||Daily",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "api",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Granularity: Daily\" › button[menuitem] \"Weekly\"",
+    "sig": "button|menuitem|||||||Weekly",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "api",
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Amount Paid QAR 130,620 +16.8%\"",
+    "sig": "button||||||||Amount Paid QAR # +#%",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "api",
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Pending Payout QAR 36,938 —\"",
+    "sig": "button||||||||Pending Payout QAR # —",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "api",
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Failed / Held Payouts QAR 1,083 −12.3%\"",
+    "sig": "button||||||||Failed / Held Payouts QAR # −#%",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "api",
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"View all payouts\"",
+    "sig": "button||||||||View all payouts",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "api",
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Refund Amount QAR 420 −7.8%\"",
+    "sig": "button||||||||Refund Amount QAR # −#%",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:admin-wallet",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Credits Issued QAR 1,842 +11.6%\"",
+    "sig": "button|||admin-wallet|||||Credits Issued QAR # +#%",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"View all refunds\"",
+    "sig": "button||||||||View all refunds",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-open",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"Period: Last 6 Months\"",
+    "sig": "button||||||||Period: Last # Months",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "api",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Period: Last 6 Months\" › button[menuitem] \"Last 3 Months\"",
+    "sig": "button|menuitem|||||||Last # Months",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-open",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"Export\"",
+    "sig": "button||ledger-export||||||Export",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Export\" › button \"Close\"",
+    "sig": "button||||||||Close",
+    "depth": 2
+   },
+   {
+    "effects": [],
+    "errors": [],
+    "verdict": "already-active",
+    "overlayOpened": false,
+    "desc": "button \"Export\" › button \"CSV\"",
+    "sig": "button||||||||CSV",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Export\" › button \"Excel (XLSX)\"",
+    "sig": "button||||||||Excel (XLSX)",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Export\" › button \"PDF\"",
+    "sig": "button||||||||PDF",
+    "depth": 2
+   },
+   {
+    "effects": [],
+    "errors": [],
+    "verdict": "already-active",
+    "overlayOpened": false,
+    "desc": "button \"Export\" › input \"filtered\"",
+    "sig": "input|||||scope|||filtered",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Export\" › input \"current_page\"",
+    "sig": "input|||||scope|||current_page",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Export\" › input \"all\"",
+    "sig": "input|||||scope|||all",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Export\" › button \"Cancel\"",
+    "sig": "button||||||||Cancel",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "toast",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Export\" › button \"Start export\"",
+    "sig": "button||||||||Start export",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "api",
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button[tab] \"Payouts\"",
+    "sig": "button|tab|||||||Payouts",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "api",
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button[tab] \"Refunds\"",
+    "sig": "button|tab|||||||Refunds",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Clear Filters\"",
+    "sig": "button||||||||Clear Filters",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "api",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Payout\"",
+    "sig": "button||||||||Payout",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "api",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Net Payout\"",
+    "sig": "button||||||||Net Payout",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "api",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Paid / Scheduled\"",
+    "sig": "button||||||||Paid / Scheduled",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-open",
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"View\"",
+    "sig": "button|||||||row|View",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-close"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"View\" › button \"Close\"",
+    "sig": "button||||||||Close",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "route:admin-merchant-detail",
+     "overlay-close",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"View\" › a \"Marina Grill House\"",
+    "sig": "a|||admin-merchant-detail|||||Marina Grill House",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-open"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"View\" › button \"Retry payout\"",
+    "sig": "button||||||||Retry payout",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "route:admin-payout-detail",
+     "overlay-close",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"View\" › button \"Open full page\"",
+    "sig": "button||||||||Open full page",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-open"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"Retry payout\"",
+    "sig": "button|||||||row|Retry payout",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-close"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Retry payout\" › button \"Close\"",
+    "sig": "button||||||||Close",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-close"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Retry payout\" › button \"Cancel\"",
+    "sig": "button||||||||Cancel",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "toast",
+     "api",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Retry payout\" › button \"Retry payout\"",
+    "sig": "button||||||||Retry payout",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "route:admin-payout-detail",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Open full page\"",
+    "sig": "button|||||||row|Open full page",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"1\"",
+    "sig": "button||||||||#",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "api",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Next page\"",
+    "sig": "button||||||||Next page",
+    "depth": 1
+   },
+   {
+    "desc": "select[name=country] → QA",
+    "depth": 1,
+    "effects": [
+     "api",
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok"
+   },
+   {
+    "desc": "select[name=city] → doha",
+    "depth": 1,
+    "effects": [
+     "api",
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok"
+   },
+   {
+    "desc": "select[name=category] → bakery",
+    "depth": 1,
+    "effects": [
+     "api",
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok"
+   },
+   {
+    "desc": "select[name=merchantId] → MER-066",
+    "depth": 1,
+    "effects": [
+     "api",
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok"
+   },
+   {
+    "desc": "select[name=branchId] → MER-066-B1",
+    "depth": 1,
+    "effects": [
+     "api",
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok"
+   },
+   {
+    "desc": "select[name=fulfillment] → pickup",
+    "depth": 1,
+    "effects": [
+     "api",
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok"
+   },
+   {
+    "desc": "select[name=status] → scheduled",
+    "depth": 1,
+    "effects": [
+     "api",
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok"
+   }
+  ],
+  "secs": 46.3
+ },
+ {
+  "route": "admin-wallet",
+  "params": {},
+  "scope": "#page",
+  "items": [
+   {
+    "effects": [
+     "route:admin-wallet",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "section[link] \"Active Vouchers 2 Live promo codes\"",
+    "sig": "section|link||admin-wallet|||||Active Vouchers # Live promo codes",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:admin-wallet",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button[tab] \"Wallet Credit\"",
+    "sig": "button|tab|||||||Wallet Credit",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:admin-wallet",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button[tab] \"Vouchers\"",
+    "sig": "button|tab|||||||Vouchers",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Clear Filters\"",
+    "sig": "button||||||||Clear Filters",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-open",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"Issue Credit\"",
+    "sig": "button||issue||||||Issue Credit",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Issue Credit\" › button \"Close\"",
+    "sig": "button||||||||Close",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Issue Credit\" › input \"on\"",
+    "sig": "input|||||notify|||on",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-close",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Issue Credit\" › button \"Cancel\"",
+    "sig": "button||||||||Cancel",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-change"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Issue Credit\" › button \"Issue Credit\"",
+    "sig": "button||||||||Issue Credit",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "api",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Balance\"",
+    "sig": "button||||||||Balance",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "api",
+     "dom"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Last Transaction\"",
+    "sig": "button||||||||Last Transaction",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-open",
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"View wallet\"",
+    "sig": "button|||||||row|View wallet",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-close"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"View wallet\" › button \"Close\"",
+    "sig": "button||||||||Close",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-open",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"View wallet\" › button \"Adjust balance\"",
+    "sig": "button||||||||Adjust balance",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "overlay-open",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"View wallet\" › button \"Freeze wallet\"",
+    "sig": "button||||||||Freeze wallet",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "route:admin-consumer-detail",
+     "overlay-close",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"View wallet\" › button \"View consumer\"",
+    "sig": "button||||||||View consumer",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "route:admin-wallet-detail",
+     "overlay-close",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"View wallet\" › button \"Open full page\"",
+    "sig": "button||||||||Open full page",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"1\"",
+    "sig": "button||||||||#",
+    "depth": 1
+   },
+   {
+    "desc": "select[name=status] → active",
+    "depth": 1,
+    "effects": [
+     "api",
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok"
+   },
+   {
+    "desc": "select[name=source] → promotional",
+    "depth": 1,
+    "effects": [
+     "api",
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok"
+   }
+  ],
+  "secs": 15.0
+ },
+ {
+  "route": "m-branches",
+  "params": {},
+  "scope": "#page",
+  "items": [
+   {
+    "effects": [
+     "route:m-vendors",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Vendors\"",
+    "sig": "button|||m-vendors|||||Vendors",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:m-branch-edit",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Add Branch\"",
+    "sig": "button|||m-branch-edit|||||Add Branch",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-open",
+     "api"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": true,
+    "desc": "button \"\"",
+    "sig": "button||||||||",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "overlay-close"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"\" › button \"Close\"",
+    "sig": "button||||||||Close",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "route:m-branch-edit",
+     "overlay-close",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"\" › button \"Edit Branch\"",
+    "sig": "button||||||||Edit Branch",
+    "depth": 2
+   },
+   {
+    "effects": [
+     "route:m-branch-edit",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"\"",
+    "sig": "button|||m-branch-edit|||||",
+    "depth": 1
+   },
+   {
+    "desc": "select[name=state-BR-01] → closed",
+    "depth": 1,
+    "effects": [
+     "toast",
+     "api",
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok"
+   },
+   {
+    "desc": "select[name=state-BR-02] → closed",
+    "depth": 1,
+    "effects": [
+     "toast",
+     "api",
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok"
+   },
+   {
+    "desc": "select[name=state-BR-03] → open",
+    "depth": 1,
+    "effects": [
+     "toast",
+     "api",
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok"
+   }
+  ],
+  "secs": 4.4
+ },
+ {
+  "route": "m-branch-edit",
+  "params": {
+   "id": "BR-01"
+  },
+  "scope": "#page",
+  "items": [
+   {
+    "effects": [
+     "route:m-branches",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Cancel\"",
+    "sig": "button|||m-branches|||||Cancel",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "route:m-branches",
+     "toast",
+     "api",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Save changes\"",
+    "sig": "button||||||||Save changes",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "input \"on\"",
+    "sig": "input|||||closed-mon|||on",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "input \"on\"",
+    "sig": "input|||||closed-tue|||on",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "input \"on\"",
+    "sig": "input|||||closed-wed|||on",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "input \"on\"",
+    "sig": "input|||||closed-thu|||on",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "input \"on\"",
+    "sig": "input|||||closed-fri|||on",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "input \"on\"",
+    "sig": "input|||||closed-sat|||on",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "dom",
+     "input-state"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "input \"on\"",
+    "sig": "input|||||closed-sun|||on",
+    "depth": 1
+   },
+   {
+    "effects": [
+     "toast"
+    ],
+    "errors": [],
+    "verdict": "ok",
+    "overlayOpened": false,
+    "desc": "button \"Copy Monday to all days\"",
+    "sig": "button||copy||||||Copy Monday to all days",
+    "depth": 1
+   }
+  ],
+  "secs": 6.4
+ }
+]

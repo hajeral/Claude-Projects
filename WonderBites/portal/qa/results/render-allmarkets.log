@@ -1,0 +1,906 @@
+ok   en/dark/1440 launcher 
+ok   en/dark/1440 admin-login 
+ok   en/dark/1440 m-login 
+ok   en/dark/1440 otp 
+ok   en/dark/1440 otp {"portal": "admin", "challengeId": "chl_qa", "destination": "s***@wonderbites.ae"}
+ok   en/dark/1440 m-signup 
+ok   en/dark/1440 forgot-password 
+ok   en/dark/1440 forgot-password {"portal": "admin"}
+ok   en/dark/1440 reset-password 
+ok   en/dark/1440 reset-password {"portal": "admin", "token": "rst_qa"}
+ok   en/dark/1440 not-found 
+ok   en/dark/1440 admin-notifications 
+ok   en/dark/1440 m-notifications 
+ok   en/dark/1440 admin-command-center 
+ok   en/dark/1440 m-overview 
+ok   en/dark/1440 m-sustainability 
+ok   en/dark/1440 admin-settings-markets 
+ok   en/dark/1440 admin-drops 
+ok   en/dark/1440 admin-drop-edit {"id": "DR-3391"}
+ok   en/dark/1440 admin-drop-edit 
+ok   en/dark/1440 admin-pickups 
+ok   en/dark/1440 admin-orders 
+ok   en/dark/1440 admin-merchants 
+ok   en/dark/1440 admin-merchant-detail {"id": "MER-058"}
+ok   en/dark/1440 admin-merchant-detail 
+ok   en/dark/1440 admin-merchant-new 
+ok   en/dark/1440 admin-consumers 
+ok   en/dark/1440 admin-consumer-detail {"id": "CON-1212"}
+ok   en/dark/1440 admin-consumer-detail 
+ok   en/dark/1440 admin-issues 
+ok   en/dark/1440 admin-issues {"tab": "alerts"}
+ok   en/dark/1440 admin-issues {"tab": "moderation"}
+ok   en/dark/1440 admin-moderation 
+ok   en/dark/1440 admin-support 
+ok   en/dark/1440 admin-ticket-detail {"id": "SUP-8841"}
+ok   en/dark/1440 admin-ticket-detail 
+ok   en/dark/1440 admin-financials 
+ok   en/dark/1440 admin-payout-detail {"id": "PO-066-261029"}
+ok   en/dark/1440 admin-payout-detail 
+ok   en/dark/1440 admin-operations 
+ok   en/dark/1440 admin-performance 
+ok   en/dark/1440 admin-performance-merchants 
+ok   en/dark/1440 admin-performance-report 
+ok   en/dark/1440 admin-sustainability 
+ok   en/dark/1440 admin-sustainability-report 
+ok   en/dark/1440 admin-wallet 
+ok   en/dark/1440 admin-wallet {"tab": "vouchers"}
+ok   en/dark/1440 admin-wallet-detail {"id": "WAL-30410"}
+ok   en/dark/1440 admin-wallet-detail 
+ok   en/dark/1440 admin-voucher-new 
+ok   en/dark/1440 admin-voucher-detail {"id": "VCH-101"}
+ok   en/dark/1440 admin-voucher-detail 
+ok   en/dark/1440 admin-quality 
+ok   en/dark/1440 admin-compliance-detail {"id": "MER-058"}
+ok   en/dark/1440 admin-compliance-detail 
+ok   en/dark/1440 admin-listings 
+ok   en/dark/1440 admin-template-new 
+ok   en/dark/1440 admin-template-edit {"id": "tpl_110"}
+ok   en/dark/1440 admin-template-edit 
+ok   en/dark/1440 admin-templates 
+ok   en/dark/1440 admin-cms 
+ok   en/dark/1440 admin-cms {"tab": "banners"}
+ok   en/dark/1440 admin-cms {"tab": "faq"}
+ok   en/dark/1440 admin-cms-page {"id": "pg_4"}
+ok   en/dark/1440 admin-cms-page 
+ok   en/dark/1440 admin-cms-banner {"id": "ban_2"}
+ok   en/dark/1440 admin-cms-banner 
+ok   en/dark/1440 admin-cms-faq {"id": "faq_1"}
+ok   en/dark/1440 admin-cms-faq 
+ok   en/dark/1440 admin-users 
+ok   en/dark/1440 admin-settings-profile 
+ok   en/dark/1440 admin-settings 
+ok   en/dark/1440 admin-settings-notifications 
+ok   en/dark/1440 admin-settings-security 
+ok   en/dark/1440 admin-settings-policies 
+ok   en/dark/1440 admin-policy-about 
+ok   en/dark/1440 admin-policy-privacy 
+ok   en/dark/1440 admin-policy-terms 
+ok   en/dark/1440 admin-policy-refund 
+ok   en/dark/1440 m-settings 
+ok   en/dark/1440 m-settings {"tab": "store"}
+ok   en/dark/1440 m-settings {"tab": "security"}
+ok   en/dark/1440 m-settings {"tab": "hours"}
+ok   en/dark/1440 m-settings {"tab": "language"}
+ok   en/dark/1440 m-help 
+ok   en/dark/1440 m-reviews 
+ok   en/dark/1440 m-reports 
+ok   en/dark/1440 m-report-detail {"id": "dsp_1042"}
+ok   en/dark/1440 m-report-detail 
+ok   en/dark/1440 m-orders 
+ok   en/dark/1440 m-listings 
+ok   en/dark/1440 m-inventory 
+ok   en/dark/1440 m-inventory-new 
+ok   en/dark/1440 m-inventory-detail {"id": "LIS-2412"}
+ok   en/dark/1440 m-inventory-detail 
+ok   en/dark/1440 m-create-product {"templateId": "TPL-01"}
+ok   en/dark/1440 m-drivers 
+ok   en/dark/1440 m-driver-detail {"id": "DRV-03"}
+ok   en/dark/1440 m-driver-detail 
+ok   en/dark/1440 m-analytics 
+ok   en/dark/1440 m-analytics-days 
+ok   en/dark/1440 m-customers 
+ok   en/dark/1440 m-customer-new 
+ok   en/dark/1440 m-customer-detail {"id": "CUS-1010"}
+ok   en/dark/1440 m-customer-detail 
+ok   en/dark/1440 m-branches 
+ok   en/dark/1440 m-branch-edit {"id": "BR-01"}
+ok   en/dark/1440 m-branch-edit 
+ok   en/dark/1440 m-vendors 
+ok   en/dark/1440 m-vendor-new 
+ok   en/dark/1440 m-vendor-detail {"id": "VEN-05"}
+ok   en/dark/1440 m-vendor-detail 
+ok   en/dark/1440 m-templates 
+ok   en/light/1440 launcher 
+ok   en/light/1440 admin-login 
+ok   en/light/1440 m-login 
+ok   en/light/1440 otp 
+ok   en/light/1440 otp {"portal": "admin", "challengeId": "chl_qa", "destination": "s***@wonderbites.ae"}
+ok   en/light/1440 m-signup 
+ok   en/light/1440 forgot-password 
+ok   en/light/1440 forgot-password {"portal": "admin"}
+ok   en/light/1440 reset-password 
+ok   en/light/1440 reset-password {"portal": "admin", "token": "rst_qa"}
+ok   en/light/1440 not-found 
+ok   en/light/1440 admin-notifications 
+ok   en/light/1440 m-notifications 
+ok   en/light/1440 admin-command-center 
+ok   en/light/1440 m-overview 
+ok   en/light/1440 m-sustainability 
+ok   en/light/1440 admin-settings-markets 
+ok   en/light/1440 admin-drops 
+ok   en/light/1440 admin-drop-edit {"id": "DR-3391"}
+ok   en/light/1440 admin-drop-edit 
+ok   en/light/1440 admin-pickups 
+ok   en/light/1440 admin-orders 
+ok   en/light/1440 admin-merchants 
+ok   en/light/1440 admin-merchant-detail {"id": "MER-058"}
+ok   en/light/1440 admin-merchant-detail 
+ok   en/light/1440 admin-merchant-new 
+ok   en/light/1440 admin-consumers 
+ok   en/light/1440 admin-consumer-detail {"id": "CON-1212"}
+ok   en/light/1440 admin-consumer-detail 
+ok   en/light/1440 admin-issues 
+ok   en/light/1440 admin-issues {"tab": "alerts"}
+ok   en/light/1440 admin-issues {"tab": "moderation"}
+ok   en/light/1440 admin-moderation 
+ok   en/light/1440 admin-support 
+ok   en/light/1440 admin-ticket-detail {"id": "SUP-8841"}
+ok   en/light/1440 admin-ticket-detail 
+ok   en/light/1440 admin-financials 
+ok   en/light/1440 admin-payout-detail {"id": "PO-066-261029"}
+ok   en/light/1440 admin-payout-detail 
+ok   en/light/1440 admin-operations 
+ok   en/light/1440 admin-performance 
+ok   en/light/1440 admin-performance-merchants 
+ok   en/light/1440 admin-performance-report 
+ok   en/light/1440 admin-sustainability 
+ok   en/light/1440 admin-sustainability-report 
+ok   en/light/1440 admin-wallet 
+ok   en/light/1440 admin-wallet {"tab": "vouchers"}
+ok   en/light/1440 admin-wallet-detail {"id": "WAL-30410"}
+ok   en/light/1440 admin-wallet-detail 
+ok   en/light/1440 admin-voucher-new 
+ok   en/light/1440 admin-voucher-detail {"id": "VCH-101"}
+ok   en/light/1440 admin-voucher-detail 
+ok   en/light/1440 admin-quality 
+ok   en/light/1440 admin-compliance-detail {"id": "MER-058"}
+ok   en/light/1440 admin-compliance-detail 
+ok   en/light/1440 admin-listings 
+ok   en/light/1440 admin-template-new 
+ok   en/light/1440 admin-template-edit {"id": "tpl_110"}
+ok   en/light/1440 admin-template-edit 
+ok   en/light/1440 admin-templates 
+ok   en/light/1440 admin-cms 
+ok   en/light/1440 admin-cms {"tab": "banners"}
+ok   en/light/1440 admin-cms {"tab": "faq"}
+ok   en/light/1440 admin-cms-page {"id": "pg_4"}
+ok   en/light/1440 admin-cms-page 
+ok   en/light/1440 admin-cms-banner {"id": "ban_2"}
+ok   en/light/1440 admin-cms-banner 
+ok   en/light/1440 admin-cms-faq {"id": "faq_1"}
+ok   en/light/1440 admin-cms-faq 
+ok   en/light/1440 admin-users 
+ok   en/light/1440 admin-settings-profile 
+ok   en/light/1440 admin-settings 
+ok   en/light/1440 admin-settings-notifications 
+ok   en/light/1440 admin-settings-security 
+ok   en/light/1440 admin-settings-policies 
+ok   en/light/1440 admin-policy-about 
+ok   en/light/1440 admin-policy-privacy 
+ok   en/light/1440 admin-policy-terms 
+ok   en/light/1440 admin-policy-refund 
+ok   en/light/1440 m-settings 
+ok   en/light/1440 m-settings {"tab": "store"}
+ok   en/light/1440 m-settings {"tab": "security"}
+ok   en/light/1440 m-settings {"tab": "hours"}
+ok   en/light/1440 m-settings {"tab": "language"}
+ok   en/light/1440 m-help 
+ok   en/light/1440 m-reviews 
+ok   en/light/1440 m-reports 
+ok   en/light/1440 m-report-detail {"id": "dsp_1042"}
+ok   en/light/1440 m-report-detail 
+ok   en/light/1440 m-orders 
+ok   en/light/1440 m-listings 
+ok   en/light/1440 m-inventory 
+ok   en/light/1440 m-inventory-new 
+ok   en/light/1440 m-inventory-detail {"id": "LIS-2412"}
+ok   en/light/1440 m-inventory-detail 
+ok   en/light/1440 m-create-product {"templateId": "TPL-01"}
+ok   en/light/1440 m-drivers 
+ok   en/light/1440 m-driver-detail {"id": "DRV-03"}
+ok   en/light/1440 m-driver-detail 
+ok   en/light/1440 m-analytics 
+ok   en/light/1440 m-analytics-days 
+ok   en/light/1440 m-customers 
+ok   en/light/1440 m-customer-new 
+ok   en/light/1440 m-customer-detail {"id": "CUS-1010"}
+ok   en/light/1440 m-customer-detail 
+ok   en/light/1440 m-branches 
+ok   en/light/1440 m-branch-edit {"id": "BR-01"}
+ok   en/light/1440 m-branch-edit 
+ok   en/light/1440 m-vendors 
+ok   en/light/1440 m-vendor-new 
+ok   en/light/1440 m-vendor-detail {"id": "VEN-05"}
+ok   en/light/1440 m-vendor-detail 
+ok   en/light/1440 m-templates 
+ok   ar/dark/1440 launcher 
+ok   ar/dark/1440 admin-login 
+ok   ar/dark/1440 m-login 
+ok   ar/dark/1440 otp 
+ok   ar/dark/1440 otp {"portal": "admin", "challengeId": "chl_qa", "destination": "s***@wonderbites.ae"}
+ok   ar/dark/1440 m-signup 
+ok   ar/dark/1440 forgot-password 
+ok   ar/dark/1440 forgot-password {"portal": "admin"}
+ok   ar/dark/1440 reset-password 
+ok   ar/dark/1440 reset-password {"portal": "admin", "token": "rst_qa"}
+ok   ar/dark/1440 not-found 
+ok   ar/dark/1440 admin-notifications 
+ok   ar/dark/1440 m-notifications 
+ok   ar/dark/1440 admin-command-center 
+ok   ar/dark/1440 m-overview 
+ok   ar/dark/1440 m-sustainability 
+ok   ar/dark/1440 admin-settings-markets 
+ok   ar/dark/1440 admin-drops 
+ok   ar/dark/1440 admin-drop-edit {"id": "DR-3391"}
+ok   ar/dark/1440 admin-drop-edit 
+ok   ar/dark/1440 admin-pickups 
+ok   ar/dark/1440 admin-orders 
+ok   ar/dark/1440 admin-merchants 
+ok   ar/dark/1440 admin-merchant-detail {"id": "MER-058"}
+ok   ar/dark/1440 admin-merchant-detail 
+ok   ar/dark/1440 admin-merchant-new 
+ok   ar/dark/1440 admin-consumers 
+ok   ar/dark/1440 admin-consumer-detail {"id": "CON-1212"}
+ok   ar/dark/1440 admin-consumer-detail 
+ok   ar/dark/1440 admin-issues 
+ok   ar/dark/1440 admin-issues {"tab": "alerts"}
+ok   ar/dark/1440 admin-issues {"tab": "moderation"}
+ok   ar/dark/1440 admin-moderation 
+ok   ar/dark/1440 admin-support 
+ok   ar/dark/1440 admin-ticket-detail {"id": "SUP-8841"}
+ok   ar/dark/1440 admin-ticket-detail 
+ok   ar/dark/1440 admin-financials 
+ok   ar/dark/1440 admin-payout-detail {"id": "PO-066-261029"}
+ok   ar/dark/1440 admin-payout-detail 
+ok   ar/dark/1440 admin-operations 
+ok   ar/dark/1440 admin-performance 
+ok   ar/dark/1440 admin-performance-merchants 
+ok   ar/dark/1440 admin-performance-report 
+ok   ar/dark/1440 admin-sustainability 
+ok   ar/dark/1440 admin-sustainability-report 
+ok   ar/dark/1440 admin-wallet 
+ok   ar/dark/1440 admin-wallet {"tab": "vouchers"}
+ok   ar/dark/1440 admin-wallet-detail {"id": "WAL-30410"}
+ok   ar/dark/1440 admin-wallet-detail 
+ok   ar/dark/1440 admin-voucher-new 
+ok   ar/dark/1440 admin-voucher-detail {"id": "VCH-101"}
+ok   ar/dark/1440 admin-voucher-detail 
+ok   ar/dark/1440 admin-quality 
+ok   ar/dark/1440 admin-compliance-detail {"id": "MER-058"}
+ok   ar/dark/1440 admin-compliance-detail 
+ok   ar/dark/1440 admin-listings 
+ok   ar/dark/1440 admin-template-new 
+ok   ar/dark/1440 admin-template-edit {"id": "tpl_110"}
+ok   ar/dark/1440 admin-template-edit 
+ok   ar/dark/1440 admin-templates 
+ok   ar/dark/1440 admin-cms 
+ok   ar/dark/1440 admin-cms {"tab": "banners"}
+ok   ar/dark/1440 admin-cms {"tab": "faq"}
+ok   ar/dark/1440 admin-cms-page {"id": "pg_4"}
+ok   ar/dark/1440 admin-cms-page 
+ok   ar/dark/1440 admin-cms-banner {"id": "ban_2"}
+ok   ar/dark/1440 admin-cms-banner 
+ok   ar/dark/1440 admin-cms-faq {"id": "faq_1"}
+ok   ar/dark/1440 admin-cms-faq 
+ok   ar/dark/1440 admin-users 
+ok   ar/dark/1440 admin-settings-profile 
+ok   ar/dark/1440 admin-settings 
+ok   ar/dark/1440 admin-settings-notifications 
+ok   ar/dark/1440 admin-settings-security 
+ok   ar/dark/1440 admin-settings-policies 
+ok   ar/dark/1440 admin-policy-about 
+ok   ar/dark/1440 admin-policy-privacy 
+ok   ar/dark/1440 admin-policy-terms 
+ok   ar/dark/1440 admin-policy-refund 
+ok   ar/dark/1440 m-settings 
+ok   ar/dark/1440 m-settings {"tab": "store"}
+ok   ar/dark/1440 m-settings {"tab": "security"}
+ok   ar/dark/1440 m-settings {"tab": "hours"}
+ok   ar/dark/1440 m-settings {"tab": "language"}
+ok   ar/dark/1440 m-help 
+ok   ar/dark/1440 m-reviews 
+ok   ar/dark/1440 m-reports 
+ok   ar/dark/1440 m-report-detail {"id": "dsp_1042"}
+ok   ar/dark/1440 m-report-detail 
+ok   ar/dark/1440 m-orders 
+ok   ar/dark/1440 m-listings 
+ok   ar/dark/1440 m-inventory 
+ok   ar/dark/1440 m-inventory-new 
+ok   ar/dark/1440 m-inventory-detail {"id": "LIS-2412"}
+ok   ar/dark/1440 m-inventory-detail 
+ok   ar/dark/1440 m-create-product {"templateId": "TPL-01"}
+ok   ar/dark/1440 m-drivers 
+ok   ar/dark/1440 m-driver-detail {"id": "DRV-03"}
+ok   ar/dark/1440 m-driver-detail 
+ok   ar/dark/1440 m-analytics 
+ok   ar/dark/1440 m-analytics-days 
+ok   ar/dark/1440 m-customers 
+ok   ar/dark/1440 m-customer-new 
+ok   ar/dark/1440 m-customer-detail {"id": "CUS-1010"}
+ok   ar/dark/1440 m-customer-detail 
+ok   ar/dark/1440 m-branches 
+ok   ar/dark/1440 m-branch-edit {"id": "BR-01"}
+ok   ar/dark/1440 m-branch-edit 
+ok   ar/dark/1440 m-vendors 
+ok   ar/dark/1440 m-vendor-new 
+ok   ar/dark/1440 m-vendor-detail {"id": "VEN-05"}
+ok   ar/dark/1440 m-vendor-detail 
+ok   ar/dark/1440 m-templates 
+ok   ar/light/1440 launcher 
+ok   ar/light/1440 admin-login 
+ok   ar/light/1440 m-login 
+ok   ar/light/1440 otp 
+ok   ar/light/1440 otp {"portal": "admin", "challengeId": "chl_qa", "destination": "s***@wonderbites.ae"}
+ok   ar/light/1440 m-signup 
+ok   ar/light/1440 forgot-password 
+ok   ar/light/1440 forgot-password {"portal": "admin"}
+ok   ar/light/1440 reset-password 
+ok   ar/light/1440 reset-password {"portal": "admin", "token": "rst_qa"}
+ok   ar/light/1440 not-found 
+ok   ar/light/1440 admin-notifications 
+ok   ar/light/1440 m-notifications 
+ok   ar/light/1440 admin-command-center 
+ok   ar/light/1440 m-overview 
+ok   ar/light/1440 m-sustainability 
+ok   ar/light/1440 admin-settings-markets 
+ok   ar/light/1440 admin-drops 
+ok   ar/light/1440 admin-drop-edit {"id": "DR-3391"}
+ok   ar/light/1440 admin-drop-edit 
+ok   ar/light/1440 admin-pickups 
+ok   ar/light/1440 admin-orders 
+ok   ar/light/1440 admin-merchants 
+ok   ar/light/1440 admin-merchant-detail {"id": "MER-058"}
+ok   ar/light/1440 admin-merchant-detail 
+ok   ar/light/1440 admin-merchant-new 
+ok   ar/light/1440 admin-consumers 
+ok   ar/light/1440 admin-consumer-detail {"id": "CON-1212"}
+ok   ar/light/1440 admin-consumer-detail 
+ok   ar/light/1440 admin-issues 
+ok   ar/light/1440 admin-issues {"tab": "alerts"}
+ok   ar/light/1440 admin-issues {"tab": "moderation"}
+ok   ar/light/1440 admin-moderation 
+ok   ar/light/1440 admin-support 
+ok   ar/light/1440 admin-ticket-detail {"id": "SUP-8841"}
+ok   ar/light/1440 admin-ticket-detail 
+ok   ar/light/1440 admin-financials 
+ok   ar/light/1440 admin-payout-detail {"id": "PO-066-261029"}
+ok   ar/light/1440 admin-payout-detail 
+ok   ar/light/1440 admin-operations 
+ok   ar/light/1440 admin-performance 
+ok   ar/light/1440 admin-performance-merchants 
+ok   ar/light/1440 admin-performance-report 
+ok   ar/light/1440 admin-sustainability 
+ok   ar/light/1440 admin-sustainability-report 
+ok   ar/light/1440 admin-wallet 
+ok   ar/light/1440 admin-wallet {"tab": "vouchers"}
+ok   ar/light/1440 admin-wallet-detail {"id": "WAL-30410"}
+ok   ar/light/1440 admin-wallet-detail 
+ok   ar/light/1440 admin-voucher-new 
+ok   ar/light/1440 admin-voucher-detail {"id": "VCH-101"}
+ok   ar/light/1440 admin-voucher-detail 
+ok   ar/light/1440 admin-quality 
+ok   ar/light/1440 admin-compliance-detail {"id": "MER-058"}
+ok   ar/light/1440 admin-compliance-detail 
+ok   ar/light/1440 admin-listings 
+ok   ar/light/1440 admin-template-new 
+ok   ar/light/1440 admin-template-edit {"id": "tpl_110"}
+ok   ar/light/1440 admin-template-edit 
+ok   ar/light/1440 admin-templates 
+ok   ar/light/1440 admin-cms 
+ok   ar/light/1440 admin-cms {"tab": "banners"}
+ok   ar/light/1440 admin-cms {"tab": "faq"}
+ok   ar/light/1440 admin-cms-page {"id": "pg_4"}
+ok   ar/light/1440 admin-cms-page 
+ok   ar/light/1440 admin-cms-banner {"id": "ban_2"}
+ok   ar/light/1440 admin-cms-banner 
+ok   ar/light/1440 admin-cms-faq {"id": "faq_1"}
+ok   ar/light/1440 admin-cms-faq 
+ok   ar/light/1440 admin-users 
+ok   ar/light/1440 admin-settings-profile 
+ok   ar/light/1440 admin-settings 
+ok   ar/light/1440 admin-settings-notifications 
+ok   ar/light/1440 admin-settings-security 
+ok   ar/light/1440 admin-settings-policies 
+ok   ar/light/1440 admin-policy-about 
+ok   ar/light/1440 admin-policy-privacy 
+ok   ar/light/1440 admin-policy-terms 
+ok   ar/light/1440 admin-policy-refund 
+ok   ar/light/1440 m-settings 
+ok   ar/light/1440 m-settings {"tab": "store"}
+ok   ar/light/1440 m-settings {"tab": "security"}
+ok   ar/light/1440 m-settings {"tab": "hours"}
+ok   ar/light/1440 m-settings {"tab": "language"}
+ok   ar/light/1440 m-help 
+ok   ar/light/1440 m-reviews 
+ok   ar/light/1440 m-reports 
+ok   ar/light/1440 m-report-detail {"id": "dsp_1042"}
+ok   ar/light/1440 m-report-detail 
+ok   ar/light/1440 m-orders 
+ok   ar/light/1440 m-listings 
+ok   ar/light/1440 m-inventory 
+ok   ar/light/1440 m-inventory-new 
+ok   ar/light/1440 m-inventory-detail {"id": "LIS-2412"}
+ok   ar/light/1440 m-inventory-detail 
+ok   ar/light/1440 m-create-product {"templateId": "TPL-01"}
+ok   ar/light/1440 m-drivers 
+ok   ar/light/1440 m-driver-detail {"id": "DRV-03"}
+ok   ar/light/1440 m-driver-detail 
+ok   ar/light/1440 m-analytics 
+ok   ar/light/1440 m-analytics-days 
+ok   ar/light/1440 m-customers 
+ok   ar/light/1440 m-customer-new 
+ok   ar/light/1440 m-customer-detail {"id": "CUS-1010"}
+ok   ar/light/1440 m-customer-detail 
+ok   ar/light/1440 m-branches 
+ok   ar/light/1440 m-branch-edit {"id": "BR-01"}
+ok   ar/light/1440 m-branch-edit 
+ok   ar/light/1440 m-vendors 
+ok   ar/light/1440 m-vendor-new 
+ok   ar/light/1440 m-vendor-detail {"id": "VEN-05"}
+ok   ar/light/1440 m-vendor-detail 
+ok   ar/light/1440 m-templates 
+ok   en/dark/1280 launcher 
+ok   en/dark/1280 admin-login 
+ok   en/dark/1280 m-login 
+ok   en/dark/1280 otp 
+ok   en/dark/1280 otp {"portal": "admin", "challengeId": "chl_qa", "destination": "s***@wonderbites.ae"}
+ok   en/dark/1280 m-signup 
+ok   en/dark/1280 forgot-password 
+ok   en/dark/1280 forgot-password {"portal": "admin"}
+ok   en/dark/1280 reset-password 
+ok   en/dark/1280 reset-password {"portal": "admin", "token": "rst_qa"}
+ok   en/dark/1280 not-found 
+ok   en/dark/1280 admin-notifications 
+ok   en/dark/1280 m-notifications 
+ok   en/dark/1280 admin-command-center 
+ok   en/dark/1280 m-overview 
+ok   en/dark/1280 m-sustainability 
+ok   en/dark/1280 admin-settings-markets 
+ok   en/dark/1280 admin-drops 
+ok   en/dark/1280 admin-drop-edit {"id": "DR-3391"}
+ok   en/dark/1280 admin-drop-edit 
+ok   en/dark/1280 admin-pickups 
+ok   en/dark/1280 admin-orders 
+ok   en/dark/1280 admin-merchants 
+ok   en/dark/1280 admin-merchant-detail {"id": "MER-058"}
+ok   en/dark/1280 admin-merchant-detail 
+ok   en/dark/1280 admin-merchant-new 
+ok   en/dark/1280 admin-consumers 
+ok   en/dark/1280 admin-consumer-detail {"id": "CON-1212"}
+ok   en/dark/1280 admin-consumer-detail 
+ok   en/dark/1280 admin-issues 
+ok   en/dark/1280 admin-issues {"tab": "alerts"}
+ok   en/dark/1280 admin-issues {"tab": "moderation"}
+ok   en/dark/1280 admin-moderation 
+ok   en/dark/1280 admin-support 
+ok   en/dark/1280 admin-ticket-detail {"id": "SUP-8841"}
+ok   en/dark/1280 admin-ticket-detail 
+ok   en/dark/1280 admin-financials 
+ok   en/dark/1280 admin-payout-detail {"id": "PO-066-261029"}
+ok   en/dark/1280 admin-payout-detail 
+ok   en/dark/1280 admin-operations 
+ok   en/dark/1280 admin-performance 
+ok   en/dark/1280 admin-performance-merchants 
+ok   en/dark/1280 admin-performance-report 
+ok   en/dark/1280 admin-sustainability 
+ok   en/dark/1280 admin-sustainability-report 
+ok   en/dark/1280 admin-wallet 
+ok   en/dark/1280 admin-wallet {"tab": "vouchers"}
+ok   en/dark/1280 admin-wallet-detail {"id": "WAL-30410"}
+ok   en/dark/1280 admin-wallet-detail 
+ok   en/dark/1280 admin-voucher-new 
+ok   en/dark/1280 admin-voucher-detail {"id": "VCH-101"}
+ok   en/dark/1280 admin-voucher-detail 
+ok   en/dark/1280 admin-quality 
+ok   en/dark/1280 admin-compliance-detail {"id": "MER-058"}
+ok   en/dark/1280 admin-compliance-detail 
+ok   en/dark/1280 admin-listings 
+ok   en/dark/1280 admin-template-new 
+ok   en/dark/1280 admin-template-edit {"id": "tpl_110"}
+ok   en/dark/1280 admin-template-edit 
+ok   en/dark/1280 admin-templates 
+ok   en/dark/1280 admin-cms 
+ok   en/dark/1280 admin-cms {"tab": "banners"}
+ok   en/dark/1280 admin-cms {"tab": "faq"}
+ok   en/dark/1280 admin-cms-page {"id": "pg_4"}
+ok   en/dark/1280 admin-cms-page 
+ok   en/dark/1280 admin-cms-banner {"id": "ban_2"}
+ok   en/dark/1280 admin-cms-banner 
+ok   en/dark/1280 admin-cms-faq {"id": "faq_1"}
+ok   en/dark/1280 admin-cms-faq 
+ok   en/dark/1280 admin-users 
+ok   en/dark/1280 admin-settings-profile 
+ok   en/dark/1280 admin-settings 
+ok   en/dark/1280 admin-settings-notifications 
+ok   en/dark/1280 admin-settings-security 
+ok   en/dark/1280 admin-settings-policies 
+ok   en/dark/1280 admin-policy-about 
+ok   en/dark/1280 admin-policy-privacy 
+ok   en/dark/1280 admin-policy-terms 
+ok   en/dark/1280 admin-policy-refund 
+ok   en/dark/1280 m-settings 
+ok   en/dark/1280 m-settings {"tab": "store"}
+ok   en/dark/1280 m-settings {"tab": "security"}
+ok   en/dark/1280 m-settings {"tab": "hours"}
+ok   en/dark/1280 m-settings {"tab": "language"}
+ok   en/dark/1280 m-help 
+ok   en/dark/1280 m-reviews 
+ok   en/dark/1280 m-reports 
+ok   en/dark/1280 m-report-detail {"id": "dsp_1042"}
+ok   en/dark/1280 m-report-detail 
+ok   en/dark/1280 m-orders 
+ok   en/dark/1280 m-listings 
+ok   en/dark/1280 m-inventory 
+ok   en/dark/1280 m-inventory-new 
+ok   en/dark/1280 m-inventory-detail {"id": "LIS-2412"}
+ok   en/dark/1280 m-inventory-detail 
+ok   en/dark/1280 m-create-product {"templateId": "TPL-01"}
+ok   en/dark/1280 m-drivers 
+ok   en/dark/1280 m-driver-detail {"id": "DRV-03"}
+ok   en/dark/1280 m-driver-detail 
+ok   en/dark/1280 m-analytics 
+ok   en/dark/1280 m-analytics-days 
+ok   en/dark/1280 m-customers 
+ok   en/dark/1280 m-customer-new 
+ok   en/dark/1280 m-customer-detail {"id": "CUS-1010"}
+ok   en/dark/1280 m-customer-detail 
+ok   en/dark/1280 m-branches 
+ok   en/dark/1280 m-branch-edit {"id": "BR-01"}
+ok   en/dark/1280 m-branch-edit 
+ok   en/dark/1280 m-vendors 
+ok   en/dark/1280 m-vendor-new 
+ok   en/dark/1280 m-vendor-detail {"id": "VEN-05"}
+ok   en/dark/1280 m-vendor-detail 
+ok   en/dark/1280 m-templates 
+ok   en/light/1280 launcher 
+ok   en/light/1280 admin-login 
+ok   en/light/1280 m-login 
+ok   en/light/1280 otp 
+ok   en/light/1280 otp {"portal": "admin", "challengeId": "chl_qa", "destination": "s***@wonderbites.ae"}
+ok   en/light/1280 m-signup 
+ok   en/light/1280 forgot-password 
+ok   en/light/1280 forgot-password {"portal": "admin"}
+ok   en/light/1280 reset-password 
+ok   en/light/1280 reset-password {"portal": "admin", "token": "rst_qa"}
+ok   en/light/1280 not-found 
+ok   en/light/1280 admin-notifications 
+ok   en/light/1280 m-notifications 
+ok   en/light/1280 admin-command-center 
+ok   en/light/1280 m-overview 
+ok   en/light/1280 m-sustainability 
+ok   en/light/1280 admin-settings-markets 
+ok   en/light/1280 admin-drops 
+ok   en/light/1280 admin-drop-edit {"id": "DR-3391"}
+ok   en/light/1280 admin-drop-edit 
+ok   en/light/1280 admin-pickups 
+ok   en/light/1280 admin-orders 
+ok   en/light/1280 admin-merchants 
+ok   en/light/1280 admin-merchant-detail {"id": "MER-058"}
+ok   en/light/1280 admin-merchant-detail 
+ok   en/light/1280 admin-merchant-new 
+ok   en/light/1280 admin-consumers 
+ok   en/light/1280 admin-consumer-detail {"id": "CON-1212"}
+ok   en/light/1280 admin-consumer-detail 
+ok   en/light/1280 admin-issues 
+ok   en/light/1280 admin-issues {"tab": "alerts"}
+ok   en/light/1280 admin-issues {"tab": "moderation"}
+ok   en/light/1280 admin-moderation 
+ok   en/light/1280 admin-support 
+ok   en/light/1280 admin-ticket-detail {"id": "SUP-8841"}
+ok   en/light/1280 admin-ticket-detail 
+ok   en/light/1280 admin-financials 
+ok   en/light/1280 admin-payout-detail {"id": "PO-066-261029"}
+ok   en/light/1280 admin-payout-detail 
+ok   en/light/1280 admin-operations 
+ok   en/light/1280 admin-performance 
+ok   en/light/1280 admin-performance-merchants 
+ok   en/light/1280 admin-performance-report 
+ok   en/light/1280 admin-sustainability 
+ok   en/light/1280 admin-sustainability-report 
+ok   en/light/1280 admin-wallet 
+ok   en/light/1280 admin-wallet {"tab": "vouchers"}
+ok   en/light/1280 admin-wallet-detail {"id": "WAL-30410"}
+ok   en/light/1280 admin-wallet-detail 
+ok   en/light/1280 admin-voucher-new 
+ok   en/light/1280 admin-voucher-detail {"id": "VCH-101"}
+ok   en/light/1280 admin-voucher-detail 
+ok   en/light/1280 admin-quality 
+ok   en/light/1280 admin-compliance-detail {"id": "MER-058"}
+ok   en/light/1280 admin-compliance-detail 
+ok   en/light/1280 admin-listings 
+ok   en/light/1280 admin-template-new 
+ok   en/light/1280 admin-template-edit {"id": "tpl_110"}
+ok   en/light/1280 admin-template-edit 
+ok   en/light/1280 admin-templates 
+ok   en/light/1280 admin-cms 
+ok   en/light/1280 admin-cms {"tab": "banners"}
+ok   en/light/1280 admin-cms {"tab": "faq"}
+ok   en/light/1280 admin-cms-page {"id": "pg_4"}
+ok   en/light/1280 admin-cms-page 
+ok   en/light/1280 admin-cms-banner {"id": "ban_2"}
+ok   en/light/1280 admin-cms-banner 
+ok   en/light/1280 admin-cms-faq {"id": "faq_1"}
+ok   en/light/1280 admin-cms-faq 
+ok   en/light/1280 admin-users 
+ok   en/light/1280 admin-settings-profile 
+ok   en/light/1280 admin-settings 
+ok   en/light/1280 admin-settings-notifications 
+ok   en/light/1280 admin-settings-security 
+ok   en/light/1280 admin-settings-policies 
+ok   en/light/1280 admin-policy-about 
+ok   en/light/1280 admin-policy-privacy 
+ok   en/light/1280 admin-policy-terms 
+ok   en/light/1280 admin-policy-refund 
+ok   en/light/1280 m-settings 
+ok   en/light/1280 m-settings {"tab": "store"}
+ok   en/light/1280 m-settings {"tab": "security"}
+ok   en/light/1280 m-settings {"tab": "hours"}
+ok   en/light/1280 m-settings {"tab": "language"}
+ok   en/light/1280 m-help 
+ok   en/light/1280 m-reviews 
+ok   en/light/1280 m-reports 
+ok   en/light/1280 m-report-detail {"id": "dsp_1042"}
+ok   en/light/1280 m-report-detail 
+ok   en/light/1280 m-orders 
+ok   en/light/1280 m-listings 
+ok   en/light/1280 m-inventory 
+ok   en/light/1280 m-inventory-new 
+ok   en/light/1280 m-inventory-detail {"id": "LIS-2412"}
+ok   en/light/1280 m-inventory-detail 
+ok   en/light/1280 m-create-product {"templateId": "TPL-01"}
+ok   en/light/1280 m-drivers 
+ok   en/light/1280 m-driver-detail {"id": "DRV-03"}
+ok   en/light/1280 m-driver-detail 
+ok   en/light/1280 m-analytics 
+ok   en/light/1280 m-analytics-days 
+ok   en/light/1280 m-customers 
+ok   en/light/1280 m-customer-new 
+ok   en/light/1280 m-customer-detail {"id": "CUS-1010"}
+ok   en/light/1280 m-customer-detail 
+ok   en/light/1280 m-branches 
+ok   en/light/1280 m-branch-edit {"id": "BR-01"}
+ok   en/light/1280 m-branch-edit 
+ok   en/light/1280 m-vendors 
+ok   en/light/1280 m-vendor-new 
+ok   en/light/1280 m-vendor-detail {"id": "VEN-05"}
+ok   en/light/1280 m-vendor-detail 
+ok   en/light/1280 m-templates 
+ok   ar/dark/1280 launcher 
+ok   ar/dark/1280 admin-login 
+ok   ar/dark/1280 m-login 
+ok   ar/dark/1280 otp 
+ok   ar/dark/1280 otp {"portal": "admin", "challengeId": "chl_qa", "destination": "s***@wonderbites.ae"}
+ok   ar/dark/1280 m-signup 
+ok   ar/dark/1280 forgot-password 
+ok   ar/dark/1280 forgot-password {"portal": "admin"}
+ok   ar/dark/1280 reset-password 
+ok   ar/dark/1280 reset-password {"portal": "admin", "token": "rst_qa"}
+ok   ar/dark/1280 not-found 
+ok   ar/dark/1280 admin-notifications 
+ok   ar/dark/1280 m-notifications 
+ok   ar/dark/1280 admin-command-center 
+ok   ar/dark/1280 m-overview 
+ok   ar/dark/1280 m-sustainability 
+ok   ar/dark/1280 admin-settings-markets 
+ok   ar/dark/1280 admin-drops 
+ok   ar/dark/1280 admin-drop-edit {"id": "DR-3391"}
+ok   ar/dark/1280 admin-drop-edit 
+ok   ar/dark/1280 admin-pickups 
+ok   ar/dark/1280 admin-orders 
+ok   ar/dark/1280 admin-merchants 
+ok   ar/dark/1280 admin-merchant-detail {"id": "MER-058"}
+ok   ar/dark/1280 admin-merchant-detail 
+ok   ar/dark/1280 admin-merchant-new 
+ok   ar/dark/1280 admin-consumers 
+ok   ar/dark/1280 admin-consumer-detail {"id": "CON-1212"}
+ok   ar/dark/1280 admin-consumer-detail 
+ok   ar/dark/1280 admin-issues 
+ok   ar/dark/1280 admin-issues {"tab": "alerts"}
+ok   ar/dark/1280 admin-issues {"tab": "moderation"}
+ok   ar/dark/1280 admin-moderation 
+ok   ar/dark/1280 admin-support 
+ok   ar/dark/1280 admin-ticket-detail {"id": "SUP-8841"}
+ok   ar/dark/1280 admin-ticket-detail 
+ok   ar/dark/1280 admin-financials 
+ok   ar/dark/1280 admin-payout-detail {"id": "PO-066-261029"}
+ok   ar/dark/1280 admin-payout-detail 
+ok   ar/dark/1280 admin-operations 
+ok   ar/dark/1280 admin-performance 
+ok   ar/dark/1280 admin-performance-merchants 
+ok   ar/dark/1280 admin-performance-report 
+ok   ar/dark/1280 admin-sustainability 
+ok   ar/dark/1280 admin-sustainability-report 
+ok   ar/dark/1280 admin-wallet 
+ok   ar/dark/1280 admin-wallet {"tab": "vouchers"}
+ok   ar/dark/1280 admin-wallet-detail {"id": "WAL-30410"}
+ok   ar/dark/1280 admin-wallet-detail 
+ok   ar/dark/1280 admin-voucher-new 
+ok   ar/dark/1280 admin-voucher-detail {"id": "VCH-101"}
+ok   ar/dark/1280 admin-voucher-detail 
+ok   ar/dark/1280 admin-quality 
+ok   ar/dark/1280 admin-compliance-detail {"id": "MER-058"}
+ok   ar/dark/1280 admin-compliance-detail 
+ok   ar/dark/1280 admin-listings 
+ok   ar/dark/1280 admin-template-new 
+ok   ar/dark/1280 admin-template-edit {"id": "tpl_110"}
+ok   ar/dark/1280 admin-template-edit 
+ok   ar/dark/1280 admin-templates 
+ok   ar/dark/1280 admin-cms 
+ok   ar/dark/1280 admin-cms {"tab": "banners"}
+ok   ar/dark/1280 admin-cms {"tab": "faq"}
+ok   ar/dark/1280 admin-cms-page {"id": "pg_4"}
+ok   ar/dark/1280 admin-cms-page 
+ok   ar/dark/1280 admin-cms-banner {"id": "ban_2"}
+ok   ar/dark/1280 admin-cms-banner 
+ok   ar/dark/1280 admin-cms-faq {"id": "faq_1"}
+ok   ar/dark/1280 admin-cms-faq 
+ok   ar/dark/1280 admin-users 
+ok   ar/dark/1280 admin-settings-profile 
+ok   ar/dark/1280 admin-settings 
+ok   ar/dark/1280 admin-settings-notifications 
+ok   ar/dark/1280 admin-settings-security 
+ok   ar/dark/1280 admin-settings-policies 
+ok   ar/dark/1280 admin-policy-about 
+ok   ar/dark/1280 admin-policy-privacy 
+ok   ar/dark/1280 admin-policy-terms 
+ok   ar/dark/1280 admin-policy-refund 
+ok   ar/dark/1280 m-settings 
+ok   ar/dark/1280 m-settings {"tab": "store"}
+ok   ar/dark/1280 m-settings {"tab": "security"}
+ok   ar/dark/1280 m-settings {"tab": "hours"}
+ok   ar/dark/1280 m-settings {"tab": "language"}
+ok   ar/dark/1280 m-help 
+ok   ar/dark/1280 m-reviews 
+ok   ar/dark/1280 m-reports 
+ok   ar/dark/1280 m-report-detail {"id": "dsp_1042"}
+ok   ar/dark/1280 m-report-detail 
+ok   ar/dark/1280 m-orders 
+ok   ar/dark/1280 m-listings 
+ok   ar/dark/1280 m-inventory 
+ok   ar/dark/1280 m-inventory-new 
+ok   ar/dark/1280 m-inventory-detail {"id": "LIS-2412"}
+ok   ar/dark/1280 m-inventory-detail 
+ok   ar/dark/1280 m-create-product {"templateId": "TPL-01"}
+ok   ar/dark/1280 m-drivers 
+ok   ar/dark/1280 m-driver-detail {"id": "DRV-03"}
+ok   ar/dark/1280 m-driver-detail 
+ok   ar/dark/1280 m-analytics 
+ok   ar/dark/1280 m-analytics-days 
+ok   ar/dark/1280 m-customers 
+ok   ar/dark/1280 m-customer-new 
+ok   ar/dark/1280 m-customer-detail {"id": "CUS-1010"}
+ok   ar/dark/1280 m-customer-detail 
+ok   ar/dark/1280 m-branches 
+ok   ar/dark/1280 m-branch-edit {"id": "BR-01"}
+ok   ar/dark/1280 m-branch-edit 
+ok   ar/dark/1280 m-vendors 
+ok   ar/dark/1280 m-vendor-new 
+ok   ar/dark/1280 m-vendor-detail {"id": "VEN-05"}
+ok   ar/dark/1280 m-vendor-detail 
+ok   ar/dark/1280 m-templates 
+ok   ar/light/1280 launcher 
+ok   ar/light/1280 admin-login 
+ok   ar/light/1280 m-login 
+ok   ar/light/1280 otp 
+ok   ar/light/1280 otp {"portal": "admin", "challengeId": "chl_qa", "destination": "s***@wonderbites.ae"}
+ok   ar/light/1280 m-signup 
+ok   ar/light/1280 forgot-password 
+ok   ar/light/1280 forgot-password {"portal": "admin"}
+ok   ar/light/1280 reset-password 
+ok   ar/light/1280 reset-password {"portal": "admin", "token": "rst_qa"}
+ok   ar/light/1280 not-found 
+ok   ar/light/1280 admin-notifications 
+ok   ar/light/1280 m-notifications 
+ok   ar/light/1280 admin-command-center 
+ok   ar/light/1280 m-overview 
+ok   ar/light/1280 m-sustainability 
+ok   ar/light/1280 admin-settings-markets 
+ok   ar/light/1280 admin-drops 
+ok   ar/light/1280 admin-drop-edit {"id": "DR-3391"}
+ok   ar/light/1280 admin-drop-edit 
+ok   ar/light/1280 admin-pickups 
+ok   ar/light/1280 admin-orders 
+ok   ar/light/1280 admin-merchants 
+ok   ar/light/1280 admin-merchant-detail {"id": "MER-058"}
+ok   ar/light/1280 admin-merchant-detail 
+ok   ar/light/1280 admin-merchant-new 
+ok   ar/light/1280 admin-consumers 
+ok   ar/light/1280 admin-consumer-detail {"id": "CON-1212"}
+ok   ar/light/1280 admin-consumer-detail 
+ok   ar/light/1280 admin-issues 
+ok   ar/light/1280 admin-issues {"tab": "alerts"}
+ok   ar/light/1280 admin-issues {"tab": "moderation"}
+ok   ar/light/1280 admin-moderation 
+ok   ar/light/1280 admin-support 
+ok   ar/light/1280 admin-ticket-detail {"id": "SUP-8841"}
+ok   ar/light/1280 admin-ticket-detail 
+ok   ar/light/1280 admin-financials 
+ok   ar/light/1280 admin-payout-detail {"id": "PO-066-261029"}
+ok   ar/light/1280 admin-payout-detail 
+ok   ar/light/1280 admin-operations 
+ok   ar/light/1280 admin-performance 
+ok   ar/light/1280 admin-performance-merchants 
+ok   ar/light/1280 admin-performance-report 
+ok   ar/light/1280 admin-sustainability 
+ok   ar/light/1280 admin-sustainability-report 
+ok   ar/light/1280 admin-wallet 
+ok   ar/light/1280 admin-wallet {"tab": "vouchers"}
+ok   ar/light/1280 admin-wallet-detail {"id": "WAL-30410"}
+ok   ar/light/1280 admin-wallet-detail 
+ok   ar/light/1280 admin-voucher-new 
+ok   ar/light/1280 admin-voucher-detail {"id": "VCH-101"}
+ok   ar/light/1280 admin-voucher-detail 
+ok   ar/light/1280 admin-quality 
+ok   ar/light/1280 admin-compliance-detail {"id": "MER-058"}
+ok   ar/light/1280 admin-compliance-detail 
+ok   ar/light/1280 admin-listings 
+ok   ar/light/1280 admin-template-new 
+ok   ar/light/1280 admin-template-edit {"id": "tpl_110"}
+ok   ar/light/1280 admin-template-edit 
+ok   ar/light/1280 admin-templates 
+ok   ar/light/1280 admin-cms 
+ok   ar/light/1280 admin-cms {"tab": "banners"}
+ok   ar/light/1280 admin-cms {"tab": "faq"}
+ok   ar/light/1280 admin-cms-page {"id": "pg_4"}
+ok   ar/light/1280 admin-cms-page 
+ok   ar/light/1280 admin-cms-banner {"id": "ban_2"}
+ok   ar/light/1280 admin-cms-banner 
+ok   ar/light/1280 admin-cms-faq {"id": "faq_1"}
+ok   ar/light/1280 admin-cms-faq 
+ok   ar/light/1280 admin-users 
+ok   ar/light/1280 admin-settings-profile 
+ok   ar/light/1280 admin-settings 
+ok   ar/light/1280 admin-settings-notifications 
+ok   ar/light/1280 admin-settings-security 
+ok   ar/light/1280 admin-settings-policies 
+ok   ar/light/1280 admin-policy-about 
+ok   ar/light/1280 admin-policy-privacy 
+ok   ar/light/1280 admin-policy-terms 
+ok   ar/light/1280 admin-policy-refund 
+ok   ar/light/1280 m-settings 
+ok   ar/light/1280 m-settings {"tab": "store"}
+ok   ar/light/1280 m-settings {"tab": "security"}
+ok   ar/light/1280 m-settings {"tab": "hours"}
+ok   ar/light/1280 m-settings {"tab": "language"}
+ok   ar/light/1280 m-help 
+ok   ar/light/1280 m-reviews 
+ok   ar/light/1280 m-reports 
+ok   ar/light/1280 m-report-detail {"id": "dsp_1042"}
+ok   ar/light/1280 m-report-detail 
+ok   ar/light/1280 m-orders 
+ok   ar/light/1280 m-listings 
+ok   ar/light/1280 m-inventory 
+ok   ar/light/1280 m-inventory-new 
+ok   ar/light/1280 m-inventory-detail {"id": "LIS-2412"}
+ok   ar/light/1280 m-inventory-detail 
+ok   ar/light/1280 m-create-product {"templateId": "TPL-01"}
+ok   ar/light/1280 m-drivers 
+ok   ar/light/1280 m-driver-detail {"id": "DRV-03"}
+ok   ar/light/1280 m-driver-detail 
+ok   ar/light/1280 m-analytics 
+ok   ar/light/1280 m-analytics-days 
+ok   ar/light/1280 m-customers 
+ok   ar/light/1280 m-customer-new 
+ok   ar/light/1280 m-customer-detail {"id": "CUS-1010"}
+ok   ar/light/1280 m-customer-detail 
+ok   ar/light/1280 m-branches 
+ok   ar/light/1280 m-branch-edit {"id": "BR-01"}
+ok   ar/light/1280 m-branch-edit 
+ok   ar/light/1280 m-vendors 
+ok   ar/light/1280 m-vendor-new 
+ok   ar/light/1280 m-vendor-detail {"id": "VEN-05"}
+ok   ar/light/1280 m-vendor-detail 
+ok   ar/light/1280 m-templates 
+
+904 renders, 0 with findings, 163s

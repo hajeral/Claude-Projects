@@ -1,0 +1,32 @@
+[
+ {
+  "flow": "F-001 listing edit keeps remaining; quantity below committed → field error",
+  "ok": true,
+  "errors": [],
+  "secs": 1.4
+ },
+ {
+  "flow": "F-002 order state machine: terminal orders 409 invalid_transition, UI hides disallowed actions",
+  "ok": true,
+  "errors": [],
+  "secs": 1.3
+ },
+ {
+  "flow": "F-003 / FLOW-08 merchant verifies pickup code in the order modal → completed (single-use, expiry, inline error)",
+  "ok": true,
+  "errors": [],
+  "secs": 1.1
+ },
+ {
+  "flow": "F-004 merchant Overview KPIs / recent orders / top bags come from the order store",
+  "ok": true,
+  "errors": [],
+  "secs": 0.5
+ },
+ {
+  "flow": "F-005 support contacts from the markets registry (Need Help drawer + Help screen), editable in Settings → Markets",
+  "ok": true,
+  "errors": [],
+  "secs": 1.6
+ }
+]
