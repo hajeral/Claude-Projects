@@ -1,0 +1,1 @@
+module.exports = { Platform: { OS: 'web', select: (o) => o.web ?? o.default }, I18nManager: { isRTL: false, allowRTL() {}, forceRTL() {}, swapLeftAndRightInRTL() {} }, Linking: { openURL: async () => {} }, Share: {}, Alert: {} };
