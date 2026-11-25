@@ -1,0 +1,10 @@
+.agent_worktrees/
+.claude/state/*
+!.claude/state/.gitkeep
+.claude/receipts/*
+!.claude/receipts/.gitkeep
+.claude/settings.local.json
+.env
+.env.*
+__pycache__/
+.pytest_cache/

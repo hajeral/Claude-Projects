@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Receipt gate: task branches (feat/task-*) cannot commit without a valid signed receipt.
+root="$(git rev-parse --path-format=absolute --git-common-dir)/.."
+exec python3 "$root/harness/harness.py" pre-commit

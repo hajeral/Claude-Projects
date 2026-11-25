@@ -1,0 +1,14 @@
+{
+  "task_id": "",
+  "title": "",
+  "scope": "One or two sentences: exactly what changes and what does not.",
+  "allowed_paths": ["app/**", "tests/**"],
+  "forbidden": [".env", ".env.*", "secrets/**", "package-lock.json", "yarn.lock", "pnpm-lock.yaml", "poetry.lock"],
+  "approved_dependencies": [],
+  "acceptance_criteria": ["python3 -m pytest -q tests", "bin/harness evals"],
+  "lint_commands": ["python3 -m compileall -q app tests"],
+  "invariants": ["Describe state rules the skeptic must check, e.g. 'balance never negative'."],
+  "budget": { "max_turns": 12, "max_usd": 4.5 },
+  "blast_radius": { "max_files": 5, "approved_by_human": false },
+  "breaker": { "same_error_limit": 3 }
+}

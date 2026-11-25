@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Always run the MAIN repo's harness (never a copy inside a task worktree).
+root="$(git rev-parse --path-format=absolute --git-common-dir 2>/dev/null)/.."
+exec python3 "$root/harness/harness.py" "$@"
